@@ -55,6 +55,18 @@ div#footer {
 }
 div#footer2 {     width: 1000px; text-align: center; margin: 0 auto; }
 
+p.bold {
+	font: bold 12px/30px Arial, serif;
+}
+
+p.italic {
+	font-style: italic;
+}
+
+p.underline {
+	text-decoration: underline;
+}
+
 #Recommend { width: 60px; position: fixed; right: 0px; top:160px; padding: 0px; text-align: right; z-index: 999; }
 
 

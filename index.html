@@ -239,7 +239,127 @@ function ShowNewsletter() {
       <div id="col23">
         <div id="col23">
           <h2>Catalogue of FINESCE "Domain Specific Enablers"</h2>
-          <p><span lang="EN-GB">Content</span></p>
+          <p><span lang="EN-GB">There are two options for making DSEs available:</span></p>
+          <ul>
+            <li>Option 1: the specification of the DSE is made publically available, royalty free.</li>
+            <li>Option 2: the specification of the DSE is made publically available, royalty free and the code is available Open Source.</li>
+          </ul>
+          <table border="1" style="background-color:#FFFFFF;border-collapse:collapse;border:1px solid #000000;color:#000000;width:100%" cellpadding="3" cellspacing="3">
+            <thead>
+              <tr>
+                <th>WP</th>
+                <th>DSE Name</th>
+                <th>DSE Description</th>
+                <th>Option</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><p>1</p></td>
+                <td><p>Integration kit DSE</p></td>
+                <td><p>Documented process including some examples for the established integrations within WP1</p></td>
+                <td><p>1</p></td>
+              </tr>
+              <tr>
+                <td><p>2</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+              </tr>
+              <tr>
+                <td><p>3</p></td>
+                <td><p>Modbus Connector (ModConn) DSE</p></td>
+                <td><p>Gateway to a local shop floor network</p></td>
+                <td><p>1</p></td>
+              </tr>
+              <tr>
+                <td><p>3</p></td>
+                <td><p>OBDC Event Sink (EvSi) DSE</p></td>
+                <td><p>Local storage of shop floor events</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>3</p></td>
+                <td><p>Production Planning and Control System Integrator (PPSI) DSE</p></td>
+                <td><p>Connecting factory planning systems to the cloud</p></td>
+                <td><p>1</p></td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Contract Tailor Processor</p></td>
+                <td><p class="underline">Available Q1 2015</p><p class="italic">This component will be responsible to calculate a new contract for a specific customer based on an incentive plan (issued by a Retailer and approved by a Market Regulator Authority).</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Contract Processor</p></td>
+                <td><p class="underline">Available Q1 2015</p><p class="italic">This component will be responsible to store all the contracts, their validation, and associated user profiles. It could involve the support of operations like contract update/modification (by a Retailer) and contract approval (by end customers).</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Social Events Interface (Social2Orion **)</p></td>
+                <td><p>Social2Orion is a REST service (developed in Java) which allows clients (e.g. Social Events Information Providers) to register data about social events (affecting consumption/production in a specific area such as a concert or a football match) in an instance of ORION Context Broker GE</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>2</p></td>
+                <td><p>Weather Condition Interface (WeaFor2Orion **)</p></td>
+                <td><p>WeaFor2Orion consists of: a REST service (developed in Java) which allow clients (e.g. Weather Condition Information Providers) to register data about weather conditions and predictions in a specific area onto an instance of ORION Context Broker GE + a Java client which retrieves weather conditions and predictions from an external service (forecast.io in our implementation) and then “passes” the data to the above mentioned REST service.</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Contract Information (ContractInformation2Orion **)</p></td>
+                <td><p>ContractInformation2Orion is a REST service (developed in Java) which allows clients (e.g. Retailers) to register data about cost of energy produced from the DERs, costs of transmission system and power plants, energy costs in an instance of ORION Context Broker GE.</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Regulation Compliance Rule Engine</p></td>
+                <td><p class="underline">Available Q1 2015</p><p class="italic">This component will be responsible for checking and confirming the compliance of an incentive plan (issued by a Retailer) to established regulations and rules.</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Incentive Processor</p></td>
+                <td><p class="underline">Available Q1 2015</p><p class="italic">This component will be responsible to calculate a new incentive plan for a specific customer based on an issue resolution plan plan (issued by an Aggregator and approved by a DSO).</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Metering (Metering2Orion **)</p></td>
+                <td><p>Metering2Orion consists of: a REST service (developed in Java) which allow clients (e.g. DSOs) to register data about metering and load profile in a specific area into an instance of ORION Context Broker GE + a Java client which accepts data about metering and load profile coming from the smart meters (via either an IoT gateway or an existing legacy system) and then “passes” the data to the above mentioned REST service.</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Protocol Adapter AMM (Sensor2AMI **)</p></td>
+                <td><p class="underline">Available Q1 2015</p><p class="italic">This component will retrieve DLMS/COSEM data from meters installed at the trial site (metering and load profile) and then feeds an instance of IDAS (Backend) Device Management GE with the data (which, on its turn, forwards data to an instance of ORION Context Broker GE</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **)</p></td>
+                <td><p class="underline">Available Q1 2015</p><p class="italic"> Detects issues related to power losses and voltage drops (in the lines of a smart LV grid) and then sends it to an instance of ORION Context Broker GE</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td><p>5</p></td>
+                <td><p>Charging Optimisation System (COS) DSE</p></td>
+                <td><p>Optimisation of Electric Vehicle Charging</p></td>
+                <td><p>1</p></td>
+              </tr>
+              <tr>
+                <td><p>6</p></td>
+                <td><p>FINESCE API Mediator (FAM) DSE</p></td>
+                <td><p>Mediation Services against FINESCE API specification</p></td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="bold">** name of the software module(s) in the WP4 eMarketplace infrastucture implementing the DSE functionality</p>
+          <p>Here you can find a template to set up a page for a new DSE: DSE Wiki Page Template</p>
           <!-- <h4>Further information: </h4>
           <ul>
             <li><span style="font-weight: bold;"><a href="http://www.finesce.eu/FIPPP.html">FI-PPP programme (2013-2014)</a></span></li><span style="font-weight: bold;"></span>
