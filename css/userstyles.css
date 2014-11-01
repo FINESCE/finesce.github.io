@@ -1,0 +1,15 @@
+html {
+    font-size: 90%;
+}
+
+body { font-family: Arial, Sans-Serif; color: #222222; }
+
+
+
+a	 { color: #b7087f; font-family: Arial, Sans-Serif; text-decoration: none; }
+a:selected { color: #792e93; font-family: Arial, Sans-Serif;  text-decoration: none; }
+a:hover { color: #792e93; font-family: Arial, Sans-Serif;   text-decoration: none; }
+
+
+.Headline	{ color: #b7087f; font-weight: bold; font-family: Arial, Sans-Serif; text-decoration: none; font-size: 1.3em; }
+.Headline:hover	{ color: #792e93; font-weight: bold; font-family: Arial, Sans-Serif;  text-decoration: none;  font-size: 1.3em;  }
