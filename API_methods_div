@@ -1,0 +1,2164 @@
+<div class="humanColumnSection humanColumnSectionReference">
+
+  <!-- Title -->
+  <div class="humanColumnTitle">
+    <h3 class="humanColumnTitleText">Reference</h3>
+  </div>
+  <!-- /Title -->
+
+<div class="resourceGroups">
+<div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Authentication    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs is used for authenticating users against oauth2 authentication and authorization services.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Service description  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Authenticates a user against a set of credentials.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 post">
+
+  <!-- Invitation -->
+  <div class="action2Invitation post">
+          <a href="/reference/authentication/service-description/get-an-authorization-token-based-on-user-data" class="action2InvitationRow">
+                  <div class="action2Tag post"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Get an authorization token based on user data      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Service description  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Retrieves a new authentication token based on a previously issued refresh token.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 post">
+
+  <!-- Invitation -->
+  <div class="action2Invitation post">
+          <a href="/reference/authentication/service-description/get-a-refreshed-authentication-token" class="action2InvitationRow">
+                  <div class="action2Tag post"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Get a refreshed authentication token      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Building control centre    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Building information    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    List of buildings in trial  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>List the buildings known to the selected trial infrastructure</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/building-information/list-of-buildings-in-trial/retrieve-a-list-of-building-descriptions" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a list of building descriptions      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Building Description  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>List the properties of the identified building. The measurement types associated with the building are delivered as well.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/building-information/building-description/retrieve-a-description-of-a-single-building" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a description of a single building      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Building measurements  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Lists the measurements of the specified type of a building.</p>
+
+<p>The measurement types can be one of the following: HousePowerDemandGrid, HousePowerConsumptionGrid, HousePowerProductionGrid, HeatpumpInletFlowDemand, HeatpumpOutletFlowDemand, HeatpumpInletFlowSummation, HeatpumpOutletFlowSummation, HouseHeatConsumption, HeatpumpInletTemperature, HeatpumpOutletTemperature, HouseNaturalGasConsumption, OutdoorTemperatureAverage, IndoorTemperatureAverage, HeatpumpReturnFlow, TemperatureAverage , HeatpumpForwardFlow, TemperatureAverage, ColdWaterTemperatureAverage, HotWaterTemperatureAverage, HeatpumpHeatFlow, HotWaterFlow, HeatpumpPowerAverage, HousePowerProductionSolar, HouseHeatEnergyAverage, HotWaterEnergyAverage, ICMIndoorTemperatureAverage, ICMIndoorHumidityAverage, ICMIndoorCO2LevelAverage, ChargingSocketPowerDemand, ChargingSocketPower</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/building-information/building-measurements/retrieve-a-set-of-measurements-of-a-specific-building" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a set of measurements of a specific building      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get available measurement types for the buildings  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>List the measurement types that are available for each building belonging to the trial</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/building-information/get-available-measurement-types-for-the-buildings/retrieve-the-list-of-available-measurement-types" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of available measurement types      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get available measurement types of a specific type for the buildings  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>List the measurement types that are available for each building belonging to the trial and are of type {type}</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/building-information/get-available-measurement-types-of-a-specific-type-for-the-buildings/retrieve-the-list-of-available-measurement-types-of-a-specific-type" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of available measurement types of a specific type      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Customer and contract    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Energy demand / Power consumption    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This API set offers services for getting/updating information related to the electricity demand (consumption).</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Total user energy consumption  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>A total electricity consumption report for a single user.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-demand-/-power-consumption/total-user-energy-consumption/retrieve-a-total-energy-consumption-report-for-a-single-user" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a total energy consumption report for a single user      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    User profile of energy consumption  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>A report on the profile of electricity consumption for a single user.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-demand-/-power-consumption/user-profile-of-energy-consumption/retrieve-an-energy-consumption-profile-report-for-a-user" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve an energy consumption profile report for a user      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Sector profile of energy consumption  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>A total electricity consumption report for a single sector.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-demand-/-power-consumption/sector-profile-of-energy-consumption/retrieve-an-energy-consumption-profile-report-for-a-sector" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve an energy consumption profile report for a sector      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    User power demand  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>The report of grid power demand of a single user.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-demand-/-power-consumption/user-power-demand/retrieve-a-user-power-demand-profile-report" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a user power demand profile report      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    User power demand  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>The report of grid power demand of a single sector.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-demand-/-power-consumption/user-power-demand/retrieve-a-sector-power-demand-profile-report" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a sector power demand profile report      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Energy supply / Power production    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This API set offers services for getting/updating information related to the electricity supply (production).</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Total user energy production  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>A total electricity production report for a single user.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-supply-/-power-production/total-user-energy-production/retrieve-a-total-energy-production-report-for-a-single-user" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a total energy production report for a single user      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    User profile of energy production  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>A report on the profile of electricity production for a single user.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-supply-/-power-production/user-profile-of-energy-production/retrieve-an-energy-production-profile-report-for-a-user" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve an energy production profile report for a user      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Sector energy production  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>A report on the profile of electricity production for a single sector.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-supply-/-power-production/sector-energy-production/retrieve-an-energy-production-report" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve an energy production report      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    User power supply  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>The report of grid power supply of a single user.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-supply-/-power-production/user-power-supply/retrieve-a-user-power-supply-profile-report" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a user power supply profile report      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Sector power supply  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>The report of grid power supply of a single sector.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/energy-supply-/-power-production/sector-power-supply/retrieve-a-sector-power-supply-profile-report" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a sector power supply profile report      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Electric Vehicles    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    List of vehicles in trial  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>List the vehicles known to the selected trial infrastructure</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/electric-vehicles/list-of-vehicles-in-trial/retrieve-a-list-of-vehicle-descriptions" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a list of vehicle descriptions      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Vehicle Description  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>List the properties of the identified vehicle. The measurement types associated with the vehicle are delivered as well.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/electric-vehicles/vehicle-description/retrieve-a-description-of-a-single-vehicle" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a description of a single vehicle      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Vehicle measurements  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Lists the measurements of the specified type of a vehicle.</p>
+
+<p>The measurement types can be one of the following: Position, Distance, BatteryCapacity</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/electric-vehicles/vehicle-measurements/retrieve-a-set-of-measurements-of-a-specific-vehicle" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a set of measurements of a specific vehicle      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get available measurement types for the vehicles  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>List the measurement types that are available for each vehicle belonging to the trial</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/electric-vehicles/get-available-measurement-types-for-the-vehicles/retrieve-the-list-of-available-measurement-types" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of available measurement types      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get available measurement types of a specific type for the vehicles  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>List the measurement types that are available for each vehicle belonging to the trial and are of type {type}</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/electric-vehicles/get-available-measurement-types-of-a-specific-type-for-the-vehicles/retrieve-the-list-of-available-measurement-types-of-a-specific-type" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of available measurement types of a specific type      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Event and KPIs    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      External information    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This API is responsible for handling requests/responses from services that do not directly map to energy-related data.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get the latest known social events  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>This service is meant to offer a list of social events that can temporarily influence the electricity consumption.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/external-information/get-the-latest-known-social-events/retrieve-the-list-of-upcoming-social-events" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of upcoming social events      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get a specific number of the latest known social events  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>This service is meant to offer a list containing a specific number of social events that can temporarily influence the electricity consumption.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/external-information/get-a-specific-number-of-the-latest-known-social-events/retrieve-a-list-of-upcoming-social-events" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a list of upcoming social events      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Metering infrastructure details    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    List all meters  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Gets a list of the available meters along with the set of their accompanying information.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/metering-infrastructure-details/list-all-meters/retrieve-the-list-of-available-meters" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of available meters      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get a specific meter description  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Retrieves a meter based on a search string.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/metering-infrastructure-details/get-a-specific-meter-description/retrieve-a-meter-based-on-a-search-string" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a meter based on a search string      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    List all available sectors  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Gets a list of the sectors that the meters may be deployed into.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/metering-infrastructure-details/list-all-available-sectors/retrieve-the-list-of-available-sectors" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of available sectors      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Pricing    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This group of APIs provides information related to energy pricing</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Retrieve the energy prices of a specific location during a specific period  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>This API retrieves the energy prices of a location during a specified period of time</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/pricing/retrieve-the-energy-prices-of-a-specific-location-during-a-specific-period/retrieve-a-location-description" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a location description      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Regions    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This API set offers services related to regional characteristics</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Available regions  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Retrieve the list of all available regions</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/regions/available-regions/retrieve-the-list-of-all-available-regions" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of all available regions      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Single region  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Retrieve the list of a single region, based on its id</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/regions/single-region/retrieve-a-region-based-on-its-id" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a region based on its id      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Resolution plan and incentives    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Savings    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Simulation    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs may be used to retrieve simulated values for various smart grid/city aspects.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Prediction of user power demand  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Returns a simulated power demand prediction for a specific user, based on his/her id.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/simulation/prediction-of-user-power-demand/retrieve-a-report-related-to-the-predicted-user-power-demand" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a report related to the predicted user power demand      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Prediction of sector power demand  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Returns a simulated power demand prediction for a specific sector.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/simulation/prediction-of-sector-power-demand/retrieve-a-report-related-to-the-predicted-sector-power-demand" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a report related to the predicted sector power demand      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Prediction of user power supply  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Returns a simulated power supply prediction for a specific user, based on his/her id.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/simulation/prediction-of-user-power-supply/retrieve-a-report-related-to-the-predicted-user-power-supply" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a report related to the predicted user power supply      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Prediction of sector power supply  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Returns a simulated power supply for a specific sector.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/simulation/prediction-of-sector-power-supply/retrieve-a-report-related-to-the-predicted-sector-power-supply" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a report related to the predicted sector power supply      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Smart Factories    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs offers information related to the monitoring and control of equipment of a smart factory.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Available machines  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Gets the list of available machines of the factory.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/smart-factories/available-machines/retrieve-the-list-of-available-machines" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of available machines      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Information over a single machine  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Gets detailed, historical information regarding a single machine, based on its id.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/smart-factories/information-over-a-single-machine/retrieve-historical-measurements-for-a-single-machine" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve historical measurements for a single machine      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Weather forecast    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This API is responsible for fetching information related to the weather be it in the past or the near future.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Available forecast descriptors  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Delivers the available forecast descriptors of the specified trial infrastructure.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/weather-forecast/available-forecast-descriptors/retrieve-the-available-weather-descriptors" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the available weather descriptors      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Detailed weather report  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>A weather report for a specific area, identified by its coordinates.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/weather-forecast/detailed-weather-report/retrieve-a-weather-report" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a weather report      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Detailed weather report  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>A weather report (only one weather descriptor) for a specific area, identified by its coordinates.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/weather-forecast/detailed-weather-report/retrieve-a-weather-report" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a weather report      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      General    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Retrieve a specific location  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Service description</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/general/retrieve-a-specific-location/retrieve-a-location-description" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a location description      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div></div></div>
