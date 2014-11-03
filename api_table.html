@@ -248,51 +248,64 @@ function ShowNewsletter() {
               </tr>
             </thead>
             <tbody>
-              <tr><td>Authentication</td><td>Service description</td><td>Authenticates a user against a set of credentials.</td></tr>
-<tr><td>Authentication</td><td>Service description</td><td>Retrieves a new authentication token based on a previously issued refresh token.</td></tr>
+              <tr><td rowspan='2'>Authentication</td>
+<td>Service description</td><td>Authenticates a user against a set of credentials.</td></tr>
+<td>Service description</td><td>Retrieves a new authentication token based on a previously issued refresh token.</td></tr>
 <tr><td>Building control centre</td><td>/</td><td>/</td></tr>
-<tr><td>Building information</td><td>List of buildings in trial</td><td>List the buildings known to the selected trial infrastructure</td></tr>
-<tr><td>Building information</td><td>Building Description</td><td>List the properties of the identified building. The measurement types associated with the building are delivered as well.</td></tr>
-<tr><td>Building information</td><td>Building measurements</td><td>Lists the measurements of the specified type of a building.</td></tr>
-<tr><td>Building information</td><td>Get available measurement types for the buildings</td><td>List the measurement types that are available for each building belonging to the trial</td></tr>
-<tr><td>Building information</td><td>Get available measurement types of a specific type for the buildings</td><td>List the measurement types that are available for each building belonging to the trial and are of type {type}</td></tr>
+<tr><td rowspan='5'>Building information</td>
+<td>List of buildings in trial</td><td>List the buildings known to the selected trial infrastructure</td></tr>
+<td>Building Description</td><td>List the properties of the identified building. The measurement types associated with the building are delivered as well.</td></tr>
+<td>Building measurements</td><td>Lists the measurements of the specified type of a building.</td></tr>
+<td>Get available measurement types for the buildings</td><td>List the measurement types that are available for each building belonging to the trial</td></tr>
+<td>Get available measurement types of a specific type for the buildings</td><td>List the measurement types that are available for each building belonging to the trial and are of type {type}</td></tr>
 <tr><td>Customer and contract</td><td>/</td><td>/</td></tr>
-<tr><td>Energy demand / Power consumption</td><td>Total user energy consumption</td><td>A total electricity consumption report for a single user.</td></tr>
-<tr><td>Energy demand / Power consumption</td><td>User profile of energy consumption</td><td>A report on the profile of electricity consumption for a single user.</td></tr>
-<tr><td>Energy demand / Power consumption</td><td>Sector profile of energy consumption</td><td>A total electricity consumption report for a single sector.</td></tr>
-<tr><td>Energy demand / Power consumption</td><td>User power demand</td><td>The report of grid power demand of a single user.</td></tr>
-<tr><td>Energy demand / Power consumption</td><td>User power demand</td><td>The report of grid power demand of a single sector.</td></tr>
-<tr><td>Energy supply / Power production</td><td>Total user energy production</td><td>A total electricity production report for a single user.</td></tr>
-<tr><td>Energy supply / Power production</td><td>User profile of energy production</td><td>A report on the profile of electricity production for a single user.</td></tr>
-<tr><td>Energy supply / Power production</td><td>Sector energy production</td><td>A report on the profile of electricity production for a single sector.</td></tr>
-<tr><td>Energy supply / Power production</td><td>User power supply</td><td>The report of grid power supply of a single user.</td></tr>
-<tr><td>Energy supply / Power production</td><td>Sector power supply</td><td>The report of grid power supply of a single sector.</td></tr>
-<tr><td>Electric Vehicles</td><td>List of vehicles in trial</td><td>List the vehicles known to the selected trial infrastructure</td></tr>
-<tr><td>Electric Vehicles</td><td>Vehicle Description</td><td>List the properties of the identified vehicle. The measurement types associated with the vehicle are delivered as well.</td></tr>
-<tr><td>Electric Vehicles</td><td>Vehicle measurements</td><td>Lists the measurements of the specified type of a vehicle.</td></tr>
-<tr><td>Electric Vehicles</td><td>Get available measurement types for the vehicles</td><td>List the measurement types that are available for each vehicle belonging to the trial</td></tr>
-<tr><td>Electric Vehicles</td><td>Get available measurement types of a specific type for the vehicles</td><td>List the measurement types that are available for each vehicle belonging to the trial and are of type {type}</td></tr>
+<tr><td rowspan='5'>Energy demand / Power consumption</td>
+<td>Total user energy consumption</td><td>A total electricity consumption report for a single user.</td></tr>
+<td>User profile of energy consumption</td><td>A report on the profile of electricity consumption for a single user.</td></tr>
+<td>Sector profile of energy consumption</td><td>A total electricity consumption report for a single sector.</td></tr>
+<td>User power demand</td><td>The report of grid power demand of a single user.</td></tr>
+<td>User power demand</td><td>The report of grid power demand of a single sector.</td></tr>
+<tr><td rowspan='5'>Energy supply / Power production</td>
+<td>Total user energy production</td><td>A total electricity production report for a single user.</td></tr>
+<td>User profile of energy production</td><td>A report on the profile of electricity production for a single user.</td></tr>
+<td>Sector energy production</td><td>A report on the profile of electricity production for a single sector.</td></tr>
+<td>User power supply</td><td>The report of grid power supply of a single user.</td></tr>
+<td>Sector power supply</td><td>The report of grid power supply of a single sector.</td></tr>
+<tr><td rowspan='5'>Electric Vehicles</td>
+<td>List of vehicles in trial</td><td>List the vehicles known to the selected trial infrastructure</td></tr>
+<td>Vehicle Description</td><td>List the properties of the identified vehicle. The measurement types associated with the vehicle are delivered as well.</td></tr>
+<td>Vehicle measurements</td><td>Lists the measurements of the specified type of a vehicle.</td></tr>
+<td>Get available measurement types for the vehicles</td><td>List the measurement types that are available for each vehicle belonging to the trial</td></tr>
+<td>Get available measurement types of a specific type for the vehicles</td><td>List the measurement types that are available for each vehicle belonging to the trial and are of type {type}</td></tr>
 <tr><td>Event and KPIs</td><td>/</td><td>/</td></tr>
-<tr><td>External information</td><td>Get the latest known social events</td><td>This service is meant to offer a list of social events that can temporarily influence the electricity consumption.</td></tr>
-<tr><td>External information</td><td>Get a specific number of the latest known social events</td><td>This service is meant to offer a list containing a specific number of social events that can temporarily influence the electricity consumption.</td></tr>
-<tr><td>Metering infrastructure details</td><td>List all meters</td><td>Gets a list of the available meters along with the set of their accompanying information.</td></tr>
-<tr><td>Metering infrastructure details</td><td>Get a specific meter description</td><td>Retrieves a meter based on a search string.</td></tr>
-<tr><td>Metering infrastructure details</td><td>List all available sectors</td><td>Gets a list of the sectors that the meters may be deployed into.</td></tr>
-<tr><td>Pricing</td><td>Retrieve the energy prices of a specific location during a specific period</td><td>This API retrieves the energy prices of a location during a specified period of time</td></tr>
-<tr><td>Regions</td><td>Available regions</td><td>Retrieve the list of all available regions</td></tr>
-<tr><td>Regions</td><td>Single region</td><td>Retrieve the list of a single region, based on its id</td></tr>
+<tr><td rowspan='2'>External information</td>
+<td>Get the latest known social events</td><td>This service is meant to offer a list of social events that can temporarily influence the electricity consumption.</td></tr>
+<td>Get a specific number of the latest known social events</td><td>This service is meant to offer a list containing a specific number of social events that can temporarily influence the electricity consumption.</td></tr>
+<tr><td rowspan='3'>Metering infrastructure details</td>
+<td>List all meters</td><td>Gets a list of the available meters along with the set of their accompanying information.</td></tr>
+<td>Get a specific meter description</td><td>Retrieves a meter based on a search string.</td></tr>
+<td>List all available sectors</td><td>Gets a list of the sectors that the meters may be deployed into.</td></tr>
+<tr><td rowspan='1'>Pricing</td>
+<td>Retrieve the energy prices of a specific location during a specific period</td><td>This API retrieves the energy prices of a location during a specified period of time</td></tr>
+<tr><td rowspan='2'>Regions</td>
+<td>Available regions</td><td>Retrieve the list of all available regions</td></tr>
+<td>Single region</td><td>Retrieve the list of a single region, based on its id</td></tr>
 <tr><td>Resolution plan and incentives</td><td>/</td><td>/</td></tr>
 <tr><td>Savings</td><td>/</td><td>/</td></tr>
-<tr><td>Simulation</td><td>Prediction of user power demand</td><td>Returns a simulated power demand prediction for a specific user, based on his/her id.</td></tr>
-<tr><td>Simulation</td><td>Prediction of sector power demand</td><td>Returns a simulated power demand prediction for a specific sector.</td></tr>
-<tr><td>Simulation</td><td>Prediction of user power supply</td><td>Returns a simulated power supply prediction for a specific user, based on his/her id.</td></tr>
-<tr><td>Simulation</td><td>Prediction of sector power supply</td><td>Returns a simulated power supply for a specific sector.</td></tr>
-<tr><td>Smart Factories</td><td>Available machines</td><td>Gets the list of available machines of the factory.</td></tr>
-<tr><td>Smart Factories</td><td>Information over a single machine</td><td>Gets detailed, historical information regarding a single machine, based on its id.</td></tr>
-<tr><td>Weather forecast</td><td>Available forecast descriptors</td><td>Delivers the available forecast descriptors of the specified trial infrastructure.</td></tr>
-<tr><td>Weather forecast</td><td>Detailed weather report</td><td>A weather report for a specific area, identified by its coordinates.</td></tr>
-<tr><td>Weather forecast</td><td>Detailed weather report</td><td>A weather report (only one weather descriptor) for a specific area, identified by its coordinates.</td></tr>
-<tr><td>General</td><td>Retrieve a specific location</td><td>Service description</td></tr>
+<tr><td rowspan='4'>Simulation</td>
+<td>Prediction of user power demand</td><td>Returns a simulated power demand prediction for a specific user, based on his/her id.</td></tr>
+<td>Prediction of sector power demand</td><td>Returns a simulated power demand prediction for a specific sector.</td></tr>
+<td>Prediction of user power supply</td><td>Returns a simulated power supply prediction for a specific user, based on his/her id.</td></tr>
+<td>Prediction of sector power supply</td><td>Returns a simulated power supply for a specific sector.</td></tr>
+<tr><td rowspan='2'>Smart Factories</td>
+<td>Available machines</td><td>Gets the list of available machines of the factory.</td></tr>
+<td>Information over a single machine</td><td>Gets detailed, historical information regarding a single machine, based on its id.</td></tr>
+<tr><td rowspan='3'>Weather forecast</td>
+<td>Available forecast descriptors</td><td>Delivers the available forecast descriptors of the specified trial infrastructure.</td></tr>
+<td>Detailed weather report</td><td>A weather report for a specific area, identified by its coordinates.</td></tr>
+<td>Detailed weather report</td><td>A weather report (only one weather descriptor) for a specific area, identified by its coordinates.</td></tr>
+<tr><td rowspan='1'>General</td>
+<td>Retrieve a specific location</td><td>Service description</td></tr>
 
 
             </tbody>
