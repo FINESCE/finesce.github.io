@@ -1,4 +1,26 @@
-<div class="humanColumnSection humanColumnSectionReference">
+<div style="width: 511px; padding-bottom: 770px;" class="humanColumnContents">
+
+  <!-- Name -->
+  <h1 class="humanColumnApiName">
+    FINESCE API  </h1>
+  <!-- /Name -->
+
+<div class="humanColumnSection humanColumnSectionIntroduction">
+
+  <!-- Title -->
+  <div class="humanColumnTitle">
+    <h3 class="humanColumnTitleText">Introduction</h3>
+  </div>
+  <!-- /Title -->
+
+  <!-- Description -->
+      <div class="humanColumnApiDescription markdown formalTheme">
+      <p>The FINESCE API is an integrated API definition of the services provided by the FINESCE EU project (<a href="http://www.finesce.eu/">http://www.finesce.eu/</a>). Assisted by an instantiation of the FINESCE API Mediator DSE, the FINESCE API presentation provided in this page offers free, unlimited experimentation of interested parties with the FINESCE trials, granted that access to the trials has been already provided, in the form of valid authentication credentials. </p>
+
+<p>As the specification of the API has not yet been completed, full integration of the services exposed in this page has not been fully achieved. The APIs falling under the categories i) Energy demand / Power consumption, ii) Energy supply / Power production, iii) Metering infrastructure details, iii) External Information and iv) Weather have been fully integrated, namely requests performed against the Production server are, in fact, redirected to the trial sites. The API categories that expose at even a single API are in the process of being integrated. The rest of the APIs are still subjects to specicication procedures.</p>    </div>
+    <!-- /Description -->
+
+</div><div class="humanColumnSection humanColumnSectionReference">
 
   <!-- Title -->
   <div class="humanColumnTitle">
@@ -24,7 +46,7 @@
 
   <!-- Name -->
   <h2 class="resource2Name">
-    Service description  </h2>
+    Authenticate a user  </h2>
   <!-- /Name -->
 
   <!-- Parameters -->
@@ -41,7 +63,7 @@
 
   <!-- Invitation -->
   <div class="action2Invitation post">
-          <a href="/reference/authentication/service-description/get-an-authorization-token-based-on-user-data" class="action2InvitationRow">
+          <a href="/reference/authentication/authenticate-a-user/get-an-authorization-token-based-on-user-data" class="action2InvitationRow">
                   <div class="action2Tag post"></div>
       
       <!-- Name -->
@@ -71,7 +93,7 @@
 
   <!-- Name -->
   <h2 class="resource2Name">
-    Service description  </h2>
+    Refresh a token  </h2>
   <!-- /Name -->
 
   <!-- Parameters -->
@@ -88,7 +110,7 @@
 
   <!-- Invitation -->
   <div class="action2Invitation post">
-          <a href="/reference/authentication/service-description/get-a-refreshed-authentication-token" class="action2InvitationRow">
+          <a href="/reference/authentication/refresh-a-token/get-a-refreshed-authentication-token" class="action2InvitationRow">
                   <div class="action2Tag post"></div>
       
       <!-- Name -->
@@ -2142,7 +2164,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>Service description</p>    </div>
+      <p>Retrieve a specific location.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -2179,4 +2201,4 @@
 </div></div>
   <!-- /Resources -->
 
-</div></div></div>
+</div></div></div></div>
