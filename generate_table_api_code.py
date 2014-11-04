@@ -8,9 +8,15 @@ for category in categories:
 	category_name = category.xpath("./h1[@class='resourceGroupName']/text()")
 	if category_name:
 		category_name = category_name[0].replace("\n","").strip()
+		category_description = category.xpath("./div[contains(@class, 'resourceGroupDescription')]/p/text()")
+		if category_description:
+			category_description = "<br>%s" % (category_description[0].replace("\n", "").strip())
+		else:
+			category_description = ""
 		methods = category.xpath(".//div[@class='resource2']")
 		if methods:
-			print "<tr><td rowspan='%d'>%s</td>" % (len(methods), category_name)
+			print "<tr><td rowspan='%d'><b>%s</b>%s</td>" % (
+					len(methods), category_name, category_description)
 			is_first_method = True
 			for method in methods:
 				method_name = method.xpath(".//h2[@class='resource2Name']/text()")

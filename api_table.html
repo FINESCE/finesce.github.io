@@ -254,63 +254,64 @@ function ShowNewsletter() {
               </tr>
             </thead>
             <tbody>
-<tr><td rowspan='2'>Authentication</td>
+
+<tr><td rowspan='2'><b>Authentication</b><br>This set of APIs is used for authenticating users against oauth2 authentication and authorization services.</td>
 <td>Service description</td><td>Authenticates a user against a set of credentials.</td></tr>
 <td>Service description</td><td>Retrieves a new authentication token based on a previously issued refresh token.</td></tr>
 <tr><td>Building control centre</td><td>/</td><td>/</td></tr>
-<tr><td rowspan='5'>Building information</td>
+<tr><td rowspan='5'><b>Building information</b><br>This set of APIs provide access to information related to Smart Buildings presentation.</td>
 <td>List of buildings in trial</td><td>List the buildings known to the selected trial infrastructure</td></tr>
 <td>Building Description</td><td>List the properties of the identified building. The measurement types associated with the building are delivered as well.</td></tr>
 <td>Building measurements</td><td>Lists the measurements of the specified type of a building.</td></tr>
 <td>Get available measurement types for the buildings</td><td>List the measurement types that are available for each building belonging to the trial</td></tr>
 <td>Get available measurement types of a specific type for the buildings</td><td>List the measurement types that are available for each building belonging to the trial and are of type {type}</td></tr>
 <tr><td>Customers and contracts</td><td>/</td><td>/</td></tr>
-<tr><td rowspan='5'>Energy demand / Power consumption</td>
+<tr><td rowspan='5'><b>Energy demand / Power consumption</b><br>This API set offers services for getting/updating information related to the electricity demand (consumption).</td>
 <td>Total user energy consumption</td><td>A total electricity consumption report for a single user.</td></tr>
 <td>User profile of energy consumption</td><td>A report on the profile of electricity consumption for a single user.</td></tr>
 <td>Sector profile of energy consumption</td><td>A total electricity consumption report for a single sector.</td></tr>
 <td>User power demand</td><td>The report of grid power demand of a single user.</td></tr>
 <td>User power demand</td><td>The report of grid power demand of a single sector.</td></tr>
-<tr><td rowspan='5'>Energy supply / Power production</td>
+<tr><td rowspan='5'><b>Energy supply / Power production</b><br>This API set offers services for getting/updating information related to the electricity supply (production).</td>
 <td>Total user energy production</td><td>A total electricity production report for a single user.</td></tr>
 <td>User profile of energy production</td><td>A report on the profile of electricity production for a single user.</td></tr>
 <td>Sector energy production</td><td>A report on the profile of electricity production for a single sector.</td></tr>
 <td>User power supply</td><td>The report of grid power supply of a single user.</td></tr>
 <td>Sector power supply</td><td>The report of grid power supply of a single sector.</td></tr>
-<tr><td rowspan='5'>Electric Vehicles</td>
+<tr><td rowspan='5'><b>Electric Vehicles</b><br>This group of APIs offers access to information related to monitoring of Electric Vehicles and their supporting equipment.</td>
 <td>List of vehicles in trial</td><td>List the vehicles known to the selected trial infrastructure</td></tr>
 <td>Vehicle Description</td><td>List the properties of the identified vehicle. The measurement types associated with the vehicle are delivered as well.</td></tr>
 <td>Vehicle measurements</td><td>Lists the measurements of the specified type of a vehicle.</td></tr>
 <td>Get available measurement types for the vehicles</td><td>List the measurement types that are available for each vehicle belonging to the trial</td></tr>
 <td>Get available measurement types of a specific type for the vehicles</td><td>List the measurement types that are available for each vehicle belonging to the trial and are of type {type}</td></tr>
 <tr><td>Event and KPIs</td><td>/</td><td>/</td></tr>
-<tr><td rowspan='2'>External information</td>
+<tr><td rowspan='2'><b>External information</b><br>This API is responsible for handling requests/responses from services that do not directly map to energy-related data.</td>
 <td>Get the latest known social events</td><td>This service is meant to offer a list of social events that can temporarily influence the electricity consumption.</td></tr>
 <td>Get a specific number of the latest known social events</td><td>This service is meant to offer a list containing a specific number of social events that can temporarily influence the electricity consumption.</td></tr>
-<tr><td rowspan='3'>Metering infrastructure details</td>
+<tr><td rowspan='3'><b>Metering infrastructure details</b><br>This set of APIs exposes services related to the presentation of the metering equipment of a Smart Energy site, be it a Smart Grid or a Smart Building.</td>
 <td>List all meters</td><td>Gets a list of the available meters along with the set of their accompanying information.</td></tr>
 <td>Get a specific meter description</td><td>Retrieves a meter based on a search string.</td></tr>
 <td>List all available sectors</td><td>Gets a list of the sectors that the meters may be deployed into.</td></tr>
-<tr><td rowspan='1'>Pricing</td>
+<tr><td rowspan='1'><b>Pricing</b><br>This group of APIs provides information related to energy pricing.</td>
 <td>Retrieve the energy prices of a specific location during a specific period</td><td>This API retrieves the energy prices of a location during a specified period of time</td></tr>
-<tr><td rowspan='2'>Regions</td>
+<tr><td rowspan='2'><b>Regions</b><br>This API set offers services related to regional characteristics</td>
 <td>Available regions</td><td>Retrieve the list of all available regions</td></tr>
 <td>Single region</td><td>Retrieve the list of a single region, based on its id</td></tr>
 <tr><td>Resolution plan and incentives</td><td>/</td><td>/</td></tr>
 <tr><td>Savings</td><td>/</td><td>/</td></tr>
-<tr><td rowspan='4'>Simulation</td>
+<tr><td rowspan='4'><b>Simulation</b><br>This set of APIs may be used to retrieve simulated values for various smart grid/city aspects.</td>
 <td>Prediction of user power demand</td><td>Returns a simulated power demand prediction for a specific user, based on his/her id.</td></tr>
 <td>Prediction of sector power demand</td><td>Returns a simulated power demand prediction for a specific sector.</td></tr>
 <td>Prediction of user power supply</td><td>Returns a simulated power supply prediction for a specific user, based on his/her id.</td></tr>
 <td>Prediction of sector power supply</td><td>Returns a simulated power supply for a specific sector.</td></tr>
-<tr><td rowspan='2'>Smart Factories</td>
+<tr><td rowspan='2'><b>Smart Factories</b><br>This set of APIs offers information related to the monitoring and control of equipment of a smart factory.</td>
 <td>Available machines</td><td>Gets the list of available machines of the factory.</td></tr>
 <td>Information over a single machine</td><td>Gets detailed, historical information regarding a single machine, based on its id.</td></tr>
-<tr><td rowspan='3'>Weather forecast</td>
+<tr><td rowspan='3'><b>Weather forecast</b><br>This API is responsible for fetching information related to the weather be it in the past or the near future.</td>
 <td>Available forecast descriptors</td><td>Delivers the available forecast descriptors of the specified trial infrastructure.</td></tr>
 <td>Detailed weather report</td><td>A weather report for a specific area, identified by its coordinates.</td></tr>
 <td>Detailed weather report</td><td>A weather report (only one weather descriptor) for a specific area, identified by its coordinates.</td></tr>
-<tr><td rowspan='1'>General</td>
+<tr><td rowspan='1'><b>General</b><br>This group of APIs contains functionality that could not fit into any other category.</td>
 <td>Retrieve a specific location</td><td>Service description</td></tr>
 
             </tbody>

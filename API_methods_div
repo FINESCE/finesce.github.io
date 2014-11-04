@@ -125,6 +125,8 @@
     <!-- /Name -->
 
   <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs will contain APIs related to controlling manageable smart equipment in the framework of Building Management Systems (BMS).</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
@@ -139,6 +141,8 @@
     <!-- /Name -->
 
   <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs provide access to information related to Smart Buildings presentation.</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
@@ -386,10 +390,12 @@
 
   <!-- Name -->
       <h1 class="resourceGroupName">
-      Customer and contract    </h1>
+      Customers and contracts    </h1>
     <!-- /Name -->
 
   <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs is intented to provide access to information related to customer profiles and contracts signed between the end-users and the Energy Retailers providing the energy.</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
@@ -906,6 +912,8 @@
     <!-- /Name -->
 
   <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This group of APIs offers access to information related to monitoring of Electric Vehicles and their supporting equipment.</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
@@ -1157,6 +1165,8 @@
     <!-- /Name -->
 
   <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs will contain services exposing functionality related to KPIs and metrics that quantify the efficiency of a Smart Energy service offering.</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
@@ -1281,6 +1291,8 @@
     <!-- /Name -->
 
   <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs exposes services related to the presentation of the metering equipment of a Smart Energy site, be it a Smart Grid or a Smart Building.</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
@@ -1437,7 +1449,7 @@
 
   <!-- Description -->
       <div class="resourceGroupDescription markdown formalTheme">
-      <p>This group of APIs provides information related to energy pricing</p>    </div>
+      <p>This group of APIs provides information related to energy pricing.</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
@@ -1609,6 +1621,8 @@
     <!-- /Name -->
 
   <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs will specify interfaces related to directives from a Smart Grid Aggregator to the Energy Retailers, to enable effective Demand Response in the framework of IP-enabled Smart Energy Marketplaces.</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
@@ -1623,6 +1637,8 @@
     <!-- /Name -->
 
   <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs will offer functionality related to historical data related to the cost savings of energy consumers, based on their energy consumption behaviour.</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
@@ -2108,6 +2124,8 @@
     <!-- /Name -->
 
   <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This group of APIs contains functionality that could not fit into any other category.</p>    </div>
     <!-- /Description -->
 
   <!-- Resources -->
