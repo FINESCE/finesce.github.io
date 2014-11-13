@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)http://www.finesce.eu/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Finesce.eu</title>
+  <meta name="keywords" content="FINESCE, smart, energy, Public, Private, Partnership, European Union">
+  <meta name="description" content="FINESCE (Future Internet Smart Utility Services) is the smart energy use case project of the Future Internet Public Private Partnership (FI-PPP) program funded by the European Union within FP7.">
+
+
+  <link rel="stylesheet" type="text/css" href="css/struktur1.css" media="screen">
+
+  <link rel="stylesheet" type="text/css" href="css/userstyles.css" media="screen">
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <link href="css/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet" media="all">
+  <script src="js/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+  <link href="http://www.finesce.eu/global/styles/jquery.bxslider.css" rel="stylesheet" type="text/javascript">
+  <script src="js/jquery.bxslider.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi">
+
+  <script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+             $("a[rel$=playvideo]").fancybox({ type: 'iframe', showNavArrows: false, height: 400, width: 700, margin: 0, padding: 10 });
+             $("a[rel$=info]").fancybox({ type: 'iframe', showNavArrows: false, height: 400, width: 700 });
+             $("a[rel$=anmeldung]").fancybox({ type: 'iframe', showNavArrows: false, height: 550, width: 640 });
+             $('.firmenlogos').bxSlider({ minSlides: 4, maxSlides: 6, slideWidth: 250, slideMargin: 10, ticker: true, speed: 30000, randomStart: true });
+             $('.ImageHeader').bxSlider({ pause: 5000, pager: false, controls: false, auto: true, slideWidth: 1000, speed: 300, randomStart: true });
+             $("a[rel$=disclaimer]").fancybox({ type: 'iframe', showNavArrows: false, height: 400, width: 700, margin: 0, padding: 10 });
+    });
+
+
+    function NewsletterBestellen(NLEmail) {
+    if (window.ActiveXObject) {
+        try { http = new ActiveXObject("MSXML2.XMLHTTP"); } catch (e) { http = false; }
+    }
+    else if (window.XMLHttpRequest) { try { http = new XMLHttpRequest(); } catch (e) { http = false; } }
+
+    if (http != null) {
+        http.onreadystatechange = ShowNewsletter;
+        http.open("POST", "http://www.finesce.eu/Newsletter.asp?Email=" + NLEmail, true);
+        http.send(null);
+    }
+}
+
+      function wopen(url, width, height) {
+          FensterGross = window.open(url, "Fenster", "top=10,left=10,width=" + width + ",height=" + height + ",status=no,resizable=no,scrollbars=no");
+          FensterGross.focus();
+      }
+
+
+function ShowNewsletter() {
+    if (http.readyState == 4) {
+        if (http.status == 200) { alert('You successfully registered for our mailing list. We have just sent an e-mail for confirmation. Please click on the activation link included to finish your registration.'); } else { alert('Registration not successfull, please try again...'); }
+    }
+}
+    </script>
+<script type="text/javascript" src="js/cnt_js.php"></script></head>
+<body>
+  <div id="Recommend">
+    <a href="http://www.finesce.eu/#" onclick="wopen(&#39;http://www.facebook.com/sharer.php?locale=de_DE&amp;u=http%3A%2F%2Fwww%2Efinesce%2Eeu&amp;src=sp&#39;, 640, 480);"><img src="images/btnFacebook.png" class="RecommendBtn" alt=""></a><br>
+    <a href="http://www.finesce.eu/#" onclick="wopen(&#39;http://twitter.com/share?text=Visit FINESCE (Future Internet Smart Utility Services) - an FI-PPP project funded by the European Union within FP7.&amp;url=http://www.finesce.eu&#39;, 640, 480);"><img src="images/btnTwitter.png" class="RecommendBtn" alt=""></a><br>
+    <a href="https://plus.google.com/share?url=www.finesce.eu" onclick="javascript:window.open(this.href, &#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&#39;);return false;"><img src="images/btnGoogle.png" class="RecommendBtn" alt=""></a><br>
+    <a href="http://www.finesce.eu/#" onclick="wopen(&#39;https://www.xing.com/app/user?op=share&amp;url=http%3a%2f%2fwww.finesce.eu;title=Visit FINESCE (Future Internet Smart Utility Services) - an FI-PPP project funded by the European Union within FP7.&#39;, 720, 720);"><img src="images/btnXing.png" class="RecommendBtn" alt=""></a><br>
+  </div>
+
+  <div id="main">
+    <div id="header">
+      <div id="header2">
+        <div id="Suche">
+          <form id="SuchForm" method="post" name="Suche" action="http://www.finesce.eu/default.asp">
+            <input type="hidden" name="Funktion" value="SUCHE">
+            <input type="text" name="Keyword" onfocus="this.value=&#39;&#39;;" value="search" id="Suchfeld">
+            <input type="image" name="Submit1" value="Suchen" id="Suchbutton" src="images/btnSubmit.png" alt="search">
+            <br class="cb">
+          </form>
+          <a href="http://www.finesce.eu/default.asp"><img src="images/Logo.png" id="Logo" alt="Logo" border="0"></a>
+        </div>
+        <div id="NaviTop">
+          <ul id="nav" class="dropdown dropdown-horizontal">
+            <li class="dir">
+              <div class="Menue_Top"><a class="A_Menue_Top" href="index.html">HOME</a></div>
+            </li>
+            <li class="dir">
+              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/About.html">ABOUT</a></div>
+              <ul>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Who_We_Are.html">Who We Are</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/What_we_do.html">What we do</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/FINSENY.html">FINSENY</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/FIPPP.html">FI-PPP</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/FIWARE.html">FI-WARE</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Links.html">Links</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dir">
+              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Trial_Sites.html">TRIAL SITES</a></div>
+              <ul>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Aachen.html">Trial Site Aachen</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Ireland.html">Trial Site Ireland</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Horsens.html">Trial Site Horsens</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Cologne.html">Trial Site Cologne</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Madrid.html">Trial Site Madrid</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Malmo.html">Trial Site Malmo</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Terni.html">Trial Site Terni</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dir">
+              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Phase_3.html">PHASE 3</a></div>
+              <ul>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/FIWARE_Accelerator_Programme.html">FIWARE Accelerator Programme</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/FINESCE_trial_infrastructure.html">FINESCE trial infrastructure</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/FINESCE_DSEs.html">FINESCE DSEs</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/FINESCE_API.html">FINESCE API</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dir">
+              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Events.html">EVENTS</a></div>
+              <ul>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Event_Reviews.html">Event Reviews</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Event_Calendar.html">Event Calendar</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Open_Days.html">Open Days</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/SGSG_Meetings.html">SGSG Meetings</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Innovation_Events.html">Innovation Events</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dir">
+              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/News.html">NEWS</a></div>
+            </li>
+            <li class="dir">
+              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Community.html">COMMUNITY</a></div>
+              <ul>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Innovation_Community.html">Innovation Community</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/SGSG.html">SGSG</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dir">
+              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Library.html">LIBRARY</a></div>
+              <ul>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Results.html">Results</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Project_Videos.html">Project Videos</a>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Videoblogs.html">Videoblogs</a>
+                  <ul>
+                    <li class="MenueLvl2"><a class="A_Menue" href="http://www.finesce.eu/FIA_2013.html">FIA 2013</a></li>
+                  </ul>
+                </li>
+                <li class="MenueLvl2">
+                  <a class="A_Menue" href="http://www.finesce.eu/Press_Review.html">Press Review</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <br class="cb">
+      </div>
+    </div>
+    <div id="content">
+      <div class="bx-wrapper" style="max-width: 1000px; margin: 0px auto;">
+        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 200px;">
+          <ul class="ImageHeader" style="border: 0px; z-index: 1; width: 615%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-1040px, 0px, 0px); background-color: rgb(255, 255, 255);">
+            <li style="float: left; list-style: none; position: relative; width: 1000px;" class="bx-clone">
+              <div style="background-image: url(&#39;images/Header_mast.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
+            </li>
+            <li style="float: left; list-style: none; position: relative; width: 1000px;">
+              <div style="background-image: url(&#39;images/Header_glasfront.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
+            </li>
+            <li style="float: left; list-style: none; position: relative; width: 1000px;">
+              <div style="background-image: url(&#39;images/Header_heads.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
+            </li>
+            <li style="float: left; list-style: none; position: relative; width: 1000px;">
+              <div style="background-image: url(&#39;images/Header_kite.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
+            </li>
+            <li style="float: left; list-style: none; position: relative; width: 1000px;">
+              <div style="background-image: url(&#39;images/Header_mast.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
+            </li>
+            <li style="float: left; list-style: none; position: relative; width: 1000px;" class="bx-clone">
+              <div style="background-image: url(&#39;images/Header_glasfront.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br class="cb">
+      <div id="col1">
+        <h2>Follow us on</h2>
+        <a href="https://www.facebook.com/pages/FINESCE/533773726686099" target="_blank"><img src="images/Facebook.jpg" alt="Follow FINESCE on facebook" hspace="5" border="0"></a> <a href="https://twitter.com/finesce" target="_blank"><img src="images/Twitter.jpg" alt="Follow FINESCE on Twitter" hspace="5" border="0"></a> <a href="http://www.linkedin.com/groups/FINESCE-6511767/about" target="_blank"><img src="images/LinkedIn.jpg" alt="Follow FINESCE on LinedIn" hspace="5" border="0"></a> <a href="http://www.youtube.com/channel/UCThhGXGPZ3GgwYIMXkQL9xg" target="_blank"><img src="images/Youtube.jpg" alt="Follow FINESCE on YOutube" hspace="5" border="0"></a>
+        <br><br>
+        <span class="tag1">Accelerator</span> <span class="tag2">Assembly</span> <span class="tag2">Brussels</span> <span class="tag2">Building</span> <span class="tag2">Business</span> <span class="tag1">Communications</span> <span class="tag2">Competition</span> <span class="tag1">Computing</span> <span class="tag5">Conference</span> <span class="tag2">Denmark</span> <span class="tag1">Edition</span> <span class="tag1">Electricity</span> <span class="tag1">Entrepreneurs</span> <span class="tag5">European</span> <span class="tag5">FINESCE</span> <span class="tag1">Foundation</span> <span class="tag1">Framework</span> <span class="tag1">Funding</span> <span class="tag3">General</span> <span class="tag1">Hamburg</span> <span class="tag1">Hedensted</span> <span class="tag5">Horsens</span> <span class="tag1">InfoDay</span> <span class="tag5">Innovation</span> <span class="tag2">Innovative</span> <span class="tag5">Internet</span> <span class="tag1">Italian</span> <span class="tag5">Meeting</span> <span class="tag1">Members</span> <span class="tag1">Million</span> <span class="tag1">Network</span> <span class="tag1">Newsletter</span> <span class="tag1">Partners</span> <span class="tag1">Private</span> <span class="tag2">Programme</span> <span class="tag2">Project</span> <span class="tag1">Registration</span> <span class="tag1">Security</span> <span class="tag1">Services</span> <span class="tag1">Seventh</span> <span class="tag1">SmartGridComm</span> <span class="tag1">SpeedUp</span> <span class="tag5">Stakeholder</span> <span class="tag1">Stenderup</span> <span class="tag2">Student</span> <span class="tag1">Technologies</span> <span class="tag1">University</span> <span class="tag2">Utility</span> <span class="tag1">Waterford</span> <span class="tag1">Wireless</span> <span class="tag5">Workshop</span> <span class="tag1">acceleration</span> <span class="tag1">accelerators</span> <span class="tag1">attends</span> <span class="tag1">available</span> <span class="tag1">between</span> <span class="tag1">building</span> <span class="tag2">countries</span> <span class="tag1">demonstrations</span> <span class="tag1">development</span> <span class="tag1">enabled</span> <span class="tag3">entrepreneurs</span> <span class="tag1">established</span> <span class="tag1">exciting</span> <span class="tag1">experiences</span> <span class="tag1">factory</span> <span class="tag3">funding</span> <span class="tag1">further</span> <span class="tag2">general</span> <span class="tag2">generation</span> <span class="tag2">industry</span> <span class="tag4">information</span> <span class="tag1">infrastructure</span> <span class="tag1">innovating</span> <span class="tag3">innovation</span> <span class="tag3">innovative</span> <span class="tag1">interdisciplinary</span> <span class="tag1">interest</span> <span class="tag1">internet</span> <span class="tag1">networking</span> <span class="tag1">newsletter</span> <span class="tag3">opportunities</span> <span class="tag1">participants</span> <span class="tag1">participated</span> <span class="tag1">participating</span> <span class="tag2">partner</span> <span class="tag1">partners</span> <span class="tag3">presented</span> <span class="tag3">programme</span> <span class="tag5">project</span> <span class="tag2">projects</span> <span class="tag1">receives</span> <span class="tag1">related</span> <span class="tag1">resulted</span> <span class="tag4">results</span> <span class="tag1">started</span> <span class="tag1">technologies</span> <span class="tag1">universities</span> <span class="tag1">welcomes</span> <span class="tag1">winners</span> <span class="tag5">workshop</span>
+        <br><br>
+      </div>
+      
+      
+      <div id="col23">
+        <div id="col23">
+            
+            <!-- CONTENTS HERE -->
+<a name="Metering-Metering2Orion"></a>
+<h1 >Metering (Metering2Orion)<a href="#Metering-Metering2Orion" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul class="toc right"><li><a href="#Metering-Metering2Orion">Metering (Metering2Orion)</a><ul><li><a href="#Copyright">Copyright</a></li><li><a href="#Preface">Preface</a></li><li><a href="#T38Cs">T&#38;Cs</a></li><li><a href="#Overview">Overview</a></li><li><a href="#Target-Usage">Target Usage</a></li><li><a href="#DSE-Description">DSE Description</a><ul><li><a href="#Metering2Orion-REST-service-named-metering-input">Metering2Orion (REST service named "metering-input")</a></li><li><a href="#How-to-send-“Meter-reading”s-of-type-Meter">How to send “Meter reading”(s) (of type "Meter")</a></li><li><a href="#How-to-send-“Meter-reading”s-of-type-Load">How to send “Meter reading”(s) (of type "Load")</a></li><li><a href="#Metering2Orion-Java-client-named-metering-input-client">Metering2Orion (Java client named "metering-input-client")</a></li><li><a href="#How-to-send-“Meter-reading”s-of-type-Meter-2">How to send “Meter reading”(s) (of type "Meter")</a></li><li><a href="#How-to-send-“Meter-reading”s-of-type-Load-2">How to send “Meter reading”(s) (of type "Load")</a></li></ul>
+</li><li><a href="#Re-utilised-TechnologiesSpecifications">Re-utilised Technologies/Specifications</a></li><li><a href="#Downloads">Downloads</a></li><li><a href="#Terms-and-Definitions">Terms and Definitions</a></li><li><a href="#References">References</a></li></ul></li></ul>
+
+
+	<a name="Copyright"></a>
+<h2 >Copyright<a href="#Copyright" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Copyright © 2014 by FINESCE</p>
+
+
+	<a name="Preface"></a>
+<h2 >Preface<a href="#Preface" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Within this document you find a self-contained open specification of the aforementioned Domain Specific Enabler (DSE).</p>
+
+
+	<p>Please consult the appropriate pages on the <a href="http://www.finesce.eu/Trial_Site_Terni.html" class="external">FINESCE</a> website in order to understand the complete context of the related FINESCE trials and this DSE.</p>
+
+
+	<a name="T38Cs"></a>
+<h2 >T&#38;Cs<a href="#T38Cs" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Overview"></a>
+<h2 >Overview<a href="#Overview" class="wiki-anchor">&para;</a></h2>
+
+
+Metering2Orion consists of:
+	<ul>
+	<li>a REST service (developed in Java) which allow clients (e.g. DSOs) to register data about metering and load profile in a specific area into an instance of ORION Context Broker GE;</li>
+		<li>a Java client which accepts data about metering and load profile coming from the smart meters (via either an IoT gateway or an existing legacy system) and then “passes” the data to the above mentioned REST service.</li>
+	</ul>
+
+
+	<a name="Target-Usage"></a>
+<h2 >Target Usage<a href="#Target-Usage" class="wiki-anchor">&para;</a></h2>
+
+
+	<ul>
+	<li>DSOs which need information on metering and load profile in a specific area</li>
+		<li>Third-party applications (such as those developed by SMEs involved in Phase3)</li>
+	</ul>
+
+
+	<a name="DSE-Description"></a>
+<h2 >DSE Description<a href="#DSE-Description" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Metering2Orion-REST-service-named-metering-input"></a>
+<h3 >Metering2Orion (REST service named "metering-input")<a href="#Metering2Orion-REST-service-named-metering-input" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>IMPORTANT: we kindly remind you that this software module is strictly tight to the use of ORION Context Broker GE thus meaning that you should have previously set up an ORION instance of yours. Please have a look at ORION GE documentation at the following link <a class="external" href="http://catalogue.fi-ware.org/enablers/publishsubscribe-context-broker-orion-context-broker">http://catalogue.fi-ware.org/enablers/publishsubscribe-context-broker-orion-context-broker</a></p>
+
+
+	<p>Download the artefact (in the form a .war file) from the bottom of the page.<br />Open the .war file (you can use an appropriate software like “winRar” or "7zip"); open the  “config.properties”s file located in the following directory:  WEB-INF/classes/ and then amend the following configuration properties “meteringInput.orionServerUrl” and “meteringInput.registerContexPath”:</p>
+
+
+	<p>meteringInput.orionServerUrl = <a class="external" href="http://(your">http://(your</a> ORION instance URL):1026<br />meteringInput.registerContexPath = NGSI10/updateContext</p>
+
+
+	<p>These two extra parametres must be left blank as they are specific of FINESCE WP4 implementation<br />meteringInput.meterDetailServerUrl = <br />meteringInput.meterDetailPath =</p>
+
+
+	<p>Save the changes to the .properties file and deploy the .war file on a Tomcat application server  using the “Tomcat Web Application Manager” (see attached screenshot). We recommend you to use an updated version of Tomcat; we have used Apache Tomcat 7.xx.</p>
+
+
+	<p style="text-align:center;"><img src="images/redmine/metering-input_deploy.jpg" style="width:800px;" alt="" /><br /><strong>Figure 1: How to the deploy the metering-input .war file</strong></p>
+
+
+To verify that the deploy of the metering-input application was done successfully and that it consequently runs, you have to type either one of the following URLs in a common browser like Google Chrome or Microsoft Internet Explorer: 
+	<ul>
+	<li><a class="external" href="http://(your">http://(your</a> tomcat ip)/metering-input/rest/meterDataInput </li>
+		<li><a class="external" href="http://(your">http://(your</a> tomcat ip)/metering-input/rest/loadDataInput</li>
+	</ul>
+
+
+	<p>and you should get a page like the following (see attached screenshot).</p>
+
+
+	<p style="text-align:center;"><img src="images/redmine/rest_meter.jpg" alt="" /><br /><strong>Figure 2: Test "meterDataInput" GET method in a browser</strong></p>
+
+
+	<p style="text-align:center;"><img src="images/redmine/rest_load.jpg" alt="" /><br /><strong>Figure 3: Test "loadDataInput" GET method in a browser</strong></p>
+
+
+	<p>If either of the previous pages appears, the metering-input application is correctly deployed.</p>
+
+
+You can now send two different types of "Meter reading" to ORION
+	<ul>
+	<li>a "Meter" (an instantaneous measure of power consumed/produced; measurements can be scheduled for example every five minutes)</li>
+		<li>a "Load" (a measure of the energy consumed/produced in a certain time range e.g. every 15 mins)</li>
+	</ul>
+
+
+	<a name="How-to-send-“Meter-reading”s-of-type-Meter"></a>
+<h3 >How to send “Meter reading”(s) (of type "Meter")<a href="#How-to-send-“Meter-reading”s-of-type-Meter" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>Now, in order to send a “Meter reading” (of type "Meter") to ORION, use a REST client such as DHC - REST/HTTP API Client chrome extension (see attached screenshot):</p>
+
+
+	<p style="text-align:center;"><img src="images/redmine/chrome_M2O_Meter_REST_client_screenshot.png" style="width:800px;" alt="" /><br /><strong>Figure 4: Send a "Meter reading" (of type "Meter") to ORION</strong></p>
+
+
+	<p>Please fill in with the following parametres:<br />SERVICE (POST)<br /><a class="external" href="http://(your">http://(your</a> tomcat ip)/metering-input/rest/meterDataInput</p>
+
+
+	<p>HEADERS<br />Content-Type: application/xml</p>
+
+
+	<p>BODY<br />&lt;meter meterId=" <em>(unique identifier of the smart meter for which a measure has been retrieved)</em> " <br />isConcentrator=" <em>(flag to indicate whether a meter is a concentrator or not)</em> " <br />upstreamActivePower=" <em>(produced active power in W)</em> " <br />downstreamActivePower=" <em>(consumed active power in W)</em> " <br />RP_Q1=" <em>(Q1 reactive power expressed in VAR)</em> " <br />RP_Q2=" <em>(Q2 reactive power expressed in VAR)</em> " <br />RP_Q3=" <em>(Q3 reactive power expressed in VAR)</em> " <br />RP_Q4=" <em>(Q4 reactive power expressed in VAR)</em> " /></p>
+
+
+	<p>and finally click the SEND button.</p>
+
+
+	<p>If you get 200 OK in the HTTP Response, you should have submitted a “Meter reading” (of type Meter) to ORION.</p>
+
+
+	<p>To verify that a new “Meter reading” (of type Meter) has been saved into ORION, an entity of the following type should be created (or updated in case it already exists) in the NoSQL DB underlying ORION (i.e. MongoDB):
+{<br />  "_id" : {<br />    "id" : " <em>(unique identifier of the smart meter for which a measure has been retrieved)</em> ",<br />    "type" : "Meter" <br />  },<br />  "attrs" : [{<br />      "name" : "isConcentrator",<br />      "type" : "boolean",<br />      "value" : " <em>(flag to indicate whether a smart meter is a concentrator or not)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "upsteamActivePower",<br />      "type" : "kW",<br />      "value" : " <em>(produced active power in W)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "downstreamActivePower",<br />      "type" : "kW",<br />      "value" : " <em>(consumed active power in W)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "RP_Q1",<br />      "type" : "kVAR",<br />      "value" : " <em>(Q1 reactive power expressed in VAR)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "RP_Q2",<br />      "type" : "kVAR",<br />      "value" : " <em>(Q2 reactive power expressed in VAR)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "RP_Q3",<br />      "type" : "kVAR",<br />      "value" : " <em>(Q3 reactive power expressed in VAR)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "RP_Q4",<br />      "type" : "kVAR",<br />      "value" : " <em>(Q4 reactive power expressed in VAR)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "currentTime",<br />      "type" : "sec",<br />      "value" : " <em>(system date at the moment the data are received by the REST Service)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }],<br />   "creDate" : <em>(date of entity creation)</em>,<br />  "modDate" : <em>(date of entity last update)</em><br />}</p>
+
+
+	<a name="How-to-send-“Meter-reading”s-of-type-Load"></a>
+<h3 >How to send “Meter reading”(s) (of type "Load")<a href="#How-to-send-“Meter-reading”s-of-type-Load" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>On the other hand, if you want to send a “Meter reading” (of type "Load") to ORION, use a REST client such as DHC - REST/HTTP API Client chrome extension (see attached screenshot):</p>
+
+
+	<p style="text-align:center;"><img src="images/redmine/chrome_M2O_Load_REST_client_screenshot.png" style="width:800px;" alt="" /><br /><strong>Figure 5: Send a "Meter reading" (of type "Load") to ORION</strong></p>
+
+
+	<p>Please fill in with the following parametres:<br />SERVICE (POST)<br /><a class="external" href="http://(your">http://(your</a> tomcat ip)/metering-input/rest/loadDataInput/singleLoad</p>
+
+
+	<p>HEADERS<br />Content-Type: application/xml</p>
+
+
+	<p>BODY<br />&lt;load meterId=" <em>(unique identifier of the smart meter for which a measure has been retrieved)</em> " <br />isConcentrator=" <em>(flag to indicate whether a meter is a concentrator or not)</em> " <br />sampleNumber=" <em>(a number between 0 and 96 that identifies a range which the load data sample refers to, e.g. 1 identifies the time range 00:00 – 00:15)</em> " <br />loadSampleDate=" <em>(date, UTC format, when the sample is calculated)</em> " <br />downstreamActivePowerEEA=" <em>(consumed Active Power EEA in Wh)</em> " <br />reactiveInductivePowerEEI=" <em>(reactive Inductive Power EEI in VARh)</em> " <br />reactiveCapacitivePowerEEC=" <em>(reactive Capacitive Power EEC in VARh)</em> " <br />upstreamActivePowerEUA=" <em>(produced Active Power EUA in Wh)</em> " <br />reactiveInductivePowerEUI=" <em>(reactive Inductive Power EUI in VARh)</em> " <br />reactiveCapacitivePowerEUC=" <em>(reactive Capacitive Power EUC in VARh)</em> " <br />tariffType=" <em>(T1, T2, T3 or T4)</em> " <br />integrationPeriodRef=" <em>(Q for quarterly sample, H for sample referring to a time range of 30 mins)</em> " /></p>
+
+
+	<p>and finally click the SEND button.</p>
+
+
+	<p>If you get 200 OK in the HTTP Response, you should have submitted a “Meter reading” (of type "Load") to ORION.</p>
+
+
+	<p>To verify that a new “Meter reading” (of type "Load") has been saved into ORION, an entity of the following type should be created (or updated in case it already exists) in the NoSQL DB underlying ORION (i.e. MongoDB):
+{<br />  "_id" : {<br />    "id" : " <em>(unique identifier of the smart meter for which a measure has been retrieved)</em> ",<br />    "type" : "Load" <br />  },<br />  "attrs" : [{<br />      "name" : "isConcentrator",<br />      "type" : "boolean",<br />      "value" : " <em>(flag to indicate whether a smart meter is a concentrator or not)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "sampleNumber",<br />      "type" : "int",<br />      "value" : " <em>(a number between 0 and 96 that identifies a range which the load data sample refers to, e.g. 1 identifies the time range 00:00 – 00:15)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "loadTime",<br />      "type" : "sec",<br />      "value" : " <em>(date, UTC format, when the sample is calculated)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "downstreamActivePowerEEA",<br />      "type" : "Wh",<br />      "value" : " <em>(consumed Active Power EEA in Wh)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "upstreamActivePowerEUA",<br />      "type" : "Wh",<br />      "value" : " <em>(produced Active Power EUA in Wh)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "reactiveInductivePowerEEI",<br />      "type" : "VARh",<br />      "value" : " <em>(reactive Inductive Power EEI in VARh)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "reactiveCapacitivePowerEEC",<br />      "type" : "VARh",<br />      "value" : " <em>(reactive Capacitive Power EEC in VARh)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "reactiveInductivePowerEUI",<br />      "type" : "VARh",<br />      "value" : " <em>(reactive Inductive Power EUI in VARh)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "reactiveCapacitivePowerEUC",<br />      "type" : "VARh",<br />      "value" : " <em>(reactive Capacitive Power EUC in VARh)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "tariffType",<br />      "type" : "string",<br />      "value" : " <em>(T1, T2, T3 or T4)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "integrationPeriodRef",<br />      "type" : "string",<br />      "value" : " <em>(Q for quarterly sample, H for sample referring to a time range of 30 mins)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }, {<br />      "name" : "currentTime",<br />      "type" : "sec",<br />      "value" : " <em>(system date at the moment the data are received by the REST Service)</em> ",<br />      "creDate" : <em>(date of attribute creation)</em>,<br />      "modDate" : <em>(date of attribute last update)</em><br />    }],<br />   "creDate" : <em>(date of entity creation)</em>,<br />  "modDate" : <em>(date of entity last update)</em><br />}</p>
+
+
+	<a name="Metering2Orion-Java-client-named-metering-input-client"></a>
+<h3 >Metering2Orion (Java client named "metering-input-client")<a href="#Metering2Orion-Java-client-named-metering-input-client" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>Download the artefact (in the form a .jar file) from the bottom of the page.<br />The <strong>metering-input-client</strong> module contains a java utility class that has to be referenced as an external library (in a software development java project within a development environment such as Eclipse) in order to let an external application interact with the <strong>metering-input</strong> REST service described in the previous paragraph.</p>
+
+
+	<a name="How-to-send-“Meter-reading”s-of-type-Meter-2"></a>
+<h3 >How to send “Meter reading”(s) (of type "Meter")<a href="#How-to-send-“Meter-reading”s-of-type-Meter-2" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>Before sending the first consumption/production power measure a Meter “entity” needs to be registered by using the registerMeter method. Here is an example of registering a “Meter” entity with meterId equal to "XXXmeterId":</p>
+
+
+	<pre><code>MeteringProxy meteringProxy = new MeteringProxyImpl();<br />        Meter meter = new Meter("XXXmeterId", false);<br />        meteringProxy.registerMeter(meter);</code></pre>
+
+
+	<p>Hereafter there is a code snippet which shows how to send a meter reading (of type "Meter") for the “Meter” entity that has been previously registered:</p>
+
+
+	<pre><code>Meter meter = new Meter(<br />        "XXXmeterId",                // smart meter unique identifier<br />        false,                                    // this meter is not a concentrator<br />        System.currentTimeMillis() / 1000,    // timestamp of the moment when data are sent to the REST Service    <br />        12.3,                    // upstreamActivePower<br />        123,                     // downstreamActivePower<br />        456,                    // reactivePowerQ1<br />        789,                             // reactivePowerQ2<br />        123,                    // reactivePowerQ3<br />        45);                            // reactivePowerQ4</code></pre>
+
+
+	<pre><code>Response response = meteringProxy.sendMeterData(meter);<br />        if(response.getStatus == 200)<br />            System.out.println(“Everything is fine!”);</code></pre>
+
+
+	<a name="How-to-send-“Meter-reading”s-of-type-Load-2"></a>
+<h3 >How to send “Meter reading”(s) (of type "Load")<a href="#How-to-send-“Meter-reading”s-of-type-Load-2" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>Before sending the first cumulative load data sample, a Load “entity” needs to be registered by using the registerLoad method. Here is an example of registering a “Load” entity with meterId equal to "XXXmeterId":</p>
+
+
+	<pre><code>MeteringProxy meteringProxy = new MeteringProxyImpl();<br />        Load load = new Load("XXXmeterId", false);<br />        meteringProxy.registerLoad(load);</code></pre>
+
+
+	<p>Hereafter there is a code snippet which shows how to send a meter reading (of type "Load"), a load sample, for the “Load” entity that has been previously registered:</p>
+
+
+	<pre><code>meteringProxy = new MeteringProxyImpl();<br />        Load load = null;<br />        load=new Load("55555555555",false);<br />        load.setSampleNumber(5);<br />        load.setDownstreamActivePowerEEA(1000.0); //consumed power<br />        load.setUpstreamActivePowerEUA(10.0); //produced power<br />        load.setIntegrationPeriodRef("Q");<br />        load.setLoadSampleDate(Calendar.getInstance().getTime());<br />        load.setReactiveCapacitivePowerEEC(10.0);<br />        load.setReactiveCapacitivePowerEUC(0.0);<br />        load.setReactiveInductivePowerEEI(0.0);<br />        load.setReactiveInductivePowerEUI(0.0);<br />        load.setTariffType("T1");<br />        load.setCurrentTime(System.currentTimeMillis() / 1000);</code></pre>
+
+
+	<pre><code>Response response = meteringProxy.sendLoadData(load);<br />        if(response.getStatus == 200)<br />            System.out.println(“Everything is fine!”);</code></pre>
+
+
+	<a name="Re-utilised-TechnologiesSpecifications"></a>
+<h2 >   Re-utilised Technologies/Specifications<a href="#Re-utilised-TechnologiesSpecifications" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Jersey - RESTful Web Services in Java (<a class="external" href="https://jersey.java.net/">https://jersey.java.net/</a>)</p>
+
+
+	<a name="Downloads"></a>
+<h2 >   Downloads<a href="#Downloads" class="wiki-anchor">&para;</a></h2>
+
+
+	<table>
+		<tr>
+			<td> Location </td>
+			<td> Revision </td>
+			<td> Release Date </td>
+		</tr>
+		<tr>
+			<td> <a class="external" href="files/metering-input.war">metering-input.war</a> </td>
+			<td> version=0.0.9-SNAPSHOT </td>
+			<td> Mon Nov 03 11:52:33 CET 2014 </td>
+		</tr>
+		<tr>
+			<td> <a class="external" href="files/metering-input-client-0.0.9-SNAPSHOT.jar">metering-input-client-0.0.9-SNAPSHOT.jar</a> </td>
+			<td> version=0.0.9-SNAPSHOT </td>
+			<td> Mon Nov 03 11:52:33 CET 2014 </td>
+		</tr>
+		<tr>
+			<td> <a class="external" href="files/metering-input-client-0.0.9-SNAPSHOT-sources.jar">metering-input-client-0.0.9-SNAPSHOT-sources.jar</a> </td>
+			<td> version=0.0.9-SNAPSHOT </td>
+			<td> Mon Nov 03 11:52:33 CET 2014 </td>
+		</tr>
+	</table>
+
+
+
+
+	<a name="Terms-and-Definitions"></a>
+<h2 >   Terms and Definitions<a href="#Terms-and-Definitions" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Software associated to the Metering2Orion product is provided as open source under the LGPLv3 license. Please check the specific terms and conditions linked to this open source license at <a class="external" href="https://www.gnu.org/licenses/lgpl.html">https://www.gnu.org/licenses/lgpl.html</a></p>
+
+
+	<a name="References"></a>
+<h2 >   References<a href="#References" class="wiki-anchor">&para;</a></h2>
+
+
+        </div>
+        <br class="cb">
+      </div><br class="cb">
+      
+    </div>
+    <br class="cb">
+    <a name="Menue"></a>
+    <div id="footer">
+      <div id="footer2">
+        <div class="slider">
+          <div class="bx-wrapper" style="max-width: 1550px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 100px;"><ul class="firmenlogos" style="border: 0px; margin: 0px; padding: 0px; width: 3215%; position: relative; -webkit-transition: 30s linear; transition: 30s linear; -webkit-transform: translate3d(-7575px, 0px, 0px);">
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/Develco_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/devolo_logo_claim_grau.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/DNET-Logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/insero_software_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/ismb-logo-1.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/LaSalle_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/LogoTeamWare-con-barra-verde.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logoyucca.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_acciona_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_alcatel_lucent_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_alstom_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_asm_terni_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_baum_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_engineering_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_eon_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_ericsson_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_esb_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_fir_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_grenoble_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_honeywell_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_inseroweb_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_intunes_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_orange_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_qsc_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_rwth_aachen_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_synelixis_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_tssg_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/SEnerCon_Logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/SOPTIM_Logo_farbig.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/XLAB_logo_large_light_bg.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
+            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/Develco_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/devolo_logo_claim_grau.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/DNET-Logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/insero_software_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/ismb-logo-1.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/LaSalle_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/LogoTeamWare-con-barra-verde.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logoyucca.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_acciona_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_alcatel_lucent_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_alstom_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_asm_terni_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_baum_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_engineering_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_eon_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_ericsson_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_esb_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_fir_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_grenoble_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_honeywell_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_inseroweb_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_intunes_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_orange_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_qsc_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_rwth_aachen_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_synelixis_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_tssg_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/SEnerCon_Logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/SOPTIM_Logo_farbig.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/XLAB_logo_large_light_bg.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li></ul></div></div>
+          </div>
+          <div style="width: 40%; max-width: 310px; min-height: 50px; float: left; margin-right: 35px;">
+            <img src="images/EU.png" alt="">
+            <img src="images/Logo_FutureINet.png" alt="">
+          </div>
+          <div style="width: 310px; min-height: 50px; float: left;"></div>
+          <div style="width: 40%; max-width: 310px; min-height: 50px; float: right;text-align: right;"><br>
+            <a class="A_Menue_Top" href="http://www.finesce.eu/Contact.html">Contact</a><br>
+            <a class="A_Menue_Top" href="http://www.finesce.eu/Legal.html">Legal</a>
+          </div>
+          <br class="cb">
+        </div>
+      </div>
+    </div>
+
+<!-- Copyright (c) 2000-2013 etracker GmbH. All rights reserved. -->
+<!-- This material may not be reproduced, displayed, modified or distributed -->
+<!-- without the express prior written permission of the copyright holder. -->
+
+<!-- BEGIN etracker Tracklet 3.0 -->
+<script type="text/javascript">    document.write(String.fromCharCode(60) + 'script type="text/javascript" src="http' + ("https:" == document.location.protocol ? "s" : "") + '://code.etracker.com/t.js?et=JoEi4s">' + String.fromCharCode(60) + '/script>');</script><script type="text/javascript" src="js/t.js"></script>
+
+<!-- etracker PARAMETER 3.0 -->
+<script type="text/javascript">
+    /* Beginn des konfigurierbaren Parameterbereichs.
+    Um folgende Parameter zu verwenden, entfernen Sie bitte die führenden zwei Schrägstriche (//) und ergänzen den Parameter um den gewünschten Wert. */
+    //var et_pagename     = "";
+    //var et_areas        = "";
+    //var et_url          = "";
+    //var et_target       = "";
+    //var et_ilevel       = 0;
+    //var et_tval         = "";
+    //var et_cust         = 0;
+    //var et_tonr         = "";
+    //var et_tsale        = 0;
+    //var et_basket       = "";
+    //var et_lpage        = "";
+    //var et_trig         = "";
+    //var et_sub          = "";
+    //var et_se           = "";
+    //var et_tag          = "";
+</script>
+<!-- etracker PARAMETER END -->
+
+<script type="text/javascript">    _etc();</script><p id="et_image" style="display:none;"></p>
+<noscript>&lt;p&gt;&lt;a href="http://www.etracker.com"&gt;&lt;img style="border:0px;" alt="" src="https://www.etracker.com/nscnt.php?et=JoEi4s" /&gt;&lt;/a&gt;&lt;/p&gt;</noscript>
+<!-- etracker CODE NOSCRIPT 3.0 -->
+<noscript>
+&lt;p&gt;&lt;a href='http://www.etracker.de/app?et=JoEi4s'&gt;
+&lt;img style='border:0px;' alt='' src='https://www.etracker.de/cnt.php?et=JoEi4s&amp;amp;v=3.0&amp;amp;java=n&amp;amp;et_easy=0&amp;amp;et_pagename=&amp;amp;et_areas=&amp;amp;et_ilevel=0&amp;amp;et_target=,0,0,0&amp;amp;et_lpage=0&amp;amp;et_trig=0&amp;amp;et_se=0&amp;amp;et_cust=0&amp;amp;et_basket=&amp;amp;et_url=&amp;amp;et_tag=&amp;amp;et_sub=&amp;amp;et_organisation=&amp;amp;et_demographic=' /&gt;&lt;/a&gt;&lt;/p&gt;
+</noscript>
+<!-- etracker CODE NOSCRIPT END-->
+
+<!-- etracker CODE END -->
+
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div id="window-resizer-tooltip" style="display: block;"><a href="http://www.finesce.eu/#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle"> </span><span class="tooltipWidth" id="winWidth"></span> <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle"></span><span class="tooltipWidth" id="vpWidth"></span> <span class="tooltipHeight" id="vpHeight"></span></div></body></html>
