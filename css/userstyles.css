@@ -13,3 +13,10 @@ a:hover { color: #792e93; font-family: Arial, Sans-Serif;   text-decoration: non
 
 .Headline	{ color: #b7087f; font-weight: bold; font-family: Arial, Sans-Serif; text-decoration: none; font-size: 1.3em; }
 .Headline:hover	{ color: #792e93; font-weight: bold; font-family: Arial, Sans-Serif;  text-decoration: none;  font-size: 1.3em;  }
+
+td, th { padding: 8 10 8 10; background-color: rgb(218, 228, 232); border-color: rgb(255, 255, 255); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none;}
+td.left { padding: 8 10 8 10; background-color: rgb(183, 8, 128); color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); font-weight: bold; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none}
+tr.top th{
+	border-bottom: 2px solid;
+	border-color: rgb(183, 8, 128);
+}
