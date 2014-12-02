@@ -14,9 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="css/struktur1.css"
        media="screen">
        -->
-    <link rel="stylesheet" type="text/css" href="css/userstyles.css"
-               media="screen">
-
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -26,6 +23,9 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<!-- <script src="js/bootstrap.min.js"></script>-->
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/userstyles.css" media="screen">
+	<link rel="stylesheet" href="css/fiware.css">
 </head>
 <body>
 	
@@ -44,21 +44,16 @@
           <ul class="nav navbar-nav">
               <li class="active">Home</li>
               <li><a href="FINESCE_GEs.html">Generic Enablers</a></li>
-              <li><a href="index.html">Specific Enablers</a></li>
+              <li><a href="FINESCE_DSEs.html">Specific Enablers</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 	
-	<div class="jumbotron">
-		<div class="container">
-			<div class="page-header">
-				<h1>FINESCE Integrated Generic Enablers</h1>
-			</div>
-		</div>
-	</div>
-	
 	<div class="container">
+		<div class="page-header">
+			<h1>FINESCE Integrated Generic Enablers</h1>
+		</div>
 		<p>The FINESCE project uses several GEs from the <a href="http://catalogue.fi-ware.org/enablers/">FIWARE catalogue</a>, a significant number of which have been fully integrated
 			into the trial sites. We list the most important ones on this page.</p>
 		
@@ -75,7 +70,7 @@
 				<th>WP3<br />FPL</th>
 				<th>WP4</th>
 			</tr>
-			<tr>
+			<tr class="category">
 				<td class=left rowspan="3"> Cloud Hosting </td>
 				<td><a href="http://catalogue.fi-ware.org/enablers/iaas-data-center-resource-management-ge-ibm-implementation" class="wiki-page">IaaS DataCenter Resource Management</a> </td>
 				<th>-</th>
@@ -103,7 +98,7 @@
 				<th>-</th>
 				<th><img src="images/LogoIcon.png"></img></th>
 			</tr>
-			<tr>
+			<tr class="category">
 				<td class=left rowspan="1"> Security</td>
 				<td><a href="http://catalogue.fi-ware.org/enablers/identity-management-keyrock" class="wiki-page">Identity Management KeyRock</a> </td>
 				<th>-</th>
@@ -113,7 +108,7 @@
 				<th>-</th>
 				<th><img src="images/LogoIcon.png"></img></th>
 			</tr>
-			<tr>
+			<tr class="category">
 				<td class=left rowspan="3"> Data/Media Context Management </td>
 				<td><a href="http://catalogue.fi-ware.org/enablers/publishsubscribe-context-broker-orion-context-broker" class="wiki-page">Publish/Subscribe Broker - Orion</a></td>
 				<th><img src="images/LogoIcon.png"></img></th>
@@ -141,7 +136,7 @@
 				<th>-</th>
 				<th><img src="images/LogoIcon.png"></img></th>
 			</tr>
-			<tr>
+			<tr class="category">
 				<td class=left rowspan="4"> IoT Services Enablement </td>
 				<td style="text-align:left;"><a href="http://catalogue.fi-ware.org/enablers/nec-iot-broker" class="wiki-page">IoT Broker - NEC</a> </td>
 				<th>-</th>
@@ -178,7 +173,7 @@
 				<th>-</th>
 				<th>-</th>
 			</tr>
-			<tr>
+			<tr class="category">
 				<td class=left> Apps/Data Ecosystems & Delivery </td>
 				<td> <a href="http://catalogue.fi-ware.org/enablers/application-mashup-wirecloud" class="wiki-page">Application Mashup</a> </td>
 				<th>-</th>

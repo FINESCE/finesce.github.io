@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- include javascript, jQuery FIRST -->
+<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<!-- 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+
+<!-- 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+<!-- 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+<!-- 	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
+		<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!--     <script src="../../dist/js/bootstrap.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+    
+	<!-- Latest compiled and minified CSS -->
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.ss"> -->
+
+	<!-- Optional theme -->
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"> -->
+	
+	<!-- FIWARE font -->
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/userstyles.css" media="screen">
+	<link rel="stylesheet" href="css/fiware.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">FINESCE</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              <li class="active">Home</li>
+              <li><a href="FINESCE_GEs.html">Generic Enablers</a></li>
+              <li><a href="FINESCE_DSEs.html">Specific Enablers</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    
+	<article>
+		<div class="container">
+			<div class="page-header">
+				<h1>FINESCE Domain Specific Enablers</h1>
+			</div>
+			<div class="enabler-list">
+				<div class="dropdown">
+					<div><b>Browse by work package:</b></div>
+					<button class="btn btn-default dropdown-toggle enabler-list-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+					    - Any -
+					    <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WP1</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WP2</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WP3</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WP4</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WP5</a></li>
+					</ul>
+				</div>
+				<div class="enabler-row">
+					<h2 class="header">DSE WP1</h2>
+					Description of this enabler.
+					<div class="category">Category</div>
+				</div>
+				<div class="enabler-row">
+					<h2 class="header">DSE WP2</h2>
+					Description of second enabler.
+					<div class="category">Special Category</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	
+	<script>
+		(function loadList(){
+			$(".enabler-row").remove();
+			var enabler_list = $(".enabler-list");
+			$.getJSON("js/DSEs.json", function(data){
+				wp_list = [];
+				for (line in data){
+					var row_html = '<div class="enabler-row"><h2 class="header">'+data[line]["name"]+'</h2>'+data[line]["description"]+'<div class="category">Work package '+data[line]["wp"]+'</div></div>';
+					enabler_list.append(row_html);
+					wp_list[data[line]["wp"]] = true;
+				}
+				
+				//fill dropdown
+				$(".dropdown-menu").empty();
+				for (wp in wp_list){
+					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Work package '+wp+'</a></li>')
+				}
+			});
+		})();
+	</script>
+</body>

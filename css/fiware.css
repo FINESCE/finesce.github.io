@@ -1,0 +1,58 @@
+.page-header {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin: 0px 0px 0px 0px;
+    padding: 48px 0px 0px 0px;
+    border-bottom: 1px solid #387038;
+}
+
+h1, h2 {
+	font-family: "Comfortaa";
+	color: #b7087f;
+}
+
+h1{
+	font-size: 37px;
+	line-height: normal;
+}
+
+h2{
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 600;
+}
+
+body{
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.enabler-list .dropdown{
+	padding: 20px 0px 15px 0px;
+	border-bottom: 1px solid #387038;
+	margin-bottom: 15px;
+}
+
+.enabler-list .enabler-row{
+	display: block;
+	border-bottom: 1px solid #387038;
+	margin-bottom: 15px;
+}
+
+.enabler-list .enabler-row .header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.enabler-list .enabler-row .category{
+	font-size: 10px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+
+tr.spaceUnder > td
+{
+  padding-bottom: 1em;
+}
