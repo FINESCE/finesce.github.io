@@ -24,3 +24,6 @@ table.themed tr.top th{
 	border-bottom: 2px solid;
 	border-color: rgb(183, 8, 128);
 }
+table.themed tr th{
+	text-align: center;
+}
