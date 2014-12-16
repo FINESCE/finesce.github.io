@@ -71,7 +71,7 @@
 			<!-- 			<section class="span12"> -->
 			<a id="main-content"></a>
 			<div class="page-header">
-				<h1>3DScan</h1>
+				<h1 class="enabler-title">3DScan</h1>
 			</div>
 			<div>
 				<ul class="nav-docs-header">
@@ -217,7 +217,7 @@
 									<div
 										class="field field-name-body field-type-text-with-summary field-label-hidden">
 										<div class="field-items">
-											<div class="field-item even" property="content:encoded">
+											<div id="content-wiki" class="field-item even" property="content:encoded">
 												<h2>i. Preface</h2>
 												<p>The FITMAN 3DScan Specific Enabler is a component
 													that assures the possibility of storing and visualizing
@@ -676,5 +676,67 @@ collisions:0 txqueuelen:1000
 			</footer>
 		</div>
 	</article>
+	
+	<script>
+		function buildHTMLforPage(dse_data, part){
+			if (part == "Documentation"){
+				return "<h2>Copyright</h2>"+dse_data["Documentation"]["Copyright"]+
+						"<h2>Preface</h2>"+dse_data["Documentation"]["Preface"]+
+						"<h2>DSE Description</h2>"+dse_data["Documentation"]["Description"]+
+						"<h2>Detailed Specifications</h2>"+dse_data["Documentation"]["Details"]+
+						"<h2>Glossary</h2>"+dse_data["Documentation"]["Glossary"]+
+						"<h2>References</h2>"+dse_data["Documentation"]["References"];
+			}else if (part == "Downloads"){
+				return dse_data["Downloads"];
+			}else if (part == "Instances"){
+				return dse_data["Instances"];
+			}else if (part == "Terms"){
+				return dse_data["Terms and Conditions"];
+			}else{
+				return "<h2>Overview</h2>"+dse_data["Overview"]+"<h2>Target Usage</h2>"+dse_data["Target usage"];
+			}
+		}
+		function getParameterByName(name) {
+		    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		        results = regex.exec(location.search);
+		    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		$(document).ready(function(){
+			var name = getParameterByName("name");
+			var show = getParameterByName("show");
+			
+			console.log("Parameters: "+name+" "+show);
+			$.getJSON("DSEs.json", function(data){
+				var found = false;
+				for (line in data){
+					console.log("Data: "+data[line]["Name"]+" comparing to "+name)
+					if (data[line]["Name"] == name){
+						found = true;
+						$("enabler-title").text(name);
+						$("#content-wiki").html(buildHTMLforPage(data[line], show));
+						break;
+					}
+				}
+				if (!found){
+					$("enabler-title").text("Krneki");
+					$("#content-wiki").html("<h2>Title</h2>");
+				}
+			
+// 				wp_list = [];
+// 				for (line in data){
+// 					var row_html = '<div class="enabler-row"><h2 class="header">'+data[line]["name"]+'</h2>'+data[line]["description"]+'<div class="category">Work package '+data[line]["wp"]+'</div></div>';
+// 					enabler_list.append(row_html);
+// 					wp_list[data[line]["wp"]] = true;
+// 				}
+				
+// 				//fill dropdown
+// 				$(".dropdown-menu").empty();
+// 				for (wp in wp_list){
+// 					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Work package '+wp+'</a></li>')
+// 				}
+			});
+		});
+	</script>
 </body>
 </html>

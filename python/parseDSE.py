@@ -1,22 +1,37 @@
 import lxml.html
 import bs4
+import json
 
 class DSEData_documentation(object):
     preface = ""
     copyright = ""
     dse_description = ""
+    detailed_specs = ""
+    glossary = ""
+    references = ""
     
     def __repr__(self):
-        return "{Preface:" + repr(self.preface) + ", Copyright:" + repr(self.copyright) + ", Description:" + repr(self.dse_description)
+        return "{Preface:" + repr(self.preface) + ", Copyright:" + repr(self.copyright) + ", Description:" + repr(self.dse_description) + ", Detailed specs:" +repr(self.detailed_specs) + ", Glossary:" +repr(self.glossary) + ", References:" +repr(self.references)
+    
+    def toJSON(self):
+        return {'Preface': self.preface, \
+                'Copyright': self.copyright, \
+                'Description': self.dse_description, \
+                'Details':self.detailed_specs, \
+                'Glossary':self.glossary, \
+                'References':self.references
+                };
+        
     
 class DSEData(object):
     work_package = ""
     name = ""
     short_description = ""
-    open_source = False
+    open_source = ""    #TODO: this was false
     contact_person = ""
     overview = ""
-    documentation = DSEData_documentation
+    target_usage = ""
+    documentation = DSEData_documentation()
     downloads = ""
     instances = ""
     terms = ""
@@ -24,16 +39,44 @@ class DSEData(object):
     def __repr__(self):
         return "WP:" + repr(self.work_package) + \
                ", Name:" + repr(self.name) + \
-               ", Short description:" + repr(self.short_description) + \
+               ", Short Description:" + repr(self.short_description) + \
                ", Open Source:" + repr(self.open_source) + \
-               ", Contact person:" + repr(self.contact_person) + \
+               ", Contact Person:" + repr(self.contact_person) + \
                ", Overview:" + repr(self.overview) + \
+               ", Target Usage:" + repr(self.target_usage) + \
                ", Documentation:" + repr(self.documentation) + \
                ", Downloads:" + repr(self.downloads) + \
                ", Instances:" + repr(self.instances) + \
-               ", Terms and conditions:" + repr(self.terms)
+               ", Terms and Conditions:" + repr(self.terms)
+               
+    def toJSON(self):
+        return [{'WP': self.work_package, \
+                 'Name': self.name, \
+                 'Short Description': self.short_description, \
+                 'Contact Person':  self.contact_person, \
+                 'Open Source':  self.open_source, \
+                 'Overview':  self.overview, \
+                 'Target Usage': self.target_usage, \
+                 'Documentation':  self.documentation.toJSON(), \
+                 'Downloads':  self.downloads, \
+                 'Instances':  self.instances, \
+                 'Terms and Conditions':  self.terms
+               }];
+           #"}"
+               
+class DSEEncoder(json.JSONEncoder):
+    def default(self, obj):
+        #return "{\"newjson\":12}"
+        if isinstance(obj, DSEData):
+            return obj.toJSON()
+        
+        if isinstance(obj, DSEData_documentation):
+            return [obj.real, obj.imag]
+        # Let the base class default method raise the TypeError
+        return json.JSONEncoder.default(self, obj)
 
-htmlcontent = open("COS.html",'r').read()
+name = "COS"
+htmlcontent = open(name+".html",'r').read()
 soup = bs4.BeautifulSoup(htmlcontent)
 
 content = soup.find("div", {"id": "content"})
@@ -63,12 +106,39 @@ def processH2(start):
 
 dse_data = DSEData()
 for h2 in content.find_all("h2"):
-    if h2.text.startswith("DSE Description"):
+    h2_text = h2.text.lstrip()
+    print h2_text
+    if h2_text.startswith("Copyright"):
+        dse_data.documentation.copyright = processH2(h2)
+    elif h2_text.startswith("Preface"):
+        dse_data.documentation.preface = processH2(h2)
+    elif h2_text.startswith("T&Cs") or h2_text.startswith("Terms and Conditions"):
+        dse_data.terms = processH2(h2)
+    elif h2_text.startswith("Overview"):
+        dse_data.overview = processH2(h2)
+    elif h2_text.startswith("Target Usage"):
+        dse_data.documentation.target_usage = processH2(h2)
+    elif h2_text.startswith("DSE Description"):
         dse_data.documentation.dse_description = processH2(h2)
+    elif h2_text.startswith("Detailed Specifications"):
+        dse_data.documentation.detailed_specs = processH2(h2)
+    elif h2_text.startswith("Re-utilised Technologies/Specifications"):
+        dse_data.documentation.reutilised_tech = processH2(h2)
+    elif h2_text.startswith("Terms and Definitions") or h2_text.startswith("Glossary"):
+        dse_data.documentation.glossary = processH2(h2)
+    elif h2_text.startswith("References"):
+        dse_data.documentation.references = processH2(h2)
 print
-print "DSE data:"
+dse_data.name = name
+"""print "DSE data:"
 print dse_data
 print dse_data.documentation.dse_description
+print dse_data.overview
+dse_data.documentation = ""
+"""
+
+with open('../enablers/DSEs.json', 'w') as outfile:
+    json.dump(dse_data, outfile, indent=4, separators=(',', ': '), cls=DSEEncoder)
 #print(content.prettify())
 
 """
