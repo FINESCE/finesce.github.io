@@ -1,742 +1,294 @@
 <!DOCTYPE html>
 <html class="js" lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<!-- Bootstrap -->
-<link
-	href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
-	rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- include javascript, jQuery FIRST -->
-<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-<!-- 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+    <!-- include javascript, jQuery FIRST -->
+    <!-- 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <!-- 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
 
-<!-- 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-<!-- 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
-<!-- 	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
-<!-- Bootstrap core JavaScript
+    <!-- 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <!-- 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+    <!-- 	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<!--     <script src="../../dist/js/bootstrap.min.js"></script> -->
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<!--     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!--     <script src="../../dist/js/bootstrap.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
 
-<!-- Latest compiled and minified CSS -->
-<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.ss"> -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.ss"> -->
 
-<!-- Optional theme -->
-<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"> -->
+    <!-- Optional theme -->
+    <!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"> -->
 
-<!-- FIWARE font -->
-<link href='http://fonts.googleapis.com/css?family=Comfortaa'
-	rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="../css/userstyles.css"
-	media="screen">
-<link rel="stylesheet" href="../css/fiware.css">
+    <!-- FIWARE font -->
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/userstyles.css" media="screen">
+    <link rel="stylesheet" href="../css/fiware.css">
 </head>
+
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">FINESCE</a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active">Home</li>
-					<li><a href="../FINESCE_GEs.html">Generic Enablers</a></li>
-					<li><a href="../FINESCE_DSEs.html">Specific Enablers</a></li>
-				</ul>
-			</div>
-			<!--/.navbar-collapse -->
-		</div>
-	</nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">FINESCE</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">Home</li>
+                    <li><a href="../FINESCE_GEs.html">Generic Enablers</a>
+                    </li>
+                    <li><a href="../FINESCE_DSEs.html">Specific Enablers</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
 
-	<article>
-		<div class="container">
-			<!-- 			<section class="span12"> -->
-			<a id="main-content"></a>
-			<div class="page-header">
-				<h1 class="enabler-title">3DScan</h1>
-			</div>
-			<div>
-				<ul class="nav-docs-header">
-					<li class="nav-docs-header"><a class="nav-docs-header"
-						href="#">Overview</a></li>
-					<li><a href="#">Documentation</a></li>
-					<li><a href="#">Downloads</a></li>
-					<li><a href="#">Instances</a></li>
-					<li><a href="#">Terms and conditions</a></li>
-				</ul>
-			</div>
-			<div class="center-wrapper">
-				<div class="center-left-wrapper">
-					<div class="left-info-block">
-						<div
-							class="panel-pane pane-views-panes pane-api-details-pane-panel-pane-1 block">
-
-
-
-							<div class="pane-content">
-								<div
-									class="view view-api-details-pane view-id-api_details_pane view-display-id-panel_pane_1 view-dom-id-6cbc0a1b7dc7dbdc1400b2bcf82003d4">
+    <article>
+        <div class="container">
+            <!-- 			<section class="span12"> -->
+            <a id="main-content"></a>
+            <div class="page-header">
+                <h1 class="enabler-title"></h1>
+            </div>
+            <div>
+                <ul class="nav-docs-header">
+                    <li class="nav-docs-header"><a class="nav-docs-header" href="#">Overview</a>
+                    </li>
+                    <li><a href="#">Documentation</a>
+                    </li>
+                    <li><a href="#">Downloads</a>
+                    </li>
+                    <li><a href="#">Instances</a>
+                    </li>
+                    <li><a href="#">Terms and conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="center-wrapper">
+                <div class="center-left-wrapper">
+                    <div class="left-info-block">
+                        <div class="panel-pane pane-views-panes pane-api-details-pane-panel-pane-1 block">
 
 
 
-									<div class="view-content">
-										<div
-											class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+                            <div class="pane-content">
+                                <div class="view view-api-details-pane view-id-api_details_pane view-display-id-panel_pane_1 view-dom-id-6cbc0a1b7dc7dbdc1400b2bcf82003d4">
 
-											<div class="views-field views-field-field-api-icon">
-												<div class="field-content">
-													<img typeof="foaf:Image"
-														src="http://catalogue.fitman.atosresearch.eu/sites/default/files/styles/enabler_icon_large/public/default_images/500px-No_image.svg.png?itok=Jk5dc53o"
-														alt="" />
-												</div>
-											</div>
-											<div class="views-field views-field-field-api-chapter">
-												<strong class="views-label views-label-field-api-chapter">Factory
+
+
+                                    <div class="view-content">
+                                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+
+                                            <div class="views-field views-field-field-api-icon">
+                                                <div class="field-content">
+                                                    <img typeof="foaf:Image" src="http://catalogue.fitman.atosresearch.eu/sites/default/files/styles/enabler_icon_large/public/default_images/500px-No_image.svg.png?itok=Jk5dc53o" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-api-chapter">
+                                                <strong class="views-label views-label-field-api-chapter">Factory
 													Domain: </strong>
-												<div class="field-content">Digital Factory</div>
-											</div>
-											<div class="views-field views-field-field-api-version">
-												<strong class="views-label views-label-field-api-version">Version:
+                                                <div class="field-content">Digital Factory</div>
+                                            </div>
+                                            <div class="views-field views-field-field-api-version">
+                                                <strong class="views-label views-label-field-api-version">Version:
 												</strong>
-												<div class="field-content"></div>
-											</div>
-											<div class="views-field views-field-changed">
-												<strong class="views-label views-label-changed">Updated:
+                                                <div class="field-content"></div>
+                                            </div>
+                                            <div class="views-field views-field-changed">
+                                                <strong class="views-label views-label-changed">Updated:
 												</strong>
-												<div class="field-content">2014-10-13</div>
-											</div>
-											<div class="views-field views-field-field-api-rating">
-												<strong class="views-label views-label-field-api-rating">Rating:
+                                                <div class="field-content">2014-10-13</div>
+                                            </div>
+                                            <div class="views-field views-field-field-api-rating">
+                                                <strong class="views-label views-label-field-api-rating">Rating:
 												</strong>
-												<div class="field-content">
-													<div
-														class="clearfix fivestar-average-stars fivestar-average-text">
-														<div class="fivestar-static-form-item">
-															<div class="control-group form-type-item">
-																<div class="controls">
-																	<div class="fivestar-default">
-																		<div
-																			class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix">
-																			<div class="star star-1 star-odd star-first">
-																				<span class="off">0</span>
-																			</div>
-																			<div class="star star-2 star-even">
-																				<span class="off"></span>
-																			</div>
-																			<div class="star star-3 star-odd">
-																				<span class="off"></span>
-																			</div>
-																			<div class="star star-4 star-even">
-																				<span class="off"></span>
-																			</div>
-																			<div class="star star-5 star-odd star-last">
-																				<span class="off"></span>
-																			</div>
-																		</div>
-																	</div>
-																	<p class="help-block">
-																	<div
-																		class="fivestar-summary fivestar-summary-average-count">
-																		<span class="empty">No votes yet</span>
-																	</div>
-																	</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="views-field views-field-field-api-contact-person">
-												<strong
-													class="views-label views-label-field-api-contact-person">Contact
+                                                <div class="field-content">
+                                                    <div class="clearfix fivestar-average-stars fivestar-average-text">
+                                                        <div class="fivestar-static-form-item">
+                                                            <div class="control-group form-type-item">
+                                                                <div class="controls">
+                                                                    <div class="fivestar-default">
+                                                                        <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix">
+                                                                            <div class="star star-1 star-odd star-first">
+                                                                                <span class="off">0</span>
+                                                                            </div>
+                                                                            <div class="star star-2 star-even">
+                                                                                <span class="off"></span>
+                                                                            </div>
+                                                                            <div class="star star-3 star-odd">
+                                                                                <span class="off"></span>
+                                                                            </div>
+                                                                            <div class="star star-4 star-even">
+                                                                                <span class="off"></span>
+                                                                            </div>
+                                                                            <div class="star star-5 star-odd star-last">
+                                                                                <span class="off"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="help-block">
+                                                                        <div class="fivestar-summary fivestar-summary-average-count">
+                                                                            <span class="empty">No votes yet</span>
+                                                                        </div>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="views-field views-field-field-api-contact-person">
+                                                <strong class="views-label views-label-field-api-contact-person">Contact
 													Person: </strong>
-												<div class="field-content">Aitor Romero</div>
-											</div>
-											<div
-												class="views-field views-field-field-api-contact-details">
-												<div class="field-content">
-													<p>
-														<span class="spamspan"><span class="u">aromero</span>
-															[at] <span class="d">datapixel [dot] com</span></span>
-													</p>
-													<script type="text/javascript"
-														src="http://jira-fitman.atosresearch.eu/s/d41d8cd98f00b204e9800998ecf8427e/en_US5owebz-1988229788/6252/28/1.4.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=c0224122"></script>
-												</div>
-											</div>
-										</div>
-									</div>
+                                                <div class="field-content"></div>
+                                            </div>
+                                            <div class="views-field views-field-field-api-contact-details">
+                                                <div class="field-content">
+                                                    <p>
+                                                        <span class="spamspan"></span>
+                                                    </p>
+                                                    <script type="text/javascript" src="http://jira-fitman.atosresearch.eu/s/d41d8cd98f00b204e9800998ecf8427e/en_US5owebz-1988229788/6252/28/1.4.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=c0224122"></script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
 
 
 
 
 
-								</div>
-							</div>
+                                </div>
+                            </div>
 
 
-						</div>
-					</div>
-				</div>
+                        </div>
+                    </div>
+                </div>
 
 
-				<div class="center-right-wrapper">
-					<div class="right-content-block">
-						<div class="panel-pane pane-node-content">
+                <div class="center-right-wrapper">
+                    <div class="right-content-block">
+                        <div class="panel-pane pane-node-content">
 
 
 
-							<div class="pane-content">
-								<article id="node-574"
-									class="node node-enabler-sub-page clearfix"
-									about="/enablers/3dscan/documentation"
-									typeof="sioc:Item foaf:Document">
+                            <div class="pane-content">
+                                <article id="node-574" class="node node-enabler-sub-page clearfix" about="/enablers/3dscan/documentation" typeof="sioc:Item foaf:Document">
 
 
-									<header> </header>
+                                    <header> </header>
 
 
-									<div
-										class="field field-name-body field-type-text-with-summary field-label-hidden">
-										<div class="field-items">
-											<div id="content-wiki" class="field-item even" property="content:encoded">
-												<h2>i. Preface</h2>
-												<p>The FITMAN 3DScan Specific Enabler is a component
-													that assures the possibility of storing and visualizing
-													precise scanned images obtained from real objects. This
-													system can be used in many fields. The Specific Enabler
-													provides, in this sense, a fast way of obtaining very
-													accurate surface representations, the possibility to store
-													them (together with other relevant data) and to visualize
-													them in a clear and intuitive way. Both modules (Storage
-													and Visualization) are conceived to be used together,
-													although they can also be used independently.</p>
-												<p>One of the main challenges that manufacturing is
-													facing nowadays is the need to achieve a high quality
-													production (in some industries the objective has been set
-													in the so called 0% defect) without slowing down the
-													production processes, which are also been fastened to
-													respond to the stressful delivery requirements.The solution
-													to this problem is obviously to approach the control to the
-													100% of the production, to assure that no pieces with
-													defects are sent to the customer. The Specific Enabler
-													provides, in this sense, provides a fast way of performing
-													quality controls and an intuitive visualization decision
-													support system to determine if the analysed manufactured
-													part must be accepted or rejected.</p>
-												<h2>ii. Copyright</h2>
-												<p>
-													Copyright © 2014 <a href="http://www.datapixel.com/en/">
-														Datapixel Quality Control Engineering </a>
-												</p>
-												<h2>iii. Overview</h2>
-												<p>In the case of dimensional control, a suitable option
-													is related to visualization and/or colour mapping
-													technologies. These technologies need a previous scan of
-													the analysed piece to compare it with the design CAD
-													figure. From this comparison a colour map to support the
-													decision of acceptance/rejection supported by the
-													visualization component of the Specific Enabler. Moreover,
-													generating reports where the piece is analysed in detail
-													and compared with the design and the tolerances previously
-													defined is also possible. This process needs to store a
-													great quantity of data (clouds of points, raw data, and
-													metadata of the analysed part, tolerances and/or the
-													process) that can be very heavy files. This constraint must
-													also be accomplished to allow the quality control process
-													to be fast enough. In this case the option could be a Big
-													Data storage system with Hadoop technology besides the
-													relational database. (storage component of the Specific
-													Enabler).</p>
-												<p>The solution provided by Datapixel consists of a
-													3Dscanning sensor, the Specific Enabler (3DScan) that will
-													be presented in this section and the Trial Specific
-													Component (3D Point Cloud Analysis Processing) detailed in
-													the fllowing diagram. When scanning a real part the output
-													acquired, as said before, is a point cloud that can be
-													defined as a surface representation constituting of
-													individual points obtained from a scanning system .</p>
-												<p>
-													The operation workflow of 3DScan component as whole is
-													detailed below. Each point corresponds to step of the
-													scanning system process:<br />
-												</p>
-												<center>
-													<img
-														src="/sites/default/files/enabler-atttachments/3dScanWorkflow 1.png " />
-												</center>
-												<br />
-												<center>Figure 1: Control Quality workflow using
-													3DScan</center>
-												<ol>
-													<li>The analysed part is scanned with a 3D Scanner.
-														After scanning the piece a set of individual points
-														belonging to the surface of the physical piece is
-														obtained. This is known as the cloud of points.</li>
-													<li>The information previously acquired is processed
-														by the system algorithm. In this stage some operations are
-														done to find in the obtained cloud of points some
-														requested geometries. This is done with the help of some
-														libraries and it is known as geometry extraction.</li>
-													<li>The point cloud obtained and the geometries
-														extracted are compared to the 3D CAD design of the
-														analysed part (real part vs ideal part). In the analysis
-														phase the comparison is made, calculating the results,
-														including the tolerances defined for the piece that
-														separate the rejection/acceptation regions.</li>
-													<li>The results of the analysis are shown in the
-														Visualizer component. There are many options to present
-														the results. One of the most common options consists in a
-														colour mapping that presents the studied part in a colour
-														representation with the differences between the real
-														dimensions and the envisaged dimensions. This way of
-														representing if the piece accomplishes with the tolerances
-														allows validating the piece with a quick view.</li>
-													<li>In all the steps of the workflow data is being
-														regularly recorded in the Big Data storage system. In the
-														storage component the following data is saved: metadata
-														belonging to the analysed part, to its manufacturing
-														process, to the tolerances accepted, as well as the cloud
-														of points obtained after the scanning of the part, the
-														data processed after the geometry extraction and the
-														results and its graphical representation. Lots of
-														operations can be done with the stored data, as for
-														example calculating trends, statistical information and
-														other indicators related with historical information.</li>
-												</ol>
-												<p>Considering this application in quality control of
-													the manufacturing domain, the Specific Enabler is oriented
-													to the following interest groups:</p>
-												<ul>
-													<li>Manufacturing Quality Engineers can use the
-														Specific Enabler to control the production quality.</li>
-													<li>Manufacturing Production Engineers can use the
-														Specific Enabler to have a notion of the quality of the
-														manufacturing process and can later improve it.</li>
-													<li>Design Engineers can use the Specific Enabler as a
-														test between the production reality and their designs, and
-														it may be useful for them to adjust tolerances.</li>
-												</ul>
-												<h2>iv. Detailed Architecture and Specification</h2>
-												<h3>3DScan is organised according to the following
-													architecture:</h3>
-												<p></p>
-												<center>
-													<img
-														src="/sites/default/files/enabler-atttachments/3dScanArchitecture 1.png " />
-												</center>
-												<br />
-												<center>Figure 2:Architecture of the high level
-													architecture</center>
-												<ol>
-													<li>Gage: Provides to 3DScan every related tool to
-														allow the best machine performance and efficiency (sensor
-														qualification, positioning correction…). This part of the
-														system handles the acquisition of data.</li>
-													<li>Server: Manages the digital parts and the clouds
-														of points. Stores information in a superior layer to be
-														shared among all elements within a network in a flexible
-														way.</li>
-													<li>Middleware: This layer includes compression
-														technologies, content markup, access control, messaging
-														and events.</li>
-													<li>Server (analytics): This part includes 3D
-														computational technologies for the point clouds analysis
-														and Big Data technologies for the analysis of the
-														production based on the analysis of lots of 3D point
-														clouds.</li>
-													<li>Visualizer: This component of the SE allows the
-														user to see the results of the quality control represented
-														graphically. It aims to present a great quantity of
-														information in an intuitive way so the user can decide
-														quickly about the analysed part.</li>
-													<li>Work station: Provides to the user with the
-														necessary commands to operate 3DScan component.</li>
-													<li>Storage: Allows to store all the data acquired
-														(raw data), as well as the new data generated by the
-														system itself: clouds of points, processed data, analysis
-														and results, and the graphical representation of these
-														results). It also stores the metadata of the analysed part
-														and the manufacturing process.</li>
-												</ol>
-												<h3>RESTful API Specification:</h3>
-												<p>
-													The Resful services includes: Upload new 3D file, Update
-													the exsited 3Dfilem, Delete file, View the 3D file in the
-													format of cloud point or mesh.<br /> Before verifying the
-													REST API of these functionalities, we suggest installing
-													the REST API client in Chrome or Firefox web browser.<br />
-													In the example below, tests are running in the POSTMAN
-													plugin of Chrome.
-												</p>
-												<ul type="i">
-													<li>Send POST with the 3D file to upload a new file :</li>
-													<p>
-														<i>http://{server Ip: port}/{your application
-															root}/post/upload/?Content-Type=application/xml&amp;charset=utf-8&amp;Content-Length=150</i><br />
-														The place for storing the image file could be configured
-														in the <i>config.properties </i> which will be explained
-														in detail in the following confiuration part.
-													</p>
-													<li>Send POST with new 3D file to update exsited file
-														stored:</li>
-													<p>
-														<i>http://{server Ip: port}/{your application
-															root}/post/update/{object id}</i>
-													</p>
-													<li>Send DELETE to delete the existed 3D file:</li>
-													<p>
-														<i>http://{server Ip: port}/{your application
-															root}/delete/{object id}</i>
-													</p>
-													<li>View one existed 3D file stored:</li>
-													<p>
-														<i>http://{server Ip: port}/{your application
-															root}/get/id_canvas/1</i><br /> The return data is a
-														javascript code which could be integrated in any web page
-														to display the 3D file detailed in the next section.
-													</p>
-												</ul>
-												<h2>v. Interactions and Interfaces</h2>
-												<h3>Local Deployment Configuration</h3>
-												<p>
-													The 3Dscan SE runs in a servlet container such as Tomcat,
-													thus it does not depend on a particular operating system
-													flavor.<br /> Installation Steps:
-												</p>
-												<ol>
-													<li>Install Java version 6 or 7 if there is no Java
-														configured in the PC.</li>
-													<li>Install Apache Tomcat servlet container version 6.</li>
-													<li>Get the FITMAN3Dscan.zip file and extract it. It
-														contains 2 application files: sqlrest folder and
-														fitmanGL.war. And it also includes the script for creating
-														the database in MySQL server of managing the file storage
-														path.</li>
-													<li>Install MySQL server 5.5 and create the database
-														called FITMAN with the script provided in the Zip file.
-														Meanwhile to ensure there is
-														mysql-connector-java-5.1.31-bin.jar in the bin folder of
-														Tomcat in order to connect to MySQL, if not copy the jar
-														file from the extracted Zip file.</li>
-													<li>Copy the sqlrest folder and the .war file of SE to
-														the {TomcatRoot}/webapps directory.</li>
-													<li>Then configure the sqlrestconfig.xml in the
-														extracted sqlrest directory with your own MySQL database
-														username and password as the following xml file:</li>
-													<div class="geshifilter">
-														<pre class="text geshifilter-text"
-															style="font-family: monospace;">	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;sqlrestconf&gt;
-  &lt;database&gt;
-    &lt;!--
+                                    <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                        <div class="field-items">
+                                            <div id="content-wiki" class="field-item even" property="content:encoded"></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 			</section> -->
+                <footer class="footer">
+                    <ul class="nav-docs-header">
+                        <li>
+                            <a href="http://www.fi-ppp.eu/" title="">Future Internet PPP</a>
+                        </li>
+                        <li>
+                            <a href="http://www.fi-ware.eu" title="Visit the main site of the FI-WARE project.">FI-WARE site</a>
+                        </li>
+                        <li>
+                            <a href="http://www.finesce.eu/" title="Main FINESCE Site">Main FINESCE site</a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+    </article>
 
-    Hypersonic DB in process with the example Database
+    <script>
+    "use strict";
 
-    --&gt;
-    &lt;jdbc-driver-class&gt;com.mysql.jdbc.Driver&lt;/jdbc-driver-class&gt;
-    &lt;database-url&gt;jdbc:mysql://localhost:3306/fitman&lt;/database-url&gt;
-    &lt;user&gt;root&lt;/user&gt;
-    &lt;password&gt;joy&lt;/password&gt;
-    &lt;!--
+    /* global $, console*/
+    function buildHTMLforPage(dse_data, part) {
+        if (part == "Documentation") {
+            return "<h2>Copyright</h2>" + dse_data.Documentation.Copyright +
+                "<h2>Preface</h2>" + dse_data.Documentation.Preface +
+                "<h2>DSE Description</h2>" + dse_data.Documentation.Description +
+                "<h2>Detailed Specifications</h2>" + dse_data.Documentation.Details +
+                "<h2>Glossary</h2>" + dse_data.Documentation.Glossary +
+                "<h2>References</h2>" + dse_data.Documentation.References;
+        } else if (part == "Downloads") {
+            return dse_data.Downloads;
+        } else if (part == "Instances") {
+            return dse_data.Instances;
+        } else if (part == "Terms") {
+            return dse_data["Terms and Conditions"];
+        } else {
+            return "<h2>Overview</h2>" + dse_data.Overview + "<h2>Target Usage</h2>" + dse_data["Target usage"];
+        }
+    }
 
-    External Hypersonic DB
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    $(document).ready(function() {
+        var id = getParameterByName("id");
+        var show = getParameterByName("show");
 
-    &lt;jdbc-driver-class&gt;org.hsqldb.jdbcDriver&lt;/jdbc-driver-class&gt;
-    &lt;database-url&gt;jdbc:hsqldb:hsql://localhost&lt;/database-url&gt;
-    &lt;user&gt;sa&lt;/user&gt;
-    &lt;password&gt;&lt;/password&gt;
-    --&gt;
-    &lt;!-- 
+        // console.log("Parameters: " + id + " " + show);
+        $.getJSON("js/json/DSEs.json", function(data) {
+            var dse_data = data.filter(function(dt) {
+                return dt.id === id;
+            });
+            dse_data = dse_data ? dse_data[0] : false;
 
-    Inet Sprinta Driver for MS SQL Server 
+            if (dse_data) {
+                $(".enabler-title").text(dse_data.name);
+                $.getJSON("js/json/" + id + ".json").then(function(dse_data_all) {
+                    $("#content-wiki").html(buildHTMLforPage(dse_data_all[0], show));
+                });
+            } else {
+                $(".enabler-title").text("404 - Not Found");
+                $("#content-wiki").html("<h2>404 - Not Found</h2>");
+            }
 
-    &lt;jdbc-driver-class&gt;com.inet.tds.TdsDriver&lt;/jdbc-driver-class&gt;
-    &lt;database-url&gt;jdbc:inetdae7a:localhost:1433&lt;/database-url&gt;
-    --&gt;
-  &lt;/database&gt;
-&lt;/sqlrestconf&gt;</pre>
-													</div>
-													<p>
-														Besides, configure config.properties in the folder of <b>{Tomcat
-															Root}/webapps/fitmanGL/WEB-INF/classes/</b>. Change the
-														highlighted lines with your own setting of file location
-														and web host as shown in the following format:
-													</p>
-													<div class="geshifilter">
-														<pre class="text geshifilter-text"
-															style="font-family: monospace;"># To change this template, choose Tools | Templates
-# and open the template in the editor.
-url_threejs = &lt;a href="http://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js
-url_jquery"&gt;http://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js
-url_jquery&lt;/a&gt; = &lt;a href="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
-url_bbdd"&gt;http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
-url_bbdd&lt;/a&gt; = &lt;a href="http://localhost:8090/sqlrest/webgl/
-dir_base"&gt;http://localhost:8090/sqlrest/webgl/
-dir_base&lt;/a&gt; = E:/FITMAN_UNSYN/ResourcesF/</pre>
-													</div>
-													<li>Run/Start Tomcat.</li>
-												</ol>
-												<h3>VM Intergartion Guide</h3>
-												<ol>
-													<li>VM File NAME:</li>
-													<p>Centos6.3VM_Fitman3DScan.ova</p>
-													<li>Starting virtual machines:</li>
-													<p>
-														The 3Dscan VM instance is running CentOS(minimal, no GUI
-														version), which could be deployed in Oracle VM VirtualBox.
-														The Virtual network type is set to bridge (default with
-														libvrt) or Bridge ( enables network cards ).<br /> If the
-														free RAM is getting less than 1GB and there is less than
-														5GB of free disk space, the GE instance begins to
-														experience problems.<br /> Once the Virtual Machines are
-														installed and running and their network accessible, and
-														you can access to it by using command:<br /> <i>sudo
-															bash<br /> Login: root<br /> Password: centos
-														</i>
-													</p>
-													<p>
-														To discover the guest virtual network IP address from the
-														host in a terminal, the command can be used (as root) in
-														the host:<br /> <i>ifconfig</i><br /> An example for
-														eth0 (could be any number) configuration is the following:
-													</p>
-													<div class="geshifilter">
-														<pre class="text geshifilter-text"
-															style="font-family: monospace;"># ifconfig eth0
-eth0      Link encap:EthernetHWaddr 08:00:27:2C:2E:7F
-inet addr:172.16.1.193  Bcast:172.16.1.255  Mask:255.255.255.0
-inet6addr: fe80::a00:27ff:fe2c:2e7f/64 Scope:Link
-          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:13760 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:1291 errors:0 dropped:0 overruns:0 carrier:0
-collisions:0 txqueuelen:1000
-          RX bytes:1756333 (1.6 MiB)  TX bytes:1011237 (987.5 KiB)</pre>
-													</div>
-													<li>Sanity checks before running SE:</li>
-												</ol>
-												<ul>
-													<li>TOMCAT</li>
-													<p>
-														As default, Tomcat should be auto-start with the system,
-														to check the status :<br /> <i># service tomcat
-															status</i><br /> If is not running, to start it:<br /> <i>#
-															service tomcat start</i><br /> To stop it:<br /> <i>#
-															service tomcat stop</i>
-													</p>
-													<p>
-														The default port for Tomcat is TCP 8080 which is opened
-														for host access. The installation path of Tomcat is
-														/home/apache-tomcat-7.0.53<br /> The html interface for
-														Tomcat can be accessed from any browser on the host
-														through the following url:<br /> <i>http://[SERVER
-															PATH]:8080</i>
-													</p>
-													<p>
-														To manage app from Tomcat Web GUI in any web browser:<br />
-														<i>Username: tomcat<br /> Password: tomcat
-														</i>
-													</p>
-													<li>MySQL</li>
-													<p>
-														Mysql, as per default, is auto-started, To check it
-														status:<br /> <i># service mysqld status</i>
-													</p>
-													<p>
-														To start it tun:<br /> <i># service mysqld start</i>
-													</p>
-													<p>
-														A quick fix to set MySQL to auto-start, is to run the
-														following command as root:<br /> <i># sudo
-															/sbin/chkconfig --level 2345 mysqld on</i>
-													</p>
-													<p>Check if the MySql contains “Fitman3dImages”
-														database which is required by the GE, and initialize the
-														Database by executing the sql script provided with the SE
-														package to create tables needed.</p>
-												</ul>
-												<li>How to start the SE:</li>
-												<p>
-													Is deployed as a .war in Tomcat webapps folder.<br />
-													*Assure the config.properties in <b>/webapps/Fitman3DScan/WEB-INF/classes/</b>
-													is configured with the "VM server" path.<br /> To test the
-													SE, see the aforementioned <b>RESTful API Specification
-													</b>.
+            // 				wp_list = [];
+            // 				for (line in data){
+            // 					var row_html = '<div class="enabler-row"><h2 class="header">'+data[line]["name"]+'</h2>'+data[line]["description"]+'<div class="category">Work package '+data[line]["wp"]+'</div></div>';
+            // 					enabler_list.append(row_html);
+            // 					wp_list[data[line]["wp"]] = true;
+            // 				}
 
-												</p>
-												<h3>Interfaces</h3>
-												<p>
-													To confirm all the services are running properly after
-													configuration, we make some interfaces to call REST API in
-													oder to manage 3D files and then test the web viewer for
-													displaying 3D point cloud file and mesh file.<br />
-													Testing files are called <b>index.jsp </b>and <b>index_update.jsp
-													</b> deployed in the Tomcat during installation by paste the
-													following urls in any web browser:<br /> <i>http://{server
-														Ip: port}/{your application root}/index.jsp</i><br />
-												</p>
-												<center>
-													<img
-														src="/sites/default/files/enabler-atttachments/FitmanBigDataCase_upload_testpage_3.png " />
-												</center>
-												<br />
-												<center>Figure 3 Upload File Test Page</center>
-												<br /> <i>http://{server Ip: port}/{your application
-													root}/index_update.jsp</i><br />
-												<center>
-													<img
-														src="/sites/default/files/enabler-atttachments/FitmanBigDataCase_update_testpage_3.png " />
-												</center>
-												<br />
-												<center>Figure 4 Update File Test Page</center>
-												<br /> Next step, it is necessary to test the web
-												visualization of 3D point file (with file extension of .r3d
-												or .txt) and mesh file (with extension of .stl).
-												<ul>
-													<li>Include the <i>View image API </i>mentioned above
-														into any web page that to show the mesh file as following:
-													</li>
-													<div class="geshifilter">
-														<pre class="javascript geshifilter-javascript"
-															style="font-family: monospace;">	<span
-																style="color: #339933;">&lt;</span>script src<span
-																style="color: #339933;">=</span><span
-																style="color: #3366CC;">"&lt;a href="</span>http<span
-																style="color: #339933;">:</span><span
-																style="color: #006600; font-style: italic;">//localhost:8090/FitmanGL/rest/get/id_canvas/3""&gt;http://localhost:8090/FitmanGL/rest/get/id_canvas/3"&lt;/a&gt; type="text/javascript"&gt;&lt;/script&gt;</span>
-															</pre>
-													</div>
-													<p>
-														The result of web page is displayed below:<br />
-													</p>
-													<center>
-														<img
-															src="/sites/default/files/enabler-atttachments/FitmanBigDataCase_getMesh_testpage.png " />
-													</center>
-													<br />
-													<center>Figure 5 Mesh file in Web Viewer</center>
-													<li>To show the 3D point cloud file, includes the code
-														above in a web page in the same way, and the result is
-														shown as the following:</li>
-													<p></p>
-													<center>
-														<img
-															src="/sites/default/files/enabler-atttachments/FitmanBigDataCase_getPointCloud_testpage.png" />
-													</center>
-													<br />
-													<center>Figure 6 Cloud Point file in Web Viewer</center>
-												</ul>
-											</div>
-										</div>
-									</div>
-
-									<footer> </footer>
-
-
-								</article>
-								<!-- /.node -->
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 			</section> -->
-			<footer class="footer">
-				<ul class="nav-docs-header">
-					<li>
-						<a href="http://www.fi-ppp.eu/"	title="">Future Internet PPP</a>
-					</li>
-					<li>
-						<a href="http://www.fi-ware.eu" title="Visit the main site of the FI-WARE project.">FI-WARE site</a>
-					</li>
-					<li>
-						<a href="http://www.finesce.eu/" title="Main FINESCE Site">Main FINESCE site</a>
-					</li>
-				</ul>
-			</footer>
-		</div>
-	</article>
-	
-	<script>
-		function buildHTMLforPage(dse_data, part){
-			if (part == "Documentation"){
-				return "<h2>Copyright</h2>"+dse_data["Documentation"]["Copyright"]+
-						"<h2>Preface</h2>"+dse_data["Documentation"]["Preface"]+
-						"<h2>DSE Description</h2>"+dse_data["Documentation"]["Description"]+
-						"<h2>Detailed Specifications</h2>"+dse_data["Documentation"]["Details"]+
-						"<h2>Glossary</h2>"+dse_data["Documentation"]["Glossary"]+
-						"<h2>References</h2>"+dse_data["Documentation"]["References"];
-			}else if (part == "Downloads"){
-				return dse_data["Downloads"];
-			}else if (part == "Instances"){
-				return dse_data["Instances"];
-			}else if (part == "Terms"){
-				return dse_data["Terms and Conditions"];
-			}else{
-				return "<h2>Overview</h2>"+dse_data["Overview"]+"<h2>Target Usage</h2>"+dse_data["Target usage"];
-			}
-		}
-		function getParameterByName(name) {
-		    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-		    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-		        results = regex.exec(location.search);
-		    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-		}
-		$(document).ready(function(){
-			var name = getParameterByName("name");
-			var show = getParameterByName("show");
-			
-			console.log("Parameters: "+name+" "+show);
-			$.getJSON("DSEs.json", function(data){
-				var found = false;
-				for (line in data){
-					console.log("Data: "+data[line]["Name"]+" comparing to "+name)
-					if (data[line]["Name"] == name){
-						found = true;
-						$("enabler-title").text(name);
-						$("#content-wiki").html(buildHTMLforPage(data[line], show));
-						break;
-					}
-				}
-				if (!found){
-					$("enabler-title").text("Krneki");
-					$("#content-wiki").html("<h2>Title</h2>");
-				}
-			
-// 				wp_list = [];
-// 				for (line in data){
-// 					var row_html = '<div class="enabler-row"><h2 class="header">'+data[line]["name"]+'</h2>'+data[line]["description"]+'<div class="category">Work package '+data[line]["wp"]+'</div></div>';
-// 					enabler_list.append(row_html);
-// 					wp_list[data[line]["wp"]] = true;
-// 				}
-				
-// 				//fill dropdown
-// 				$(".dropdown-menu").empty();
-// 				for (wp in wp_list){
-// 					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Work package '+wp+'</a></li>')
-// 				}
-			});
-		});
-	</script>
+            // 				//fill dropdown
+            // 				$(".dropdown-menu").empty();
+            // 				for (wp in wp_list){
+            // 					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Work package '+wp+'</a></li>')
+            // 				}
+        });
+    });
+    </script>
 </body>
+
 </html>
