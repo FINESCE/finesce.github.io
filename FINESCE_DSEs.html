@@ -65,7 +65,7 @@
 			</div>
 			<div class="enabler-list">
 				<div class="dropdown">
-					<div><b>Browse by site:</b></div>
+					<div><b>Browse by work package:</b></div>
 					<button class="btn btn-default dropdown-toggle enabler-list-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
 					    <span class="caret"></span>
 					</button>
@@ -105,7 +105,7 @@
 				$("#dropdownMenu1").html('All <span class="caret"></span>');
 
 				for (var wp in wp_list){
-					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" data-id="'+wp+'" href="#">Site '+wp+'</a></li>');
+					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" data-id="'+wp+'" href="#">Work Package '+wp+'</a></li>');
 				}
 			});
 
@@ -129,7 +129,7 @@
 				}
 
 				for (var line in data) {
-					row_html = '<div class="enabler-row"><h2 class="header"><a href="DSE.html?id='+ data[line].id +'">'+data[line].name+'</a></h2>'+data[line].description+'<div class="category">Site '+data[line].wp+'</div></div>';
+					row_html = '<div class="enabler-row"><h2 class="header"><a href="DSE.html?id='+ data[line].id +'">'+data[line].name+'</a></h2>'+data[line].description+'<div class="category">Work Package '+data[line].wp+'</div></div>';
 					enabler_list.append(row_html);
 				}
 			}
