@@ -94,20 +94,22 @@
 	
 	<script>
 		(function loadList(){
+			/* global $ */
+			"use strict";
 			$(".enabler-row").remove();
 			var enabler_list = $(".enabler-list");
-			$.getJSON("js/DSEs.json", function(data){
-				wp_list = [];
-				for (line in data){
-					var row_html = '<div class="enabler-row"><h2 class="header">'+data[line]["name"]+'</h2>'+data[line]["description"]+'<div class="category">Work package '+data[line]["wp"]+'</div></div>';
+			$.getJSON("js/json/DSEs.json", function(data){
+				var wp_list = [];
+				for (var line in data){
+					var row_html = '<div class="enabler-row"><h2 class="header">'+data[line].name+'</h2>'+data[line].description+'<div class="category">Work package '+data[line].wp+'</div></div>';
 					enabler_list.append(row_html);
-					wp_list[data[line]["wp"]] = true;
+					wp_list[data[line].wp] = true;
 				}
 				
 				//fill dropdown
 				$(".dropdown-menu").empty();
-				for (wp in wp_list){
-					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Work package '+wp+'</a></li>')
+				for (var wp in wp_list){
+					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Work package '+wp+'</a></li>');
 				}
 			});
 		})();
