@@ -62,22 +62,23 @@
 
     <article>
         <div class="container">
-            <!-- 			<section class="span12"> -->
+            <!-- <section class="span12"> -->
             <a id="main-content"></a>
             <div class="page-header">
                 <h1 class="enabler-title"></h1>
             </div>
             <div>
-                <ul class="nav-docs-header">
-                    <li class="nav-docs-header"><a class="nav-docs-header" href="#">Overview</a>
+                <ul class="nav-docs-header finesce-subpages">
+                    <li class="nav-docs-header">
+                    <a class="nav-docs-header" href="Overview">Overview</a>
                     </li>
-                    <li><a href="#">Documentation</a>
+                    <li><a href="Documentation">Documentation</a>
                     </li>
-                    <li><a href="#">Downloads</a>
+                    <li><a href="Downloads">Downloads</a>
                     </li>
-                    <li><a href="#">Instances</a>
+                    <li><a href="Instances">Instances</a>
                     </li>
-                    <li><a href="#">Terms and conditions</a>
+                    <li><a href="Terms">Terms and conditions</a>
                     </li>
                 </ul>
             </div>
@@ -253,6 +254,14 @@
             results = regex.exec(location.search);
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
+
+    function insertOrUpdateShow (link) {
+        var show = $(link).attr('href');
+        var path = document.location;
+        // location.href.replace("page="+currentPageNum, "page="+newPageNum);
+        var search = path.search.toString().replace(/&show=[a-zA-Z]+/gi, '');
+        return path.pathname + search + '&show=' + show;
+    }
     $(document).ready(function() {
         var id = getParameterByName("id");
         var show = getParameterByName("show");
@@ -268,6 +277,10 @@
                 $(".enabler-title").text(dse_data.name);
                 $.getJSON("js/json/" + id + ".json").then(function(dse_data_all) {
                     $("#content-wiki").html(buildHTMLforPage(dse_data_all[0], show));
+
+                    $(".finesce-subpages a").each(function(){
+                        $(this).attr("href", insertOrUpdateShow(this));
+                    });
                 });
             } else {
                 $(".enabler-title").text("404 - Not Found");
