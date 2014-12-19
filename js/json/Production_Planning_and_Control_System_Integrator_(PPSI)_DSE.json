@@ -1,0 +1,22 @@
+[
+    {
+        "Target Usage": "",
+        "Name": "Production Planning and Control System Integrator (PPSI) DSE",
+        "Short Description": "",
+        "Documentation": {
+            "Description": "\n<a name=\"Detailed-Specifications\">\n</a>\n\n",
+            "Copyright": "\n<p>\n Copyright \u00a9 2014 by FINESCE\n</p>\n\n<a name=\"Preface\">\n</a>\n\n",
+            "Glossary": "\n<a name=\"References\">\n</a>\n\n",
+            "References": "\n<a name=\"Contact-Person\">\n</a>\n\n",
+            "Details": "\n<a name=\"Downloads\">\n</a>\n\n",
+            "Preface": "\n<p>\n Within this document you find a self-contained open specification of the aforementioned Domain Specific Enabler (DSE).\n</p>\n\n<p>\n Please consult the appropriate pages on the\n <a class=\"external\" href=\"http://www.finesce.eu/Trial_Site_Ireland.html\">\n  FINESCE\n </a>\n website in order to understand the complete context of the related FINESCE trials and this DSE.\n</p>\n\n<a name=\"Terms-and-Conditions\">\n</a>\n\n"
+        },
+        "WP": "",
+        "Terms and Conditions": "\n<p>\n This DSE will be available as Open Source (Apache License 2.0).\n</p>\n\n<a name=\"Overview\">\n</a>\n\n",
+        "Open Source": "",
+        "Contact Person": "",
+        "Overview": "\n<p>\n For the further integration, it is assumed that an additional DSE will be necessary, although it could not be specified at time of this report.The feedback of information from the FI cloud back to the factory will be the next required interface between GEs and trial site-specific systems. Hence, it is assumed that another DSE will be required, providing an interface to the FI cloud and receiving enriched and processed events and information about the energy consumption on the shopfloor. These information have to be fed into the planning and control systems such as Enterprise Resource Planning (ERP) and MES. The DSE to be specified and developed will provide this functionality and bridge the gap between production planning and control and the FI cloud.\n</p>\n\n<a name=\"DSE-Description\">\n</a>\n\n",
+        "Downloads": "",
+        "Instances": ""
+    }
+]

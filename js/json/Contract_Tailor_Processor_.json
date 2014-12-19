@@ -1,0 +1,22 @@
+[
+    {
+        "Target Usage": "",
+        "Name": "Contract Tailor Processor ",
+        "Short Description": "",
+        "Documentation": {
+            "Description": "\n<a name=\"Basic-Concepts\">\n</a>\n\n<h3>\n Basic Concepts\n <a class=\"wiki-anchor\" href=\"#Basic-Concepts\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Basic-Design-Principles\">\n</a>\n\n<h3>\n Basic Design Principles\n <a class=\"wiki-anchor\" href=\"#Basic-Design-Principles\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Detailed-Specifications\">\n</a>\n\n",
+            "Copyright": "\n<p>\n Copyright \u00a9 2014 by FINESCE\n</p>\n\n<a name=\"Preface\">\n</a>\n\n",
+            "Glossary": "\n<a name=\"References\">\n</a>\n\n",
+            "References": "\n<a name=\"Contact-Person\">\n</a>\n\n",
+            "Details": "\n<a name=\"AddressProtocol\">\n</a>\n\n<h3>\n Address/Protocol\n <a class=\"wiki-anchor\" href=\"#AddressProtocol\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Commands\">\n</a>\n\n<h3>\n Commands\n <a class=\"wiki-anchor\" href=\"#Commands\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Endpoints\">\n</a>\n\n<h3>\n Endpoints\n <a class=\"wiki-anchor\" href=\"#Endpoints\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Re-utilised-TechnologiesSpecifications\">\n</a>\n\n",
+            "Preface": "\n<p>\n Within this document you find a self-contained open specification of the aforementioned Domain Specific Enabler (DSE).\n</p>\n\n<p>\n Please consult the appropriate pages on the\n <a class=\"external\" href=\"http://www.finesce.eu/Trial_Site_Ireland.html\">\n  FINESCE\n </a>\n website in order to understand the complete context of the related FINESCE trials and this DSE.\n</p>\n\n<a name=\"Terms-and-Conditions\">\n</a>\n\n"
+        },
+        "WP": "",
+        "Terms and Conditions": "\n<a name=\"Overview\">\n</a>\n\n",
+        "Open Source": "",
+        "Contact Person": "",
+        "Overview": "\n<a name=\"What-you-get\">\n</a>\n\n<h3>\n What you get\n <a class=\"wiki-anchor\" href=\"#What-you-get\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Why-to-get-it\">\n</a>\n\n<h3>\n Why to get it\n <a class=\"wiki-anchor\" href=\"#Why-to-get-it\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Open-Specifications\">\n</a>\n\n<h3>\n Open Specifications\n <a class=\"wiki-anchor\" href=\"#Open-Specifications\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"DSE-Description\">\n</a>\n\n",
+        "Downloads": "",
+        "Instances": ""
+    }
+]
