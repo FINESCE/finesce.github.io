@@ -65,7 +65,7 @@
 			</div>
 			<div class="enabler-list">
 				<div class="dropdown">
-					<div><b>Browse by work package:</b></div>
+					<div><b>Browse by site:</b></div>
 					<button class="btn btn-default dropdown-toggle enabler-list-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
 					    - Any -
 					    <span class="caret"></span>
@@ -101,7 +101,7 @@
 			$.getJSON("js/json/DSEs.json", function(data){
 				var wp_list = [];
 				for (var line in data){
-					var row_html = '<div class="enabler-row"><h2 class="header">'+data[line].name+'</h2>'+data[line].description+'<div class="category">Work package '+data[line].wp+'</div></div>';
+					var row_html = '<div class="enabler-row"><h2 class="header">'+data[line].name+'</h2>'+data[line].description+'<div class="category">Site '+data[line].wp+'</div></div>';
 					enabler_list.append(row_html);
 					wp_list[data[line].wp] = true;
 				}
@@ -109,7 +109,7 @@
 				//fill dropdown
 				$(".dropdown-menu").empty();
 				for (var wp in wp_list){
-					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Work package '+wp+'</a></li>');
+					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Site '+wp+'</a></li>');
 				}
 			});
 		})();
