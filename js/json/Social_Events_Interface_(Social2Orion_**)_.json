@@ -13,10 +13,17 @@
         },
         "WP": "",
         "Terms and Conditions": "\n<p>\n Software associated to the Social2Orion product is provided as open source under the LGPLv3 license. Please check the specific terms and conditions linked to this open source license at\n <a class=\"external\" href=\"https://www.gnu.org/licenses/lgpl.html\">\n  https://www.gnu.org/licenses/lgpl.html\n </a>\n</p>\n\n<a name=\"Overview\">\n</a>\n\n",
+        "wiki_attachments": [
+            "/redmine/attachments/download/1920/browser_test_Social2Orion_GET.png",
+            "/redmine/attachments/download/1921/chrome_REST_client_screenshot.png",
+            "/redmine/attachments/download/1930/Social2Orion_TomcatManager_screenshot.jpg",
+            "/redmine/attachments/download/1938/social2orion.war",
+            "/redmine/attachments/download/2070/social2orion_domainModel.png"
+        ],
         "Open Source": "",
         "Contact Person": "",
         "Overview": "\n<a name=\"What-you-get\">\n</a>\n\n<h3>\n What you get\n <a class=\"wiki-anchor\" href=\"#What-you-get\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n Social2Orion is a REST service (developed in Java) which allows clients (e.g. Social Events Information Providers) to register data about social events (affecting consumption/production in a specific area such as a concert or a football match) into an instance of ORION Context Broker GE.\n</p>\n\n<p>\n This component can be eventually re-used and customized to fulfill the general need of having a REST service which is connected to the ORION GE.\n</p>\n\n<a name=\"Why-to-get-it\">\n</a>\n\n<h3>\n Why to get it\n <a class=\"wiki-anchor\" href=\"#Why-to-get-it\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n A reference implementation of a REST service which is connected to the ORION GE.\n</p>\n\n<a name=\"Open-Specifications\">\n</a>\n\n<h3>\n Open Specifications\n <a class=\"wiki-anchor\" href=\"#Open-Specifications\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Target-Usage\">\n</a>\n\n<h3>\n Target Usage\n <a class=\"wiki-anchor\" href=\"#Target-Usage\">\n  \u00b6\n </a>\n</h3>\n\n<ul>\n <li>\n  Social Events Information Providers (which may be appointed by energy companies that would need information on social events affecting consumption/production in a specific area)\n </li>\n <li>\n  Third-party applications (such as those developed by SMEs involved in Phase3)\n </li>\n</ul>\n\n<a name=\"DSE-Description\">\n</a>\n\n",
-        "Downloads": "",
+        "Downloads": "\n<table>\n <tr>\n  <td>\n   Location\n  </td>\n  <td>\n   Revision\n  </td>\n  <td>\n   Release Date\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/social2orion.war\">\n    http://rm.finesce.tssg.org/redmine/attachments/download/1938/social2orion.war\n   </a>\n  </td>\n  <td>\n   version=0.0.1-SNAPSHOT\n  </td>\n  <td>\n   Thu Oct 30 11:02:19 CET 2014\n  </td>\n </tr>\n</table>\n\n<a name=\"Instances\">\n</a>\n\n",
         "Instances": ""
     }
 ]

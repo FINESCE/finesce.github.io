@@ -13,10 +13,17 @@
         },
         "WP": "",
         "Terms and Conditions": "\n<a name=\"Overview\">\n</a>\n\n",
+        "wiki_attachments": [
+            "/redmine/attachments/download/2102/Image%201.png",
+            "/redmine/attachments/download/2103/Image%202.jpg",
+            "/redmine/attachments/download/2104/Image%203.jpg",
+            "/redmine/attachments/download/2105/Image%204.jpg",
+            "/redmine/attachments/download/2106/Image%205.jpg"
+        ],
         "Open Source": "",
         "Contact Person": "",
         "Overview": "\n<p>\n The WP1 Integration Kit consists of a documented process for the established integrations within WP1. This will help others to more easily and quickly establish those integrations. The kit will fit into the architecture as illustrated below (Image 1).\n</p>\n\n<p>\n The WP1 architecture consists of, but not limited to:\n <br/>\n - The E.ON API Proxy which serves as the main integrator and core point of our architecture. The E.ON API Proxy integrates the Portfolio Manager, the FINESCE API and the FINESCE GE's.\n <br/>\n - The Portfolio Manager provides data to E.ON API Proxy through a REST API. The data is then forwarded to either the FINESCE GE's for analysis, or the FINESCE API for publishing.\n <br/>\n - The FINESCE API publishes data from the E.ON API Proxy to its users as a Odata API, currently available types are weather and price.\n <br/>\n - The FIWARE GE's integrated thus far is Orion Context Broker and Cosmos BigData Analysis.\n</p>\n\n<p>\n Orion Context Broker serves as the entry point of the FINESCE GE Cloud, where data to be analyzed is sent to the REST API Interface of Orion Context Broker. Through the subscription functionality of Orion Context Broker, data is automatically forwarded to Cosmos BigData Analysis, where analytical work is performed.\n</p>\n\n<p>\n The following DSE details reflect the current status of the WP1 DSE and may be subject to change.\n</p>\n\n<p>\n The integration consists of interconnecting the API Proxy, with the Orion Context Broker, and the Cosmos BigData Analysis. The purpose of the integration is for data that has been retrieved by API Proxy, to be analyzed within Cosmos Big Data Analysis, and then returned to API Proxy via Orion Context Broker. The analyzed data is then exposed from the API Proxy as an OData API for the outside world to access.\n</p>\n\n<a name=\"What-you-get\">\n</a>\n\n<h3>\n What you get\n <a class=\"wiki-anchor\" href=\"#What-you-get\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n The DSE includes the following, but not limited to:\n <br/>\n - Experience gained by WP1 when integrating FIWARE Generic Enablers\n <br/>\n - Different integration kits developed by WP1\n <br/>\n - Sample code\n</p>\n\n<a name=\"Why-to-get-it\">\n</a>\n\n<h3>\n Why to get it\n <a class=\"wiki-anchor\" href=\"#Why-to-get-it\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n Ideally this DSE will give valuable insights linked to FIWARE Generic Enablers to SME\u2019s and Start up\u2019s joining the FIWARE Accelerator Programme. In particular FIWARE GE\u2019s Orion Context Broker and Cosmos BigData Analysis.\n</p>\n\n<a name=\"Open-Specifications\">\n</a>\n\n<h3>\n Open Specifications\n <a class=\"wiki-anchor\" href=\"#Open-Specifications\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"DSE-Description\">\n</a>\n\n",
-        "Downloads": "",
+        "Downloads": "\n<a name=\"Instances\">\n</a>\n\n",
         "Instances": ""
     }
 ]

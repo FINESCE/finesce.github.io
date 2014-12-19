@@ -13,10 +13,19 @@
         },
         "WP": "",
         "Terms and Conditions": "",
+        "wiki_attachments": [
+            "/redmine/attachments/download/1971/weather_rest_get.jpg",
+            "/redmine/attachments/download/1972/weafor2orion-0.0.1-SNAPSHOT-sources.jar",
+            "/redmine/attachments/download/1973/weafor2orion-0.0.1-SNAPSHOT.jar",
+            "/redmine/attachments/download/1974/weafor2orionrest.war",
+            "/redmine/attachments/download/1976/tomcat_deploy_weafor2orionrest.jpg",
+            "/redmine/attachments/download/1977/chrome_W2O_REST_client_screenshot.png",
+            "/redmine/attachments/download/2071/weafor2orion_domainModel.png"
+        ],
         "Open Source": "",
         "Contact Person": "",
         "Overview": "\n<a name=\"What-you-get\">\n</a>\n\n<h3>\n What you get\n <a class=\"wiki-anchor\" href=\"#What-you-get\">\n  \u00b6\n </a>\n</h3>\n\n\n\nWeaFor2Orion consists of:\n\t<ul>\n <li>\n  a REST service (developed in Java) which allow clients (e.g. Weather Condition Information Providers) to register data about weather conditions and predictions in a specific area into an instance of ORION Context Broker GE;\n </li>\n <li>\n  a Java TIMER client which retrieves (every five minutes) weather conditions and predictions from an external provider (\n  <a class=\"external\" href=\"https://developer.forecast.io/\">\n   https://developer.forecast.io/\n  </a>\n  in our implementation) and then \u201cpasses\u201d the data to the above mentioned REST service.\n </li>\n</ul>\n\n<a name=\"Why-to-get-it\">\n</a>\n\n<h3>\n Why to get it\n <a class=\"wiki-anchor\" href=\"#Why-to-get-it\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n A reference implementation of a TIMER client which retrieves weather conditions and predictions from an external provider.\n <br/>\n A reference implementation of a REST service which is connected to the ORION GE.\n</p>\n\n<a name=\"Open-Specifications\">\n</a>\n\n<h3>\n Open Specifications\n <a class=\"wiki-anchor\" href=\"#Open-Specifications\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Target-Usage\">\n</a>\n\n<h3>\n Target Usage\n <a class=\"wiki-anchor\" href=\"#Target-Usage\">\n  \u00b6\n </a>\n</h3>\n\n<ul>\n <li>\n  Weather Condition Information Providers (which may be appointed by energy companies that would need information on weather conditions and forecasts in a specific area)\n </li>\n <li>\n  Third-party applications (such as those developed by SMEs involved in Phase3)\n </li>\n</ul>\n\n<a name=\"DSE-Description\">\n</a>\n\n",
-        "Downloads": "",
+        "Downloads": "\n<table>\n <tr>\n  <td>\n   Location\n  </td>\n  <td>\n   Revision\n  </td>\n  <td>\n   Release Date\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/weafor2orionrest.war\">\n    http://rm.finesce.tssg.org/redmine/attachments/download/1974/weafor2orionrest.war\n   </a>\n  </td>\n  <td>\n   version=0.0.1-SNAPSHOT\n  </td>\n  <td>\n   Thu Oct 30 12:17:47 CET 2014\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/weafor2orion-0.0.1-SNAPSHOT.jar\">\n    http://rm.finesce.tssg.org/redmine/attachments/download/1973/weafor2orion-0.0.1-SNAPSHOT.jar\n   </a>\n  </td>\n  <td>\n   version=0.0.1-SNAPSHOT\n  </td>\n  <td>\n   Thu Oct 30 12:17:47 CET 2014\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/weafor2orion-0.0.1-SNAPSHOT-sources.jar\">\n    http://rm.finesce.tssg.org/redmine/attachments/download/1972/weafor2orion-0.0.1-SNAPSHOT-sources.jar\n   </a>\n  </td>\n  <td>\n   version=0.0.1-SNAPSHOT\n  </td>\n  <td>\n   Thu Oct 30 12:17:47 CET 2014\n  </td>\n </tr>\n</table>\n\n<a name=\"Instances\">\n</a>\n\n",
         "Instances": ""
     }
 ]

@@ -13,10 +13,11 @@
         },
         "WP": "",
         "Terms and Conditions": "\n<p>\n This DSE will be available as Open Source (Apache License 2.0).\n</p>\n\n<a name=\"Overview\">\n</a>\n\n",
+        "wiki_attachments": [],
         "Open Source": "",
         "Contact Person": "",
         "Overview": "\n<p>\n For the further integration, it is assumed that an additional DSE will be necessary, although it could not be specified at time of this report.The feedback of information from the FI cloud back to the factory will be the next required interface between GEs and trial site-specific systems. Hence, it is assumed that another DSE will be required, providing an interface to the FI cloud and receiving enriched and processed events and information about the energy consumption on the shopfloor. These information have to be fed into the planning and control systems such as Enterprise Resource Planning (ERP) and MES. The DSE to be specified and developed will provide this functionality and bridge the gap between production planning and control and the FI cloud.\n</p>\n\n<a name=\"DSE-Description\">\n</a>\n\n",
-        "Downloads": "",
+        "Downloads": "\n<p>\n To be released in Q1/2015.\n</p>\n\n<a name=\"Instances\">\n</a>\n\n",
         "Instances": ""
     }
 ]

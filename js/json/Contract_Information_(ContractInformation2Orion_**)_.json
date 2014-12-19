@@ -13,10 +13,16 @@
         },
         "WP": "",
         "Terms and Conditions": "",
+        "wiki_attachments": [
+            "/redmine/attachments/download/1928/chrome_CI2O_REST_client_screenshot.png",
+            "/redmine/attachments/download/1929/browser_test_ContractInformation2Orion_GET.png",
+            "/redmine/attachments/download/1931/ContractInformation2Orion_TomcatManager_screenshot.jpg",
+            "/redmine/attachments/download/1939/contractinformation2orion.war"
+        ],
         "Open Source": "",
         "Contact Person": "",
         "Overview": "\n<a name=\"What-you-get\">\n</a>\n\n<h3>\n What you get\n <a class=\"wiki-anchor\" href=\"#What-you-get\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n ContractInformation2Orion is a REST service (developed in Java) which allows clients (e.g. Retailers) to register data about cost of energy produced from the DERs, costs of transmission system and power plants, energy costs into an instance of ORION Context Broker GE.\n</p>\n\n<p>\n This component can be eventually re-used and customized to fulfill the general need of having a REST service which is connected to the ORION GE.\n</p>\n\n<a name=\"Why-to-get-it\">\n</a>\n\n<h3>\n Why to get it\n <a class=\"wiki-anchor\" href=\"#Why-to-get-it\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n A reference implementation of a REST service which is connected to the ORION GE.\n</p>\n\n<a name=\"Open-Specifications\">\n</a>\n\n<h3>\n Open Specifications\n <a class=\"wiki-anchor\" href=\"#Open-Specifications\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Target-Usage\">\n</a>\n\n<h3>\n Target Usage\n <a class=\"wiki-anchor\" href=\"#Target-Usage\">\n  \u00b6\n </a>\n</h3>\n\n<ul>\n <li>\n  Retailers (to upload information on cost of energy produced from the DERs, costs of transmission system and power plants, energy costs)\n </li>\n <li>\n  Third-party applications (such as those developed by SMEs involved in Phase3)\n </li>\n</ul>\n\n<a name=\"DSE-Description\">\n</a>\n\n",
-        "Downloads": "",
+        "Downloads": "\n<table>\n <tr>\n  <td>\n   Location\n  </td>\n  <td>\n   Revision\n  </td>\n  <td>\n   Release Date\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/contractinformation2orion.war\">\n    http://rm.finesce.tssg.org/redmine/attachments/download/1939/contractinformation2orion.war\n   </a>\n  </td>\n  <td>\n   version=0.0.1-SNAPSHOT\n  </td>\n  <td>\n   Thu Oct 30 11:01:15 CET 2014\n  </td>\n </tr>\n</table>\n\n<a name=\"Instances\">\n</a>\n\n",
         "Instances": ""
     }
 ]

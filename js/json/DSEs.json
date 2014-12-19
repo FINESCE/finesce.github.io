@@ -57,7 +57,7 @@
         "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Incentive_Processor_", 
         "description": "", 
-        "site": "", 
+        "site": "(no site specified)", 
         "wp": "4", 
         "id": "Incentive_Processor_", 
         "name": "Incentive Processor "
@@ -66,7 +66,7 @@
         "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Regulation_Compliance_Rule_Engine_", 
         "description": "", 
-        "site": "", 
+        "site": "(no site specified)", 
         "wp": "4", 
         "id": "Regulation_Compliance_Rule_Engine_", 
         "name": "Regulation Compliance Rule Engine "
@@ -75,7 +75,7 @@
         "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Tailor_Processor_", 
         "description": "", 
-        "site": "", 
+        "site": "(no site specified)", 
         "wp": "4", 
         "id": "Contract_Tailor_Processor_", 
         "name": "Contract Tailor Processor "
@@ -84,7 +84,7 @@
         "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Processor_", 
         "description": "", 
-        "site": "", 
+        "site": "(no site specified)", 
         "wp": "4", 
         "id": "Contract_Processor_", 
         "name": "Contract Processor "
@@ -129,7 +129,7 @@
         "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
         "description": "", 
-        "site": "", 
+        "site": "(no site specified)", 
         "wp": "4", 
         "id": "Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
         "name": "Protocol Adapter AMM (Sensor2AMI **) "
@@ -138,7 +138,7 @@
         "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
         "description": "", 
-        "site": "", 
+        "site": "(no site specified)", 
         "wp": "4", 
         "id": "Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
         "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) "
@@ -147,7 +147,7 @@
         "option": "1", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Charging_Optimisation_System_(COS)_DSE", 
         "description": "Optimisation of Electric Vehicle Charging", 
-        "site": "", 
+        "site": "(no site specified)", 
         "wp": "5", 
         "id": "Charging_Optimisation_System_(COS)_DSE", 
         "name": "Charging Optimisation System (COS) DSE"

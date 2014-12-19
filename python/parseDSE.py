@@ -1,5 +1,6 @@
 import sys
 import lxml.html
+from lxml import etree
 import bs4
 import json
 import re
@@ -54,6 +55,7 @@ class DSEData(object):
     downloads = ""
     instances = ""
     terms = ""
+    wiki_attachments = [ ]
     
     def __repr__(self):
         return "WP:" + repr(self.work_package) + \
@@ -79,7 +81,8 @@ class DSEData(object):
                  'Documentation':  self.documentation.toJSON(), \
                  'Downloads':  self.downloads, \
                  'Instances':  self.instances, \
-                 'Terms and Conditions':  self.terms
+                 'Terms and Conditions':  self.terms,
+                 'wiki_attachments': self.wiki_attachments,
                }];
            #"}"
                
@@ -112,11 +115,11 @@ def redirect_images(text):
     return text
 
 def redirect_attachments(text):
-    pattern = re.compile(r"<a.+href=\"/redmine/attachments/download/.+/([^\"]+)\"")
+    pattern = re.compile(r"<a.+href=\"(http://rm.finesce.tssg.org)?/redmine/attachments/download/.+/([^\"]+)\"")
     for att_url in re.findall(pattern, text):
-        print("%s" % att_url)
-    text = re.sub(r'(<a.+href=\")/redmine/attachments/download/.+/([^/]+)\"', 
-            "\\1%s/\\2\"" % attachments_path, text)
+        print(att_url)
+    text = re.sub(r'(<a.+href=\")(http://rm.finesce.tssg.org)?/redmine/attachments/download/.+/([^/]+)\"', 
+            "\\1%s/\\3\"" % attachments_path, text)
     return text
 
 def processH2(start):
@@ -171,6 +174,17 @@ for h2 in content.find_all("h2"):
         dse_data.documentation.glossary = processH2(h2)
     elif h2_text.startswith("References"):
         dse_data.documentation.references = processH2(h2)
+    elif h2_text.startswith("Downloads"):
+        dse_data.downloads = processH2(h2)
+
+root = etree.fromstring(htmlcontent, etree.HTMLParser(encoding="utf-8"))
+attachments_div = root.xpath("//div[@class='attachments']")
+if len(attachments_div) > 0:
+    links = attachments_div[0].xpath(
+        ".//a[contains(@class, 'icon-attachment')]")
+    for l in links:
+        dse_data.wiki_attachments.append(l.get('href'))
+    
 #print
 dse_data.name = name
 """print "DSE data:"

@@ -13,10 +13,25 @@
         },
         "WP": "",
         "Terms and Conditions": "\n<p>\n Software associated to the Metering2Orion product is provided as open source under the LGPLv3 license. Please check the specific terms and conditions linked to this open source license at\n <a class=\"external\" href=\"https://www.gnu.org/licenses/lgpl.html\">\n  https://www.gnu.org/licenses/lgpl.html\n </a>\n</p>\n\n<a name=\"Overview\">\n</a>\n\n",
+        "wiki_attachments": [
+            "/redmine/attachments/download/1941/metering-input_deploy.jpg",
+            "/redmine/attachments/download/1942/rest_meter.jpg",
+            "/redmine/attachments/download/1943/chrome_M2O_Meter_REST_client_screenshot.png",
+            "/redmine/attachments/download/1957/rest_load.jpg",
+            "/redmine/attachments/download/1959/chrome_M2O_Load_REST_client_screenshot.png",
+            "/redmine/attachments/download/1961/metering-input.war",
+            "/redmine/attachments/download/1962/metering-input-client-0.0.9-SNAPSHOT.jar",
+            "/redmine/attachments/download/1963/metering-input-client-0.0.9-SNAPSHOT-sources.jar",
+            "/redmine/attachments/download/2095/meter.png",
+            "/redmine/attachments/download/2096/load.png",
+            "/redmine/attachments/download/2097/metering-input-client.png",
+            "/redmine/attachments/download/2098/metering-input-server_METER.png",
+            "/redmine/attachments/download/2099/metering-input-server_LOAD.png"
+        ],
         "Open Source": "",
         "Contact Person": "",
         "Overview": "\n<a name=\"What-you-get\">\n</a>\n\n<h3>\n What you get\n <a class=\"wiki-anchor\" href=\"#What-you-get\">\n  \u00b6\n </a>\n</h3>\n\n\n\nMetering2Orion consists of:\n\t<ul>\n <li>\n  a REST service (developed in Java) which allow clients (e.g. DSOs) to register data about metering and load profile in a specific area into an instance of ORION Context Broker GE;\n </li>\n <li>\n  a Java client which accepts data about metering and load profile coming from the smart meters (via either an IoT gateway or an existing legacy system) and then \u201cpasses\u201d the data to the above mentioned REST service.\n </li>\n</ul>\n\n<a name=\"Why-to-get-it\">\n</a>\n\n<h3>\n Why to get it\n <a class=\"wiki-anchor\" href=\"#Why-to-get-it\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n A reference implementation of\n <em>\n  a client + a REST service\n </em>\n by which smart meter readings can be \"delivered\" to an instance of ORION.\n</p>\n\n<a name=\"Open-Specifications\">\n</a>\n\n<h3>\n Open Specifications\n <a class=\"wiki-anchor\" href=\"#Open-Specifications\">\n  \u00b6\n </a>\n</h3>\n\n<a name=\"Target-Usage\">\n</a>\n\n<h3>\n Target Usage\n <a class=\"wiki-anchor\" href=\"#Target-Usage\">\n  \u00b6\n </a>\n</h3>\n\n<ul>\n <li>\n  DSOs which need information on metering and load profile in a specific area\n </li>\n <li>\n  Third-party applications (such as those developed by SMEs involved in Phase3)\n </li>\n</ul>\n\n<a name=\"DSE-Description\">\n</a>\n\n",
-        "Downloads": "",
+        "Downloads": "\n<table>\n <tr>\n  <td>\n   Location\n  </td>\n  <td>\n   Revision\n  </td>\n  <td>\n   Release Date\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/metering-input.war\">\n    http://rm.finesce.tssg.org/redmine/attachments/download/1961/metering-input.war\n   </a>\n  </td>\n  <td>\n   version=0.0.9-SNAPSHOT\n  </td>\n  <td>\n   Mon Nov 03 11:52:33 CET 2014\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/metering-input-client-0.0.9-SNAPSHOT.jar\">\n    http://rm.finesce.tssg.org/redmine/attachments/download/1962/metering-input-client-0.0.9-SNAPSHOT.jar\n   </a>\n  </td>\n  <td>\n   version=0.0.9-SNAPSHOT\n  </td>\n  <td>\n   Mon Nov 03 11:52:33 CET 2014\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/metering-input-client-0.0.9-SNAPSHOT-sources.jar\">\n    http://rm.finesce.tssg.org/redmine/attachments/download/1963/metering-input-client-0.0.9-SNAPSHOT-sources.jar\n   </a>\n  </td>\n  <td>\n   version=0.0.9-SNAPSHOT\n  </td>\n  <td>\n   Mon Nov 03 11:52:33 CET 2014\n  </td>\n </tr>\n</table>\n\n<a name=\"Instances\">\n</a>\n\n",
         "Instances": ""
     }
 ]

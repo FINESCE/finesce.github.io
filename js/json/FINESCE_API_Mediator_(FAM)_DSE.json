@@ -13,10 +13,14 @@
         },
         "WP": "",
         "Terms and Conditions": "\n<p>\n Software associated to the FINESCE API Mediator DSE is provided as open source under the Apache v2.0 license. Please check the specific terms and conditions linked to this open source license at\n <a class=\"external\" href=\"http://www.apache.org/licenses/LICENSE-2.0\">\n  http://www.apache.org/licenses/LICENSE-2.0\n </a>\n</p>\n\n<a name=\"Overview\">\n</a>\n\n",
+        "wiki_attachments": [
+            "/redmine/attachments/download/1391/FAMArchitecture.png",
+            "/redmine/attachments/download/1392/APIDSESequence.png"
+        ],
         "Open Source": "",
         "Contact Person": "",
         "Overview": "\n<a name=\"What-you-get\">\n</a>\n\n<h3>\n What you get\n <a class=\"wiki-anchor\" href=\"#What-you-get\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n A consolidated approach for interacting with the various FINESCE trial infrastructures, using a simple, RESTful API.\n</p>\n\n<a name=\"Why-to-get-it\">\n</a>\n\n<h3>\n Why to get it\n <a class=\"wiki-anchor\" href=\"#Why-to-get-it\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n It enables seamless, interoperable interaction with all the FINESCE trial infrastructures, in a transparent, homogeneous manner.\n</p>\n\n<a name=\"Open-Specifications\">\n</a>\n\n<h3>\n Open Specifications\n <a class=\"wiki-anchor\" href=\"#Open-Specifications\">\n  \u00b6\n </a>\n</h3>\n\n<p>\n A complete list of functionalities is going to be released in the coming months. As FAM DSE will be released as OSS, open specifications will be also available.\n</p>\n\n<a name=\"DSE-Description\">\n</a>\n\n",
-        "Downloads": "",
+        "Downloads": "\n<p>\n A download link for this DSE is not yet available.\n</p>\n\n<a name=\"Instances\">\n</a>\n\n",
         "Instances": ""
     }
 ]
