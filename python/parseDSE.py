@@ -98,7 +98,8 @@ name = "COS" if len(sys.argv) <= 1 else sys.argv[1]
 input_fname =  name+".html" if len(sys.argv) <= 2 else sys.argv[2]
 output_json_path = '../enablers/DSEs.json' if len(sys.argv) <= 3 else sys.argv[3]
 
-images_path = "/images/redmine"
+images_path = "images/redmine"
+attachments_path = "files"
 
 htmlcontent = open(input_fname,'r').read()
 soup = bs4.BeautifulSoup(htmlcontent)
@@ -107,12 +108,16 @@ content = soup.find("div", {"id": "content"})
 
 def redirect_images(text):
     text = re.sub(r'(<img.+src=\")/redmine/attachments/download/.+/([^/]+)\"', 
-            "\\1%s\\2\"" % images_path, text)
-    pattern = re.compile(r"<img.+src=\"([^\"]+)\"")
-    for img_url in re.findall(pattern, text):
-        #new_url = re.sub(r'.+/([^/]+)$', 
-        #    images_path + '\\1', img_url)
-        print("%s" % img_url)
+            "\\1%s/\\2\"" % images_path, text)
+    return text
+
+def redirect_attachments(text):
+    pattern = re.compile(r"<a.+href=\"/redmine/attachments/download/.+/([^\"]+)\"")
+    for att_url in re.findall(pattern, text):
+        print("%s" % att_url)
+    text = re.sub(r'(<a.+href=\")/redmine/attachments/download/.+/([^/]+)\"', 
+            "\\1%s/\\2\"" % attachments_path, text)
+    return text
 
 def processH2(start):
     processed_part = ""
@@ -136,7 +141,8 @@ def processH2(start):
             break
         #if type(sibling) != BeautifulSoup.NavigableString and sibling.tag == "h2":
     
-    redirect_images(processed_part)
+    processed_part = redirect_images(processed_part)
+    processed_part = redirect_attachments(processed_part)
     
     return processed_part
     
