@@ -1,6 +1,24 @@
+import sys
 import lxml.html
 import bs4
 import json
+
+def usage():
+    print("""
+Usage: parseDSE.py [NAME INPUT_FILE_PATH OUTPUT_JSON_PATH]
+
+Reads the DSE description from the html file that has been saved
+from the Redmine wiki. It extracts the description text and packages
+it into a json file.
+
+NAME: the name of the DSO (? ID perhaps?)
+
+INPUT_FILE_PATH: the path to the html containing the Redmine wiki page
+    contents
+    
+OUTPUT_JSON_PATH: the path to the output json file
+
+    """)
 
 class DSEData_documentation(object):
     preface = ""
@@ -75,8 +93,10 @@ class DSEEncoder(json.JSONEncoder):
         # Let the base class default method raise the TypeError
         return json.JSONEncoder.default(self, obj)
 
-name = "COS"
-htmlcontent = open(name+".html",'r').read()
+name = "COS" if len(sys.argv) <= 1 else sys.argv[1]
+input_fname =  name+".html" if len(sys.argv) <= 2 else sys.argv[2]
+output_json_path = '../enablers/DSEs.json' if len(sys.argv) <= 3 else sys.argv[3]
+htmlcontent = open(input_fname,'r').read()
 soup = bs4.BeautifulSoup(htmlcontent)
 
 content = soup.find("div", {"id": "content"})
@@ -137,7 +157,7 @@ print dse_data.overview
 dse_data.documentation = ""
 """
 
-with open('../enablers/DSEs.json', 'w') as outfile:
+with open(output_json_path, 'w') as outfile:
     json.dump(dse_data, outfile, indent=4, separators=(',', ': '), cls=DSEEncoder)
 #print(content.prettify())
 

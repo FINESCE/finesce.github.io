@@ -28,4 +28,32 @@ Output
  * ***images*** - images embedded into the DSE description and 
     referenced as attachments of the DSE details wiki page
  
+Tool usage
+----------
 
+```bash
+# set the cookie
+$ export COOKIE="_redmine_default=A7hB....4461; path=/redmine; HttpOnly"
+
+# fetch the TCO table
+$ ./fetch.sh "$COOKIE"
+Saved the index to /tmp/redmine_dse_index.html
+
+# process the DSEs (do not forget the quotation marks around the cookie)
+$ python parse_index_table.py /tmp/redmine_dse_index.html ../js/json/DSEs.json ../js/json "$COOKIE"
+Written the DSO table of contents to /tmp/DSEs.json
+Fetching 'Integration kit DSE' from https://rm.finesce.tssg.org/redmine/projects/finesce-domain-specific-enablers/wiki/Integration_kit_DSE
+Saved the index to /tmp/Integration_kit_DSE.html
+Fetching 'Modbus Connector (ModConn) DSE' from https://rm.finesce.tssg.org/redmine/projects/finesce-domain-specific-enablers/wiki/Modbus_Connector_(ModConn)_DSE
+Saved the index to /tmp/Modbus_Connector_(ModConn)_DSE.html
+[...]
+Fetching 'FINESCE API Mediator (FAM) DSE' from https://rm.finesce.tssg.org/redmine/projects/finesce-domain-specific-enablers/wiki/FINESCE_API_Mediator_(FAM)_DSE
+Saved the index to /tmp/FINESCE_API_Mediator_(FAM)_DSE.html
+```
+
+Paths
+-----
+
+ * ***python/*** - the directory with tools
+ * ***js/json/*** - contains the extracted JSONs
+ * ***files/*** - the attachment files in the DSE
