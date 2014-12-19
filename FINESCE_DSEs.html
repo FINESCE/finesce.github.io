@@ -97,7 +97,7 @@
 
 				var wp_list = [];
 				for (var line in data){
-					wp_list[data[line].wp] = true;
+					wp_list[data[line].site] = true;
 				}
 				//fill dropdown
 				$(".dropdown-menu").empty();
@@ -105,7 +105,7 @@
 				$("#dropdownMenu1").html('All <span class="caret"></span>');
 
 				for (var wp in wp_list){
-					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" data-id="'+wp+'" href="#">Work Package '+wp+'</a></li>');
+					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" data-id="'+wp+'" href="#">'+wp+'</a></li>');
 				}
 			});
 
@@ -121,15 +121,14 @@
 				// enabler_list.html('');
 				var row_html = "";
 				var data = dataGlobal;
-
 				if(filter && filter !== "all") {
 					data = data.filter(function(dt){
-						return Number(dt.wp) === Number(filter);
+						return dt.site === filter;
 					});
 				}
 
 				for (var line in data) {
-					row_html = '<div class="enabler-row"><h2 class="header"><a href="DSE.html?id='+ data[line].id +'">'+data[line].name+'</a></h2>'+data[line].description+'<div class="category">Work Package '+data[line].wp+'</div></div>';
+					row_html = '<div class="enabler-row"><h2 class="header"><a href="DSE.html?id='+ data[line].id +'">'+data[line].name+'</a></h2>'+data[line].description+'<div class="category">'+data[line].site+'</div></div>';
 					enabler_list.append(row_html);
 				}
 			}
