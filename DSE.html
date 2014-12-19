@@ -65,7 +65,7 @@
             <!-- <section class="span12"> -->
             <a id="main-content"></a>
             <div class="page-header">
-                <h1 class="enabler-title"></h1>
+                <h1 class="enabler-title">&nbsp;</h1>
             </div>
             <div>
                 <ul class="nav-docs-header finesce-subpages">
@@ -117,47 +117,9 @@
 												</strong>
                                                 <div class="field-content">2014-10-13</div>
                                             </div>
-                                            <div class="views-field views-field-field-api-rating">
-                                                <strong class="views-label views-label-field-api-rating">Rating:
-												</strong>
-                                                <div class="field-content">
-                                                    <div class="clearfix fivestar-average-stars fivestar-average-text">
-                                                        <div class="fivestar-static-form-item">
-                                                            <div class="control-group form-type-item">
-                                                                <div class="controls">
-                                                                    <div class="fivestar-default">
-                                                                        <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix">
-                                                                            <div class="star star-1 star-odd star-first">
-                                                                                <span class="off">0</span>
-                                                                            </div>
-                                                                            <div class="star star-2 star-even">
-                                                                                <span class="off"></span>
-                                                                            </div>
-                                                                            <div class="star star-3 star-odd">
-                                                                                <span class="off"></span>
-                                                                            </div>
-                                                                            <div class="star star-4 star-even">
-                                                                                <span class="off"></span>
-                                                                            </div>
-                                                                            <div class="star star-5 star-odd star-last">
-                                                                                <span class="off"></span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="help-block">
-                                                                        <div class="fivestar-summary fivestar-summary-average-count">
-                                                                            <span class="empty">No votes yet</span>
-                                                                        </div>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="views-field views-field-field-api-contact-person">
                                                 <strong class="views-label views-label-field-api-contact-person">Contact
-													Person: </strong>
+													Person: <span class="contact-person"></span></strong>
                                                 <div class="field-content"></div>
                                             </div>
                                             <div class="views-field views-field-field-api-contact-details">
@@ -276,7 +238,9 @@
             if (dse_data) {
                 $(".enabler-title").text(dse_data.name);
                 $.getJSON("js/json/" + id + ".json").then(function(dse_data_all) {
-                    $("#content-wiki").html(buildHTMLforPage(dse_data_all[0], show));
+                    var data = dse_data_all[0];
+                    $("#content-wiki").html(buildHTMLforPage(data, show));
+                    $(".conact-person").html(data["Contact Person"]);
 
                     $(".finesce-subpages a").each(function(){
                         $(this).attr("href", insertOrUpdateShow(this));
@@ -286,19 +250,6 @@
                 $(".enabler-title").text("404 - Not Found");
                 $("#content-wiki").html("<h2>404 - Not Found</h2>");
             }
-
-            // 				wp_list = [];
-            // 				for (line in data){
-            // 					var row_html = '<div class="enabler-row"><h2 class="header">'+data[line]["name"]+'</h2>'+data[line]["description"]+'<div class="category">Work package '+data[line]["wp"]+'</div></div>';
-            // 					enabler_list.append(row_html);
-            // 					wp_list[data[line]["wp"]] = true;
-            // 				}
-
-            // 				//fill dropdown
-            // 				$(".dropdown-menu").empty();
-            // 				for (wp in wp_list){
-            // 					$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Work package '+wp+'</a></li>')
-            // 				}
         });
     });
     </script>
