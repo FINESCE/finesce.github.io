@@ -252,7 +252,7 @@
                     var data = dse_data_all[0];
                     $("#content-wiki").html(buildHTMLforPage(data, show));
                     $(".contact-person").html(data["Contact Person"]);
-//                     $(".trial-site").html(dse_data.site);
+                    $(".trial-site").html(dse_data.site);
 
                     $(".finesce-subpages a").each(function(){
                         $(this).attr("href", insertOrUpdateShow(this));

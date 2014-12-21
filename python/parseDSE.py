@@ -122,7 +122,7 @@ def redirect_attachments(text):
             "\\1%s/\\3\"" % attachments_path, text)
     return text
 
-def processH2(start):
+def processH2(start, trim_href = False):
     processed_part = ""
     prev_contextual = False;    #mark end of h2 segment, where an additinal <a> tag is behind the div with class contextual, it should be removed
     for sibling in h2.next_siblings:
@@ -136,6 +136,9 @@ def processH2(start):
                 #    print sibling.get('class'), ":x: ", sibling
                 #else:
                 if type(sibling) == bs4.element.Tag:
+                    for href in sibling.findAll('a', href=True):
+                        if href.string.rfind("/") != -1:
+                            href.string.replaceWith(href.string[href.string.rfind("/")+1:0])
                     processed_part += sibling.prettify() 
                     #print "adding ", sibling.prettify()
                 else:
@@ -187,7 +190,7 @@ for h2 in content.find_all("h2"):
     elif h2_text.startswith("References"):
         dse_data.documentation.references = processH2(h2)
     elif h2_text.startswith("Downloads"):
-        dse_data.downloads = processH2(h2)
+        dse_data.downloads = processH2(h2, True)
     elif h2_text.startswith("Contact Person"):
         dse_data.contact_person = processH2(h2)
 
