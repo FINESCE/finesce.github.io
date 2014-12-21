@@ -138,7 +138,7 @@ def processH2(start, trim_href = False):
                 if type(sibling) == bs4.element.Tag:
                     for href in sibling.findAll('a', href=True):
                         if href.string.rfind("/") != -1:
-                            href.string.replaceWith(href.string[href.string.rfind("/")+1:0])
+                            href.string.replaceWith(href.string[href.string.rfind("/")+1:])
                     processed_part += sibling.prettify() 
                     #print "adding ", sibling.prettify()
                 else:
