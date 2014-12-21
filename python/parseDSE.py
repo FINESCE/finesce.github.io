@@ -124,25 +124,29 @@ def redirect_attachments(text):
 
 def processH2(start):
     processed_part = ""
+    prev_contextual = False;    #mark end of h2 segment, where an additinal <a> tag is behind the div with class contextual, it should be removed
     for sibling in h2.next_siblings:
         try:
             tag_name = sibling.name
         except AttributeError:
             tag_name = ""
         if tag_name != "h2":
-            if type(sibling) == bs4.element.NavigableString or sibling.get('class') == None or (not "contextual" in sibling.get('class') and not "wiki-anchor" in sibling.get('class')):
+            if not prev_contextual and (type(sibling) == bs4.element.NavigableString or sibling.get('class') == None or (not "contextual" in sibling.get('class') and not "wiki-anchor" in sibling.get('class'))):
                 #if type(sibling) != bs4.element.NavigableString and sibling.get('class') != None:
                 #    print sibling.get('class'), ":x: ", sibling
                 #else:
                 if type(sibling) == bs4.element.Tag:
-                    processed_part += sibling.prettify()
+                    processed_part += sibling.prettify() 
                     #print "adding ", sibling.prettify()
                 else:
                     processed_part += sibling
                     #print "add ", sibling
+            elif prev_contextual:
+                prev_contextual = False;
+            elif type(sibling) == bs4.element.Tag and sibling.get('class') != None and "contextual" in sibling.get('class'):
+                prev_contextual = True; 
         else:
-            break
-        #if type(sibling) != BeautifulSoup.NavigableString and sibling.tag == "h2":
+            break    
     
     processed_part = redirect_images(processed_part)
     processed_part = redirect_attachments(processed_part)
@@ -151,6 +155,14 @@ def processH2(start):
     
 
 dse_data = DSEData()
+
+for wikitag in content.find_all("a", "wiki-anchor"):
+    wikitag.replace_with("")
+    
+for tabletag in content.find_all("table"):
+    tabletag["class"] = "themed"
+    tabletag.tr["class"] = "top"
+
 for h2 in content.find_all("h2"):
     h2_text = h2.text.lstrip()
     #print h2_text
@@ -176,6 +188,11 @@ for h2 in content.find_all("h2"):
         dse_data.documentation.references = processH2(h2)
     elif h2_text.startswith("Downloads"):
         dse_data.downloads = processH2(h2)
+    elif h2_text.startswith("Contact Person"):
+        dse_data.contact_person = processH2(h2)
+
+#if len(content.findAll(text="What you get")) > 0:
+#    dse_data.target_usage = "";
 
 root = etree.fromstring(htmlcontent, etree.HTMLParser(encoding="utf-8"))
 attachments_div = root.xpath("//div[@class='attachments']")

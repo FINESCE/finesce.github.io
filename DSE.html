@@ -45,14 +45,14 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">FINESCE</a>
+                <a class="navbar-brand" href="index.html">FINESCE</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">Home</li>
-                    <li><a href="../FINESCE_GEs.html">Generic Enablers</a>
+                    <li><a href="FINESCE_GEs.html">Generic Enablers</a>
                     </li>
-                    <li><a href="../FINESCE_DSEs.html">Specific Enablers</a>
+                    <li><a href="FINESCE_DSEs.html">Specific Enablers</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +68,7 @@
                 <h1 class="enabler-title">&nbsp;</h1>
             </div>
             <noscript>
-                <div class="alert alert-warning" role="alert">Hi Matej! This site won't work properly without Javascript. You may prefer the experience with Javascript enabled!</div>
+                <div class="alert alert-warning" role="alert">Hi! This site won't work properly without Javascript. You may prefer the experience with Javascript enabled!</div>
             </noscript>
             <div>
                 <ul class="nav-docs-header finesce-subpages">
@@ -121,8 +121,13 @@
                                                 <div class="field-content">2014-10-13</div>
                                             </div> -->
                                             <div class="views-field views-field-field-api-contact-person">
+                                                <strong class="views-label views-label-field-api-contact-person">Trial
+													site: </strong><span class="trial-site"></span>
+                                                <div class="field-content"></div>
+                                            </div>
+                                            <div class="views-field views-field-field-api-contact-person">
                                                 <strong class="views-label views-label-field-api-contact-person">Contact
-													Person: <span class="contact-person"></span></strong>
+													person: </strong><span class="contact-person"></span>
                                                 <div class="field-content"></div>
                                             </div>
                                         </div>
@@ -188,12 +193,20 @@
     /* global $, console*/
     function buildHTMLforPage(dse_data, part) {
         if (part == "Documentation") {
-            return "<h2>Copyright</h2>" + dse_data.Documentation.Copyright +
-                "<h2>Preface</h2>" + dse_data.Documentation.Preface +
-                "<h2>DSE Description</h2>" + dse_data.Documentation.Description +
-                "<h2>Detailed Specifications</h2>" + dse_data.Documentation.Details +
-                "<h2>Glossary</h2>" + dse_data.Documentation.Glossary +
-                "<h2>References</h2>" + dse_data.Documentation.References;
+        	var doc_html = "";
+        	if ($.trim(dse_data.Documentation.Copyright) != "")
+        		doc_html = doc_html + "<h2>Copyright</h2>" + dse_data.Documentation.Copyright;
+       		if ($.trim(dse_data.Documentation.Preface) != "")
+        		doc_html = doc_html + "<h2>Preface</h2>" + dse_data.Documentation.Preface;
+        	if ($.trim(dse_data.Documentation.Description) != "")
+        		doc_html = doc_html + "<h2>DSE Description</h2>" + dse_data.Documentation.Description;
+        	if ($.trim(dse_data.Documentation.Details) != "")
+        		doc_html = doc_html + "<h2>Detailed Specifications</h2>" + dse_data.Documentation.Details;
+       		if ($.trim(dse_data.Documentation.Glossary) != "")
+        		doc_html = doc_html + "<h2>Glossary</h2>" + dse_data.Documentation.Glossary;
+        	if ($.trim(dse_data.Documentation.References) != "")
+        		doc_html = doc_html + "<h2>References</h2>" + dse_data.Documentation.References;
+            return doc_html;
         } else if (part == "Downloads") {
             return dse_data.Downloads;
         } else if (part == "Instances") {
@@ -201,7 +214,10 @@
         } else if (part == "Terms") {
             return dse_data["Terms and Conditions"];
         } else {
-            return "<h2>Overview</h2>" + dse_data.Overview + "<h2>Target Usage</h2>" + dse_data["Target usage"];
+        	var overview_html = "<h2>Overview</h2>" + dse_data.Overview; 
+        	if (dse_data["Target Usage"] != "")
+        		overview_html = overview_html + "<h2>Target Usage</h2>" + dse_data["Target usage"]; 
+            return overview_html;
         }
     }
 
@@ -235,7 +251,8 @@
                 $.getJSON("js/json/" + id + ".json").then(function(dse_data_all) {
                     var data = dse_data_all[0];
                     $("#content-wiki").html(buildHTMLforPage(data, show));
-                    $(".conact-person").html(data["Contact Person"]);
+                    $(".contact-person").html(data["Contact Person"]);
+//                     $(".trial-site").html(dse_data.site);
 
                     $(".finesce-subpages a").each(function(){
                         $(this).attr("href", insertOrUpdateShow(this));

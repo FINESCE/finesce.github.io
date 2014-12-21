@@ -20,7 +20,8 @@ table.themed tr.category{
 	border-top: 1px solid;
 	border-color: rgb(255, 255, 255);
 }
-table.themed tr.top th{
+table.themed tr.top th, table.themed tbody tr.top td{
+	font-weight: bold;
 	border-bottom: 2px solid;
 	border-color: rgb(183, 8, 128);
 }
