@@ -55,39 +55,12 @@
     }, 
     {
         "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Incentive_Processor_", 
-        "description": "", 
-        "site": "(no site specified)", 
-        "wp": "4", 
-        "id": "Incentive_Processor_", 
-        "name": "Incentive Processor "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Regulation_Compliance_Rule_Engine_", 
-        "description": "", 
-        "site": "(no site specified)", 
-        "wp": "4", 
-        "id": "Regulation_Compliance_Rule_Engine_", 
-        "name": "Regulation Compliance Rule Engine "
-    }, 
-    {
-        "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Tailor_Processor_", 
         "description": "", 
         "site": "(no site specified)", 
         "wp": "4", 
         "id": "Contract_Tailor_Processor_", 
         "name": "Contract Tailor Processor "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Processor_", 
-        "description": "", 
-        "site": "(no site specified)", 
-        "wp": "4", 
-        "id": "Contract_Processor_", 
-        "name": "Contract Processor "
     }, 
     {
         "option": "2", 
@@ -140,7 +113,7 @@
         "description": "", 
         "site": "(no site specified)", 
         "wp": "4", 
-        "id": "Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
+        "id": "Issue_Detector_Processor_(Cosmos2SCILAB___INP-SCILAB___SCILAB2Orion_**)_", 
         "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) "
     }, 
     {
