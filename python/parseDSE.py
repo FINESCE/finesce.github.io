@@ -172,33 +172,33 @@ for tabletag in content.find_all("table"):
     tabletag.tr["class"] = "top"
 
 for h2 in content.find_all("h2"):
-    h2_text = h2.text.lstrip()
+    h2_text = h2.text.lstrip().lower()
     #print h2_text
-    if h2_text.startswith("Copyright"):
+    if h2_text.startswith("copyright"):
         dse_data.documentation.copyright = processH2(h2)
-    elif h2_text.startswith("Preface"):
+    elif h2_text.startswith("preface"):
         dse_data.documentation.preface = processH2(h2)
-    elif h2_text.startswith("T&Cs") or h2_text.startswith("Terms and Conditions"):
+    elif h2_text.startswith("t&cs") or h2_text.startswith("terms and conditions"):
         dse_data.terms = processH2(h2)
-    elif h2_text.startswith("Overview"):
+    elif h2_text.startswith("overview"):
         dse_data.overview = processH2(h2)
-    elif h2_text.startswith("Target Usage"):
+    elif h2_text.startswith("target usage"):
         dse_data.target_usage = processH2(h2)
-    elif h2_text.startswith("DSE Description"):
+    elif h2_text.startswith("dse description"):
         dse_data.documentation.dse_description = processH2(h2)
-    elif h2_text.startswith("Detailed Specifications"):
+    elif h2_text.startswith("detailed specifications"):
         dse_data.documentation.detailed_specs = processH2(h2)
-    elif h2_text.startswith("Re-utilised Technologies/Specifications"):
+    elif h2_text.startswith("re-utilised technologies/specifications"):
         dse_data.documentation.reutilised_tech = processH2(h2)
-    elif h2_text.startswith("Terms and Definitions") or h2_text.startswith("Glossary"):
+    elif h2_text.startswith("terms and definitions") or h2_text.startswith("glossary"):
         dse_data.documentation.glossary = processH2(h2)
-    elif h2_text.startswith("References"):
+    elif h2_text.startswith("references"):
         dse_data.documentation.references = processH2(h2)
-    elif h2_text.startswith("Downloads"):
+    elif h2_text.startswith("downloads"):
         dse_data.downloads = processH2(h2, True)
-    elif h2_text.startswith("Instances"):
+    elif h2_text.startswith("instances"):
         dse_data.instances = processH2(h2, True)
-    elif h2_text.startswith("Contact person"):
+    elif h2_text.startswith("contact person"):
         dse_data.contact_person = spam_protect(processH2(h2))
 
 #if len(content.findAll(text="What you get")) > 0:
