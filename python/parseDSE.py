@@ -27,6 +27,7 @@ class DSEData_documentation(object):
     copyright = ""
     dse_description = ""
     detailed_specs = ""
+    reutilised_tech = ""
     glossary = ""
     references = ""
     
@@ -38,6 +39,7 @@ class DSEData_documentation(object):
                 'Copyright': self.copyright, \
                 'Description': self.dse_description, \
                 'Details':self.detailed_specs, \
+                'ReutilisedTech':self.reutilised_tech, \
                 'Glossary':self.glossary, \
                 'References':self.references
                 };
@@ -181,7 +183,7 @@ for h2 in content.find_all("h2"):
     elif h2_text.startswith("Overview"):
         dse_data.overview = processH2(h2)
     elif h2_text.startswith("Target Usage"):
-        dse_data.documentation.target_usage = processH2(h2)
+        dse_data.target_usage = processH2(h2)
     elif h2_text.startswith("DSE Description"):
         dse_data.documentation.dse_description = processH2(h2)
     elif h2_text.startswith("Detailed Specifications"):
@@ -194,6 +196,8 @@ for h2 in content.find_all("h2"):
         dse_data.documentation.references = processH2(h2)
     elif h2_text.startswith("Downloads"):
         dse_data.downloads = processH2(h2, True)
+    elif h2_text.startswith("Instances"):
+        dse_data.instances = processH2(h2, True)
     elif h2_text.startswith("Contact person"):
         dse_data.contact_person = spam_protect(processH2(h2))
 

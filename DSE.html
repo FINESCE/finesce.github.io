@@ -202,6 +202,8 @@
         		doc_html = doc_html + "<h2>DSE Description</h2>" + dse_data.Documentation.Description;
         	if ($.trim(dse_data.Documentation.Details) != "")
         		doc_html = doc_html + "<h2>Detailed Specifications</h2>" + dse_data.Documentation.Details;
+        	if ($.trim(dse_data.Documentation.ReutilisedTech) != "")
+        		doc_html = doc_html + "<h2>Re-utilised Technologies/Specifications</h2>" + dse_data.Documentation.ReutilisedTech;	
        		if ($.trim(dse_data.Documentation.Glossary) != "")
         		doc_html = doc_html + "<h2>Glossary</h2>" + dse_data.Documentation.Glossary;
         	if ($.trim(dse_data.Documentation.References) != "")
