@@ -122,6 +122,9 @@ def redirect_attachments(text):
             "\\1%s/\\3\"" % attachments_path, text)
     return text
 
+def spam_protect(text):
+    return re.sub("@", "REMOVE-NO-SPAM@", text)
+
 def processH2(start, trim_href = False):
     processed_part = ""
     prev_contextual = False;    #mark end of h2 segment, where an additinal <a> tag is behind the div with class contextual, it should be removed
@@ -191,8 +194,8 @@ for h2 in content.find_all("h2"):
         dse_data.documentation.references = processH2(h2)
     elif h2_text.startswith("Downloads"):
         dse_data.downloads = processH2(h2, True)
-    elif h2_text.startswith("Contact Person"):
-        dse_data.contact_person = processH2(h2)
+    elif h2_text.startswith("Contact person"):
+        dse_data.contact_person = spam_protect(processH2(h2))
 
 #if len(content.findAll(text="What you get")) > 0:
 #    dse_data.target_usage = "";

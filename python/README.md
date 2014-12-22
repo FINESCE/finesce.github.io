@@ -35,12 +35,14 @@ Tool usage
 # set the cookie
 $ export COOKIE="_redmine_default=A7hB....4461; path=/redmine; HttpOnly"
 
-# fetch the TCO table
+$ cd python
+
+# fetch the TCO table (qutation marks are important)
 $ ./fetch.sh "$COOKIE"
 Saved the index to /tmp/redmine_dse_index.html
 
 # process the DSEs (do not forget the quotation marks around the cookie)
-$ python parse_index_table.py /tmp/redmine_dse_index.html ../js/json/DSEs.json ../js/json ../attachments ../images/redmine "$COOKIE"
+$ python parse_index_table.py -c "$COOKIE"
 Written the DSO table of contents to /tmp/DSEs.json
 Fetching 'Integration kit DSE' from https://rm.finesce.tssg.org/redmine/projects/finesce-domain-specific-enablers/wiki/Integration_kit_DSE
 Saved the index to /tmp/Integration_kit_DSE.html
@@ -57,3 +59,4 @@ Paths
  * ***python/*** - the directory with tools
  * ***js/json/*** - contains the extracted JSONs
  * ***files/*** - the attachment files in the DSE
+ * ***images/redmine*** - the images from the attachments

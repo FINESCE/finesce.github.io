@@ -4,36 +4,52 @@ from subprocess import call
 from lxml import etree
 import re
 import json
+import argparse
 
 
-def usage():
-	print """
-	parse_index_table.py [ INPUT_FILE_PATH [ JSON_OUTPUT [ OUTPUT_PATH ATTACHMENTS_PATH IMAGES_PATH HTTP_COOKIE ] ] 
+def query_cleanup(text):
+	return re.sub('\\+', '_', text)
 	
-	Reads the HTML file refered to as INPUT_FILE_PATH or /tmp/redmine_dse_index.html
-	if the parameter is missing. It parses the table containing the
-	DSE summaries and produces a JSON-formatted output.
-	
-	JSON_OUTPUT: the path to store the DSO TOC json
-	
-	OUTPUT_PATH: the path where the individual DSO's JSON files will be
-	    stored.
-	    
-	ATTACHMENTS_PATH: the path where the attachments (non-image ones)
-	    should be stored.
-	    
-	IMAGES_PATH: the path where the image attachments should be stored.
-	    
-	HTTP_COOKIE: the cookie for accessing Redmine wiki pages, e.g.:
-	     _redmine_default=A7hB....4461; path=/redmine; HttpOnly
-	"""
+parser = argparse.ArgumentParser(
+	description="Extractor and parser of Redmine DSE descriptions. "
+		"Reads the HTML file refered to as INPUT_FILE_PATH or /tmp/redmine_dse_index.html "
+		"if the parameter is missing. It parses the table containing the "
+		"DSE summaries and produces a JSON-formatted output."
+	)
 
-file_name = "/tmp/redmine_dse_index.html" if len(sys.argv) <= 1 else sys.argv[1]
-json_output = "/tmp/DSEs.json" if len(sys.argv) <= 2 else sys.argv[2]
-output_path = "/tmp" if len(sys.argv) <= 3 else sys.argv[3]
-attachments_path = None if len(sys.argv) <= 4 else sys.argv[4]
-images_path = None if len(sys.argv) <= 5 else sys.argv[5]
-cookie = None if len(sys.argv) <= 6 else sys.argv[6]
+parser.add_argument('-i', '--input', action='store', 
+	metavar='INPUT_FILE_PATH', 
+	default="/tmp/redmine_dse_index.html", 
+	help='input file containing the DSE index')
+parser.add_argument('-t', '--toc', action='store', 
+	metavar='JSON_TOC_OUTPUT', 
+	default='../js/json/DSEs.json',
+	help='the path to store the DSO TOC json')
+parser.add_argument('-o', '--outputpath', action='store',
+	metavar='OUTPUT_PATH', 
+	default='../js/json',
+	help="the path where the individual DSO's JSON files will be stored")
+parser.add_argument('-a', '--attachments', action='store',
+	metavar='ATTACHMENTS_PATH', 
+	default='../files',
+	help='the path where the attachments (non-image ones) should be stored')
+parser.add_argument('-m', '--images', action='store',
+	metavar='IMAGES_PATH',
+	default='../images/redmine',
+	help='the path where the image attachments should be stored')
+parser.add_argument('-c', '--cookie', action='store',
+	metavar='HTTP_COOKIE',
+	help='the cookie for accessing Redmine wiki pages, e.g.:\n'
+	     '"_redmine_default=A7hB....4461; path=/redmine; HttpOnly"')
+
+args = parser.parse_args()
+
+file_name = args.input
+json_output = args.toc
+output_path = args.outputpath
+attachments_path = args.attachments
+images_path = args.images
+cookie = args.cookie
 redmine_url = "https://rm.finesce.tssg.org"
 
 root = etree.parse(file_name, etree.HTMLParser(encoding="utf-8"))
@@ -54,13 +70,17 @@ for row in rows[1:]:
 		dse_title = dse_cell[0].text
 		dse_link = dse_cell[0].get('href')
 		m = re.search(r"/[^/]+$", dse_link)
-		dse_id = m.group(0)
+		dse_id = query_cleanup(m.group(0))
 		if dse_id[0] == '/':
 			dse_id = dse_id[1:]
 
 	description = cells[2].text.strip()
 	option = cells[3].text.strip()
 	site = cells[4].text.strip()
+	do_publish = cells[5].text.strip()
+	if do_publish != "yes":
+		continue
+	
 	if site == "":
 		site = "(no site specified)" 
 
