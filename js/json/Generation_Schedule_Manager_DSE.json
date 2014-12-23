@@ -1,6 +1,6 @@
 [
     {
-        "Target Usage": "",
+        "Target Usage": "\n<ul>\n <li>\n  Provide energy generation schedules with historical, actual and forecasted data\n </li>\n <li>\n  Provide services for the Complex Event Processing engine\n </li>\n <li>\n  Data handler between different components\n </li>\n</ul>\n\n\n",
         "Name": "Generation Schedule Manager DSE",
         "Short Description": "",
         "Documentation": {
@@ -9,7 +9,8 @@
             "Glossary": "\n\n",
             "References": "\n\n",
             "Details": "\n\n<h3>\n Address/Protocol\n</h3>\n\n\n<h3>\n Commands\n</h3>\n\n\n<h3>\n Endpoints\n</h3>\n\n\n",
-            "Preface": "\n<p>\n Within this document you find a self-contained open specification of the aforementioned Domain Specific Enabler (DSE).\n</p>\n\n<p>\n Please consult the appropriate pages on the\n <a class=\"external\" href=\"http://www.finesce.eu/Trial_Site_Ireland.html\">\n  FINESCE\n </a>\n website in order to understand the complete context of the related FINESCE trials and this DSE.\n</p>\n\n\n"
+            "Preface": "\n<p>\n Within this document you find a self-contained open specification of the aforementioned Domain Specific Enabler (DSE).\n</p>\n\n<p>\n Please consult the appropriate pages on the\n <a class=\"external\" href=\"http://www.finesce.eu/Trial_Site_Ireland.html\">\n  FINESCE\n </a>\n website in order to understand the complete context of the related FINESCE trials and this DSE.\n</p>\n\n\n",
+            "ReutilisedTech": "\n\n"
         },
         "WP": "",
         "Terms and Conditions": "\n\n",
@@ -18,7 +19,7 @@
             "/redmine/attachments/download/1968/WP3_VPP_GenScheduleManager_DSE_Services.png"
         ],
         "Open Source": "",
-        "Contact Person": "",
+        "Contact Person": "\n<p>\n Adelheid Weinert,\n <a class=\"email\" href=\"mailto:Adelheid.weinertREMOVE-NO-SPAM@qsc.de\">\n  Adelheid.weinertREMOVE-NO-SPAM@qsc.de\n </a>\n</p>\n\n",
         "Overview": "\n<p>\n In the trial of the B2B energy ecosystem a factory and a Virtual Power Plant representing respectively the energy consumer and energy generation side are combined. The target of this setup is to balance the use of energy by the factory with the generation of energy from renewable sources. In this approach an energy-flexible factory is adapted to volatile energy supply and prices which leads to an energy driven production planning. The balancing between the energy generation and consumption is done by matching the profiles of energy generation and consumption, based on a variation of energy profiles for the factory and the production as well as the forecasted data of the VPP.\n</p>\n\n<p>\n The Schedule Managers are designed for the energy generation and energy consumption to provide the profiles which enable the applications to balance the energy generation and consumption.\n</p>\n\n\n",
         "Downloads": "",
         "Instances": ""
