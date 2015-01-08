@@ -15,7 +15,10 @@ a:hover { color: #792e93; font-family: Arial, Sans-Serif;   text-decoration: non
 .Headline:hover	{ color: #792e93; font-weight: bold; font-family: Arial, Sans-Serif;  text-decoration: none;  font-size: 1.3em;  }
 
 table.themed td, table.themed th, table.themed tbody tr td {margin-left: auto; margin-right: auto; padding: 5px 8px; background-color: rgb(218, 228, 232); border-color: rgb(255, 255, 255); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none;}
-table.themed td.left { padding: 5 8; background-color: rgb(183, 8, 128); color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); font-weight: bold; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none}
+table.themed td.left, table.themed td.left-nonbold { padding: 5 8; background-color: rgb(183, 8, 128); color: rgb(255, 255, 255); border-color: rgb(255, 255, 255); font-weight: bold; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none}
+table.themed td.left-nonbold {
+	font-weight: normal;
+}
 table.themed tr.category{
 	border-top: 1px solid;
 	border-color: rgb(255, 255, 255);

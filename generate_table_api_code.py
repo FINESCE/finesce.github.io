@@ -2,6 +2,7 @@ from lxml import etree
 
 file_name = "API_methods_div"
 
+print "<tr class='top'><th>Category</th><th>Method</th><th>Description</th></tr>"
 root = etree.parse(file_name, etree.HTMLParser(encoding="utf-8"))
 categories = root.xpath("//div[@class='resourceGroup']")
 for category in categories:
@@ -15,7 +16,7 @@ for category in categories:
 			category_description = ""
 		methods = category.xpath(".//div[@class='resource2']")
 		if methods:
-			print "<tr><td rowspan='%d'><b>%s</b>%s</td>" % (
+			print "<tr class=category><td class=left-nonbold rowspan='%d'><b>%s</b>%s</td>" % (
 					len(methods), category_name, category_description)
 			is_first_method = True
 			for method in methods:
@@ -34,4 +35,4 @@ for category in categories:
 					print "<tr>"
 				print "<td>%s</td><td>%s</td></tr>" % (method_name, method_description)
 		else:
-			print "<tr><td>%s</td><td>/</td><td>/</td></tr>" % category_name
+			print "<tr class=category><td class=left-nonbold><b>%s</b>%s</td><td>/</td><td>/</td></tr>" % (category_name, category_description)

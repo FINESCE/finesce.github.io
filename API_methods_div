@@ -1,4 +1,4 @@
-<div style="width: 511px; padding-bottom: 770px;" class="humanColumnContents">
+<div style="width: 860px; padding-bottom: 862px;" class="humanColumnContents">
 
   <!-- Name -->
   <h1 class="humanColumnApiName">
@@ -17,7 +17,7 @@
       <div class="humanColumnApiDescription markdown formalTheme">
       <p>The FINESCE API is an integrated API definition of the services provided by the FINESCE EU project (<a href="http://www.finesce.eu/">http://www.finesce.eu/</a>). Assisted by an instantiation of the FINESCE API Mediator DSE, the FINESCE API presentation provided in this page offers free, unlimited experimentation of interested parties with the FINESCE trials, granted that access to the trials has been already provided, in the form of valid authentication credentials. </p>
 
-<p>As the specification of the API has not yet been completed, full integration of the services exposed in this page has not been fully achieved. The APIs falling under the categories i) Energy demand / Power consumption, ii) Energy supply / Power production, iii) Metering infrastructure details, iii) External Information and iv) Weather have been fully integrated, namely requests performed against the Production server are, in fact, redirected to the trial sites. The API categories that expose at even a single API are in the process of being integrated. The rest of the APIs are still subjects to specicication procedures.</p>    </div>
+<p>As the specification of the API has not yet been completed, full integration of the services exposed in this page has not been fully achieved. The APIs falling under the categories i) Energy demand / Power consumption, ii) Energy supply / Power production, iii) Metering infrastructure details and iii) Weather have been fully integrated, namely requests performed against the Production server are, in fact, redirected to the trial sites. The API categories that expose at even a single API are in the process of being integrated. The rest of the APIs are still subjects to specification procedures.</p>    </div>
     <!-- /Description -->
 
 </div><div class="humanColumnSection humanColumnSectionReference">
@@ -143,22 +143,6 @@
 
   <!-- Name -->
       <h1 class="resourceGroupName">
-      Building control centre    </h1>
-    <!-- /Name -->
-
-  <!-- Description -->
-      <div class="resourceGroupDescription markdown formalTheme">
-      <p>This set of APIs will contain APIs related to controlling manageable smart equipment in the framework of Building Management Systems (BMS).</p>    </div>
-    <!-- /Description -->
-
-  <!-- Resources -->
-  <div class="resources"></div>
-  <!-- /Resources -->
-
-</div><div class="resourceGroup">
-
-  <!-- Name -->
-      <h1 class="resourceGroupName">
       Building information    </h1>
     <!-- /Name -->
 
@@ -181,7 +165,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>List the buildings known to the selected trial infrastructure</p>    </div>
+      <p>List the buildings known to the selected trial infrastructure. 'Horsens' is the only trial offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -228,7 +212,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>List the properties of the identified building. The measurement types associated with the building are delivered as well.</p>    </div>
+      <p>List the properties of the identified building. The measurement types associated with the building are delivered as well. 'Horsens' is the only trial offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -266,7 +250,7 @@
 
   <!-- Name -->
   <h2 class="resource2Name">
-    Building measurements  </h2>
+    Get available measurement types for a specific building  </h2>
   <!-- /Name -->
 
   <!-- Parameters -->
@@ -275,9 +259,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>Lists the measurements of the specified type of a building.</p>
-
-<p>The measurement types can be one of the following: HousePowerDemandGrid, HousePowerConsumptionGrid, HousePowerProductionGrid, HeatpumpInletFlowDemand, HeatpumpOutletFlowDemand, HeatpumpInletFlowSummation, HeatpumpOutletFlowSummation, HouseHeatConsumption, HeatpumpInletTemperature, HeatpumpOutletTemperature, HouseNaturalGasConsumption, OutdoorTemperatureAverage, IndoorTemperatureAverage, HeatpumpReturnFlow, TemperatureAverage , HeatpumpForwardFlow, TemperatureAverage, ColdWaterTemperatureAverage, HotWaterTemperatureAverage, HeatpumpHeatFlow, HotWaterFlow, HeatpumpPowerAverage, HousePowerProductionSolar, HouseHeatEnergyAverage, HotWaterEnergyAverage, ICMIndoorTemperatureAverage, ICMIndoorHumidityAverage, ICMIndoorCO2LevelAverage, ChargingSocketPowerDemand, ChargingSocketPower</p>    </div>
+      <p>Provides information regarding the available measurements types for the specific building.A valid {id} can be obtained by the /{version}/{trial}/buildings service. 'Horsens' is the only trial offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -285,12 +267,12 @@
 
   <!-- Invitation -->
   <div class="action2Invitation get">
-          <a href="/reference/building-information/building-measurements/retrieve-a-set-of-measurements-of-a-specific-building" class="action2InvitationRow">
+          <a href="/reference/building-information/get-available-measurement-types-for-a-specific-building/retrieve-the-list-of-available-measurement-types-for-a-building" class="action2InvitationRow">
                   <div class="action2Tag get"></div>
       
       <!-- Name -->
       <h4 class="action2Name">
-        Retrieve a set of measurements of a specific building      </h4>
+        Retrieve the list of available measurement types for a building      </h4>
       <!-- /Name -->
 
       <!-- Icon -->
@@ -315,7 +297,7 @@
 
   <!-- Name -->
   <h2 class="resource2Name">
-    Get available measurement types for the buildings  </h2>
+    Get the available measurement for a specific building  </h2>
   <!-- /Name -->
 
   <!-- Parameters -->
@@ -324,7 +306,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>List the measurement types that are available for each building belonging to the trial</p>    </div>
+      <p>Provides information regarding the available measurements of a specific type for a specific building, during a certain period of time. A valid {id} can be obtained by calling the /buildings service. A valid {type_id} can be obtained by calling the /buildings service and check the 'measurement_points' section of the answer. Valid {from} and {to} values are expressed in ISO8601 format. 'Horsens' is the only trial offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -332,7 +314,54 @@
 
   <!-- Invitation -->
   <div class="action2Invitation get">
-          <a href="/reference/building-information/get-available-measurement-types-for-the-buildings/retrieve-the-list-of-available-measurement-types" class="action2InvitationRow">
+          <a href="/reference/building-information/get-the-available-measurement-for-a-specific-building/retrieve-the-list-of-available-measurements-for-a-building" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the list of available measurements for a building      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get the available measurement types for the trial  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Provides a detailed list of all the available building measurements types in the trial. 'Horsens' is the only trial offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/building-information/get-the-available-measurement-types-for-the-trial/retrieve-the-list-of-available-measurement-types" class="action2InvitationRow">
                   <div class="action2Tag get"></div>
       
       <!-- Name -->
@@ -362,7 +391,7 @@
 
   <!-- Name -->
   <h2 class="resource2Name">
-    Get available measurement types of a specific type for the buildings  </h2>
+    Get the available measurement types for the trial, based on their id  </h2>
   <!-- /Name -->
 
   <!-- Parameters -->
@@ -371,7 +400,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>List the measurement types that are available for each building belonging to the trial and are of type {type}</p>    </div>
+      <p>Provides a detailed list of all the available measurements types that match a specific measurements type name. A valid {id} can be obtained by calling the /{version}/{trial}/buildings/measurement_types service. 'Horsens' is the only trial offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -379,12 +408,59 @@
 
   <!-- Invitation -->
   <div class="action2Invitation get">
-          <a href="/reference/building-information/get-available-measurement-types-of-a-specific-type-for-the-buildings/retrieve-the-list-of-available-measurement-types-of-a-specific-type" class="action2InvitationRow">
+          <a href="/reference/building-information/get-the-available-measurement-types-for-the-trial-based-on-their-id/retrieve-a-list-of-measurement-types,-based-on-their-id" class="action2InvitationRow">
                   <div class="action2Tag get"></div>
       
       <!-- Name -->
       <h4 class="action2Name">
-        Retrieve the list of available measurement types of a specific type      </h4>
+        Retrieve a list of measurement types, based on their id      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get the available measurement types for buildings, based on their type  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Provides a detailed list of all the available measurements types that match a specific measurements type. A valid {type} can be obtained by calling the /{version}/{trial}/buildings/measurement_types service and check the 'type' attribute of the answer.'Horsens' is the only trial offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/building-information/get-the-available-measurement-types-for-buildings-based-on-their-type/retrieve-a-list-of-measurement-types,-based-on-their-type" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a list of measurement types, based on their type      </h4>
       <!-- /Name -->
 
       <!-- Icon -->
@@ -952,7 +1028,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>List the vehicles known to the selected trial infrastructure</p>    </div>
+      <p>List the vehicles known to the selected trial infrastructure. 'Horsens' and 'Ireland' are the only trials offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -999,7 +1075,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>List the properties of the identified vehicle. The measurement types associated with the vehicle are delivered as well.</p>    </div>
+      <p>GET /Horsens/vehicles/{id} Provides information regarding a single vehicle. A valid {id} can be found by calling the /{version}/{trial}/vehicles service. 'Horsens' and 'Ireland' are the only trials offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -1037,7 +1113,7 @@
 
   <!-- Name -->
   <h2 class="resource2Name">
-    Vehicle measurements  </h2>
+    Vehicles measurement types  </h2>
   <!-- /Name -->
 
   <!-- Parameters -->
@@ -1046,9 +1122,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>Lists the measurements of the specified type of a vehicle.</p>
-
-<p>The measurement types can be one of the following: Position, Distance, BatteryCapacity</p>    </div>
+      <p>Provides a detailed list of all the available vehicle measurements types in the trial. 'Horsens' and 'Ireland' are the only trials offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -1056,12 +1130,12 @@
 
   <!-- Invitation -->
   <div class="action2Invitation get">
-          <a href="/reference/electric-vehicles/vehicle-measurements/retrieve-a-set-of-measurements-of-a-specific-vehicle" class="action2InvitationRow">
+          <a href="/reference/electric-vehicles/vehicles-measurement-types/retrieve-the-measurement-types-of-the-vehicles-of-the-trial" class="action2InvitationRow">
                   <div class="action2Tag get"></div>
       
       <!-- Name -->
       <h4 class="action2Name">
-        Retrieve a set of measurements of a specific vehicle      </h4>
+        Retrieve the measurement types of the vehicles of the trial      </h4>
       <!-- /Name -->
 
       <!-- Icon -->
@@ -1086,7 +1160,7 @@
 
   <!-- Name -->
   <h2 class="resource2Name">
-    Get available measurement types for the vehicles  </h2>
+    Vehicles measurement types  </h2>
   <!-- /Name -->
 
   <!-- Parameters -->
@@ -1095,7 +1169,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>List the measurement types that are available for each vehicle belonging to the trial</p>    </div>
+      <p>Provides a detailed list of all the available measurements types that match a specific measurements type name. A valid {id} can be obtained by calling the /{version}/{trial}/vehicles/measurement_types service. 'Horsens' and 'Ireland' are the only trials offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -1103,12 +1177,12 @@
 
   <!-- Invitation -->
   <div class="action2Invitation get">
-          <a href="/reference/electric-vehicles/get-available-measurement-types-for-the-vehicles/retrieve-the-list-of-available-measurement-types" class="action2InvitationRow">
+          <a href="/reference/electric-vehicles/vehicles-measurement-types/retrieve-a-single-measurement-type-based-on-its-id" class="action2InvitationRow">
                   <div class="action2Tag get"></div>
       
       <!-- Name -->
       <h4 class="action2Name">
-        Retrieve the list of available measurement types      </h4>
+        Retrieve a single measurement type based on its id      </h4>
       <!-- /Name -->
 
       <!-- Icon -->
@@ -1133,7 +1207,7 @@
 
   <!-- Name -->
   <h2 class="resource2Name">
-    Get available measurement types of a specific type for the vehicles  </h2>
+    Vehicles measurement types  </h2>
   <!-- /Name -->
 
   <!-- Parameters -->
@@ -1142,7 +1216,7 @@
 
   <!-- Description -->
       <div class="resource2Description markdown formalTheme">
-      <p>List the measurement types that are available for each vehicle belonging to the trial and are of type {type}</p>    </div>
+      <p>Provides a detailed list of all the available measurements types that match a specific measurements type. A valid {type} can be obtained by calling the /{version}/{trial}/vehicles/measurement_types service and check the 'type' entries.'Horsens' and 'Ireland' are the only trials offering this service.</p>    </div>
     <!-- /Description -->
 
   <!-- Actions -->
@@ -1150,12 +1224,106 @@
 
   <!-- Invitation -->
   <div class="action2Invitation get">
-          <a href="/reference/electric-vehicles/get-available-measurement-types-of-a-specific-type-for-the-vehicles/retrieve-the-list-of-available-measurement-types-of-a-specific-type" class="action2InvitationRow">
+          <a href="/reference/electric-vehicles/vehicles-measurement-types/retrieve-a-single-measurement-type-based-on-its-type" class="action2InvitationRow">
                   <div class="action2Tag get"></div>
       
       <!-- Name -->
       <h4 class="action2Name">
-        Retrieve the list of available measurement types of a specific type      </h4>
+        Retrieve a single measurement type based on its type      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Measurement types of a single vehicle  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Provides information regarding the available measurements types for the specific vehicle. A valid {id} can be obtained by calling the /{version}/{trial}/vehicles service. 'Horsens' and 'Ireland' are the only trials offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/electric-vehicles/measurement-types-of-a-single-vehicle/retrieve-the-measurement-types-of-a-vehicle-of-the-trial" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the measurement types of a vehicle of the trial      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Measurement types of a single vehicle  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Provides information regarding the available measurements of a specific type for a specific vehicle, during a certain period of time. A valid {id} can be obtained by calling the /{version}/{trial}/vehicles service. A valid {type_id} can be obtained by calling the /{version}/{trial}/vehicles service and check the 'measurement_points' section of the answer. Valid {from} and {to} values are expressed in ISO8601 format. 'Horsens' and 'Ireland' are the only trials offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/electric-vehicles/measurement-types-of-a-single-vehicle/retrieve-the-measurement-types-of-a-vehicle-of-the-trial" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve the measurement types of a vehicle of the trial      </h4>
       <!-- /Name -->
 
       <!-- Icon -->
@@ -1439,6 +1607,116 @@
       <!-- Name -->
       <h4 class="action2Name">
         Retrieve the list of available sectors      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Optimization    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This group of APIs offers access to supported optimization engines and their parametrization.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    List available algorithm weights  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Allows a user to retrieve a collection of algoweights. 'Ireland' is the only trial offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/optimization/list-available-algorithm-weights/retrieve-a-list-of-algorithm-weights-descriptions" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve a list of algorithm weights descriptions      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    List available algorithm weights  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Allows a user to retrieve an algoweights record, based on its ID. A valid {id} can be obtained by calling the /algoweights service. 'Ireland' is the only trial offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/optimization/list-available-algorithm-weights/retrieve-information-over-a-single-algorithm-object" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve information over a single algorithm object      </h4>
       <!-- /Name -->
 
       <!-- Icon -->
@@ -1958,6 +2236,210 @@
       <!-- Name -->
       <h4 class="action2Name">
         Retrieve historical measurements for a single machine      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div></div>
+  <!-- /Resources -->
+
+</div><div class="resourceGroup">
+
+  <!-- Name -->
+      <h1 class="resourceGroupName">
+      Virtual Power Plant    </h1>
+    <!-- /Name -->
+
+  <!-- Description -->
+      <div class="resourceGroupDescription markdown formalTheme">
+      <p>This set of APIs offers information regarding the operation of virtual power plants (vvp).</p>    </div>
+    <!-- /Description -->
+
+  <!-- Resources -->
+  <div class="resources"><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get VPP components data  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Gets measurement data for component for a specified data and data type. The {comp_type} can be either 'production' or 'consumption'. A valid {comp_id} can be found from the /vpp/components service. A valid {date} can be found from the /{version}/{trial}/vpp/{comp_type}/{comp_id}/data service. Currently, 'Aachen' is the only trial offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/virtual-power-plant/get-vpp-components-data/retrieve-vpp-components" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve VPP components      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get the data of a specific VPP component  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Gets the list of dates of available data for a component. The {comp_type} can be either 'production' or 'consumption'. A valid {comp_id} can be found from the /{version}/{trial}/vpp/components service. Currently, 'Aachen' is the only trial offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/virtual-power-plant/get-the-data-of-a-specific-vpp-component/retrieve-data-for-a-vpp-component" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve data for a VPP component      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get the measurements of a specific VPP component in a day  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Gets measurement data for component for a specified data and data type. The {comp_type} can be either 'production' or 'consumption'. A valid {comp_id} can be found from the /{version}/{trial}/vpp/components service. A valid {date} can be found from the /{version}/{trial}/vpp/{comp_type}/{comp_id}/data service. Currently, 'Aachen' is the only trial offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/virtual-power-plant/get-the-measurements-of-a-specific-vpp-component-in-a-day/retrieve-vpp-component-measurements" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve VPP component measurements      </h4>
+      <!-- /Name -->
+
+      <!-- Icon -->
+      <div class="action2InvitationIcon"></div>
+      <!-- /Icon -->
+
+          </a>
+      </div>
+  <!-- Invitation -->
+
+  <!-- Parameters -->
+  <div class="row action2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+    <!-- /Description -->
+
+</div></div>
+  <!-- /Actions -->
+
+</div><div class="resource2">
+
+  <!-- Name -->
+  <h2 class="resource2Name">
+    Get the predictions for a specific VPP component in a day  </h2>
+  <!-- /Name -->
+
+  <!-- Parameters -->
+  <div class="row resource2Parameters hidden"></div>
+  <!-- /Parameters -->
+
+  <!-- Description -->
+      <div class="resource2Description markdown formalTheme">
+      <p>Gets prediction data for component for a specified data and data type. The {comp_type} can be either 'production' or 'consumption'. A valid {comp_id} can be found from the /{version}/{trial}/vpp/components service. A valid {date} can be found from the /{version}/{trial}/vpp/{comp_type}/{comp_id}/data service.Currently, 'Aachen' is the only trial offering this service.</p>    </div>
+    <!-- /Description -->
+
+  <!-- Actions -->
+  <div class="resource2Actions"><div class="action2 get">
+
+  <!-- Invitation -->
+  <div class="action2Invitation get">
+          <a href="/reference/virtual-power-plant/get-the-predictions-for-a-specific-vpp-component-in-a-day/retrieve-vpp-component-predictions" class="action2InvitationRow">
+                  <div class="action2Tag get"></div>
+      
+      <!-- Name -->
+      <h4 class="action2Name">
+        Retrieve VPP component predictions      </h4>
       <!-- /Name -->
 
       <!-- Icon -->

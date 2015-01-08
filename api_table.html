@@ -1,425 +1,143 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0022)http://www.finesce.eu/ -->
-<html xmlns="http://www.w3.org/1999/xhtml" data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Finesce.eu</title>
-  <meta name="keywords" content="FINESCE, smart, energy, Public, Private, Partnership, European Union">
-  <meta name="description" content="FINESCE (Future Internet Smart Utility Services) is the smart energy use case project of the Future Internet Public Private Partnership (FI-PPP) program funded by the European Union within FP7.">
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" data-ember-extension="1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+	<title>FINESCE API</title>
+	
+    <!--
+	<link rel="stylesheet" type="text/css" href="css/struktur1.css"
+       media="screen">
+       -->
 
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-  <link rel="stylesheet" type="text/css" href="css/struktur1.css" media="screen">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
-  <link rel="stylesheet" type="text/css" href="css/userstyles.css" media="screen">
-  <script src="js/jquery.min.js" type="text/javascript"></script>
-  <link href="css/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet" media="all">
-  <script src="js/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
-  <link href="http://www.finesce.eu/global/styles/jquery.bxslider.css" rel="stylesheet" type="text/javascript">
-  <script src="js/jquery.bxslider.js" type="text/javascript"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi">
-
-  <script language="javascript" type="text/javascript">
-    $(document).ready(function () {
-             $("a[rel$=playvideo]").fancybox({ type: 'iframe', showNavArrows: false, height: 400, width: 700, margin: 0, padding: 10 });
-             $("a[rel$=info]").fancybox({ type: 'iframe', showNavArrows: false, height: 400, width: 700 });
-             $("a[rel$=anmeldung]").fancybox({ type: 'iframe', showNavArrows: false, height: 550, width: 640 });
-             $('.firmenlogos').bxSlider({ minSlides: 4, maxSlides: 6, slideWidth: 250, slideMargin: 10, ticker: true, speed: 30000, randomStart: true });
-             $('.ImageHeader').bxSlider({ pause: 5000, pager: false, controls: false, auto: true, slideWidth: 1000, speed: 300, randomStart: true });
-             $("a[rel$=disclaimer]").fancybox({ type: 'iframe', showNavArrows: false, height: 400, width: 700, margin: 0, padding: 10 });
-    });
-
-
-    function NewsletterBestellen(NLEmail) {
-    if (window.ActiveXObject) {
-        try { http = new ActiveXObject("MSXML2.XMLHTTP"); } catch (e) { http = false; }
-    }
-    else if (window.XMLHttpRequest) { try { http = new XMLHttpRequest(); } catch (e) { http = false; } }
-
-    if (http != null) {
-        http.onreadystatechange = ShowNewsletter;
-        http.open("POST", "http://www.finesce.eu/Newsletter.asp?Email=" + NLEmail, true);
-        http.send(null);
-    }
-}
-
-      function wopen(url, width, height) {
-          FensterGross = window.open(url, "Fenster", "top=10,left=10,width=" + width + ",height=" + height + ",status=no,resizable=no,scrollbars=no");
-          FensterGross.focus();
-      }
-
-
-function ShowNewsletter() {
-    if (http.readyState == 4) {
-        if (http.status == 200) { alert('You successfully registered for our mailing list. We have just sent an e-mail for confirmation. Please click on the activation link included to finish your registration.'); } else { alert('Registration not successfull, please try again...'); }
-    }
-}
-    </script>
-<script type="text/javascript" src="js/cnt_js.php"></script></head>
+	<!-- Latest compiled and minified JavaScript -->
+	<!-- <script src="js/bootstrap.min.js"></script>-->
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/userstyles.css" media="screen">
+	<link rel="stylesheet" href="css/fiware.css">
+</head>
 <body>
-  <div id="Recommend">
-    <a href="http://www.finesce.eu/#" onclick="wopen(&#39;http://www.facebook.com/sharer.php?locale=de_DE&amp;u=http%3A%2F%2Fwww%2Efinesce%2Eeu&amp;src=sp&#39;, 640, 480);"><img src="images/btnFacebook.png" class="RecommendBtn" alt=""></a><br>
-    <a href="http://www.finesce.eu/#" onclick="wopen(&#39;http://twitter.com/share?text=Visit FINESCE (Future Internet Smart Utility Services) - an FI-PPP project funded by the European Union within FP7.&amp;url=http://www.finesce.eu&#39;, 640, 480);"><img src="images/btnTwitter.png" class="RecommendBtn" alt=""></a><br>
-    <a href="https://plus.google.com/share?url=www.finesce.eu" onclick="javascript:window.open(this.href, &#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&#39;);return false;"><img src="images/btnGoogle.png" class="RecommendBtn" alt=""></a><br>
-    <a href="http://www.finesce.eu/#" onclick="wopen(&#39;https://www.xing.com/app/user?op=share&amp;url=http%3a%2f%2fwww.finesce.eu;title=Visit FINESCE (Future Internet Smart Utility Services) - an FI-PPP project funded by the European Union within FP7.&#39;, 720, 720);"><img src="images/btnXing.png" class="RecommendBtn" alt=""></a><br>
-  </div>
-
-  <div id="main">
-    <div id="header">
-      <div id="header2">
-        <div id="Suche">
-          <form id="SuchForm" method="post" name="Suche" action="http://www.finesce.eu/default.asp">
-            <input type="hidden" name="Funktion" value="SUCHE">
-            <input type="text" name="Keyword" onfocus="this.value=&#39;&#39;;" value="search" id="Suchfeld">
-            <input type="image" name="Submit1" value="Suchen" id="Suchbutton" src="images/btnSubmit.png" alt="search">
-            <br class="cb">
-          </form>
-          <a href="http://www.finesce.eu/default.asp"><img src="images/Logo.png" id="Logo" alt="Logo" border="0"></a>
+	
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">FINESCE</a>
         </div>
-        <div id="NaviTop">
-          <ul id="nav" class="dropdown dropdown-horizontal">
-            <li class="dir">
-              <div class="Menue_Top"><a class="A_Menue_Top" href="index.html">HOME</a></div>
-            </li>
-            <li class="dir">
-              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/About.html">ABOUT</a></div>
-              <ul>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Who_We_Are.html">Who We Are</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/What_we_do.html">What we do</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/FINSENY.html">FINSENY</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/FIPPP.html">FI-PPP</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/FIWARE.html">FI-WARE</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Links.html">Links</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dir">
-              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Trial_Sites.html">TRIAL SITES</a></div>
-              <ul>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Aachen.html">Trial Site Aachen</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Ireland.html">Trial Site Ireland</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Horsens.html">Trial Site Horsens</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Cologne.html">Trial Site Cologne</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Madrid.html">Trial Site Madrid</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Malmo.html">Trial Site Malmo</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Trial_Site_Terni.html">Trial Site Terni</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dir">
-              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Phase_3.html">PHASE 3</a></div>
-              <ul>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/FIWARE_Accelerator_Programme.html">FIWARE Accelerator Programme</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/FINESCE_trial_infrastructure.html">FINESCE trial infrastructure</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/FINESCE_DSEs.html">FINESCE DSEs</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/FINESCE_API.html">FINESCE API</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dir">
-              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Events.html">EVENTS</a></div>
-              <ul>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Event_Reviews.html">Event Reviews</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Event_Calendar.html">Event Calendar</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Open_Days.html">Open Days</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/SGSG_Meetings.html">SGSG Meetings</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Innovation_Events.html">Innovation Events</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dir">
-              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/News.html">NEWS</a></div>
-            </li>
-            <li class="dir">
-              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Community.html">COMMUNITY</a></div>
-              <ul>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Innovation_Community.html">Innovation Community</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/SGSG.html">SGSG</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dir">
-              <div class="Menue_Top"><a class="A_Menue_Top" href="http://www.finesce.eu/Library.html">LIBRARY</a></div>
-              <ul>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Results.html">Results</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Project_Videos.html">Project Videos</a>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Videoblogs.html">Videoblogs</a>
-                  <ul>
-                    <li class="MenueLvl2"><a class="A_Menue" href="http://www.finesce.eu/FIA_2013.html">FIA 2013</a></li>
-                  </ul>
-                </li>
-                <li class="MenueLvl2">
-                  <a class="A_Menue" href="http://www.finesce.eu/Press_Review.html">Press Review</a>
-                </li>
-              </ul>
-            </li>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              <li class="active">Home</li>
+              <li><a href="FINESCE_GEs.html">Generic Enablers</a></li>
+              <li><a href="FINESCE_DSEs.html">Specific Enablers</a></li>
+              <li><a href="api_table.html">API</a></li>
           </ul>
-        </div>
-        <br class="cb">
+        </div><!--/.navbar-collapse -->
       </div>
-    </div>
-    <div id="content">
-      <div class="bx-wrapper" style="max-width: 1000px; margin: 0px auto;">
-        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 200px;">
-          <ul class="ImageHeader" style="border: 0px; z-index: 1; width: 615%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-1040px, 0px, 0px); background-color: rgb(255, 255, 255);">
-            <li style="float: left; list-style: none; position: relative; width: 1000px;" class="bx-clone">
-              <div style="background-image: url(&#39;images/Header_mast.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
-            </li>
-            <li style="float: left; list-style: none; position: relative; width: 1000px;">
-              <div style="background-image: url(&#39;images/Header_glasfront.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
-            </li>
-            <li style="float: left; list-style: none; position: relative; width: 1000px;">
-              <div style="background-image: url(&#39;images/Header_heads.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
-            </li>
-            <li style="float: left; list-style: none; position: relative; width: 1000px;">
-              <div style="background-image: url(&#39;images/Header_kite.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
-            </li>
-            <li style="float: left; list-style: none; position: relative; width: 1000px;">
-              <div style="background-image: url(&#39;images/Header_mast.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
-            </li>
-            <li style="float: left; list-style: none; position: relative; width: 1000px;" class="bx-clone">
-              <div style="background-image: url(&#39;images/Header_glasfront.jpg&#39;); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;"><img src="images/Header_font_white_trans.png" alt="Talking Energy"></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <br class="cb">
-      <div id="col1">
-        <h2>Follow us on</h2>
-        <a href="https://www.facebook.com/pages/FINESCE/533773726686099" target="_blank"><img src="images/Facebook.jpg" alt="Follow FINESCE on facebook" hspace="5" border="0"></a> <a href="https://twitter.com/finesce" target="_blank"><img src="images/Twitter.jpg" alt="Follow FINESCE on Twitter" hspace="5" border="0"></a> <a href="http://www.linkedin.com/groups/FINESCE-6511767/about" target="_blank"><img src="images/LinkedIn.jpg" alt="Follow FINESCE on LinedIn" hspace="5" border="0"></a> <a href="http://www.youtube.com/channel/UCThhGXGPZ3GgwYIMXkQL9xg" target="_blank"><img src="images/Youtube.jpg" alt="Follow FINESCE on YOutube" hspace="5" border="0"></a>
-        <br><br>
-        <span class="tag1">Accelerator</span> <span class="tag2">Assembly</span> <span class="tag2">Brussels</span> <span class="tag2">Building</span> <span class="tag2">Business</span> <span class="tag1">Communications</span> <span class="tag2">Competition</span> <span class="tag1">Computing</span> <span class="tag5">Conference</span> <span class="tag2">Denmark</span> <span class="tag1">Edition</span> <span class="tag1">Electricity</span> <span class="tag1">Entrepreneurs</span> <span class="tag5">European</span> <span class="tag5">FINESCE</span> <span class="tag1">Foundation</span> <span class="tag1">Framework</span> <span class="tag1">Funding</span> <span class="tag3">General</span> <span class="tag1">Hamburg</span> <span class="tag1">Hedensted</span> <span class="tag5">Horsens</span> <span class="tag1">InfoDay</span> <span class="tag5">Innovation</span> <span class="tag2">Innovative</span> <span class="tag5">Internet</span> <span class="tag1">Italian</span> <span class="tag5">Meeting</span> <span class="tag1">Members</span> <span class="tag1">Million</span> <span class="tag1">Network</span> <span class="tag1">Newsletter</span> <span class="tag1">Partners</span> <span class="tag1">Private</span> <span class="tag2">Programme</span> <span class="tag2">Project</span> <span class="tag1">Registration</span> <span class="tag1">Security</span> <span class="tag1">Services</span> <span class="tag1">Seventh</span> <span class="tag1">SmartGridComm</span> <span class="tag1">SpeedUp</span> <span class="tag5">Stakeholder</span> <span class="tag1">Stenderup</span> <span class="tag2">Student</span> <span class="tag1">Technologies</span> <span class="tag1">Universtiy</span> <span class="tag2">Utility</span> <span class="tag1">Waterford</span> <span class="tag1">Wireless</span> <span class="tag5">Workshop</span> <span class="tag1">acceleration</span> <span class="tag1">accelerators</span> <span class="tag1">attends</span> <span class="tag1">available</span> <span class="tag1">between</span> <span class="tag1">building</span> <span class="tag2">countries</span> <span class="tag1">demonstrations</span> <span class="tag1">development</span> <span class="tag1">enabled</span> <span class="tag3">entrepreneurs</span> <span class="tag1">established</span> <span class="tag1">exciting</span> <span class="tag1">experiences</span> <span class="tag1">factory</span> <span class="tag3">funding</span> <span class="tag1">further</span> <span class="tag2">general</span> <span class="tag2">generation</span> <span class="tag2">industry</span> <span class="tag4">information</span> <span class="tag1">infrastructure</span> <span class="tag1">innovating</span> <span class="tag3">innovation</span> <span class="tag3">innovative</span> <span class="tag1">interdisciplinary</span> <span class="tag1">interest</span> <span tag1="class">internet</span> <span class="tag1">networking</span> <span class="tag1">newsletter</span> <span class="tag3">opportunities</span> <span class="tag1">participants</span> <span class="tag1">participated</span> <span class="tag1">participating</span> <span class="tag2">partner</span> <span class="tag1">partners</span> <span class="tag3">presented</span> <span class="tag3">programme</span> <span class="tag5">project</span> <span class="tag2">projects</span> <span class="tag1">receives</span> <span class="tag1">related</span> <span class="tag1">resulted</span> <span class="tag4">results</span> <span class="tag1">started</span> <span class="tag1">technologies</span> <span class="tag1">universities</span> <span class="tag1">welcomes</span> <span class="tag1">winners</span> <span class="tag5">workshop</span>
-        <br><br>
-      </div>
-      <div id="col23">
-        <div id="col23">
-          <h2>Catalogue of FINESCE API</h2>
-          
-          <p>Smart Energy Grids have been subjects to extensive research during the last few years. The rapid development of highly effective communication technologies, in combination with the ever increasing computation capacity of contemporary data centres have assisted towards the design of such Grids. However, not all technical barriers have been eradicated, rendering their implementation, in many cases, impractical. Furthermore, most of the times Energy Utilities rely on proprietary software to power their Smart Energy Systems, limiting their sustainability flexibility as value added services are hard to implement. In the same context, third parties are very difficult to integrate into the existing systems, increasing implementation costs and contributing to vendor lock-ins.</p>
-          <p>FINESCE, as a part of its value proposition to the European Energy sector and the FI-PPP Phase III projects, provides a unified, homogeneous Application Programming Interface (API) in an attempt to strictly define a common format of interaction among distinct Smart Energy Systems and facilitate access of third parties to the functionality of its seven trials. The FINESCE API has been built upon the functional requirements and characteristics of these trials, spanning numerous application domains ranging from Electric Vehicles monitoring, to Smart Factories and Energy Marketplaces. A detailed but not exhaustive list of supported categories is provided in the following paragraphs.</p>
-          <p>The FINESCE API specification (currently ongoing work) is being integrated into a dedicated mediation service, provided in the form of an open-source Domain Specific Enabler (DSE), namely the FINESCE API Mediator DSE. The DSE has already been instantiated and can be graphically accessed through a dedicated web portal hosted in <a href="http://docs.fam.apiary.io" target="_blank">http://docs.fam.apiary.io</a>. With the help of the FINESCE API and the aforementioned DSE, all interested parties are able to securely access the FINESCE trial infrastructures and experiment with the FINESCE API and the historical data gathered by the FINESCE partners for more than a year.</p>
-          <p>FINESCE, as a solution provider, exhibits the capabilities of Future Internet in a multitude of disciplines including, among others, low-latency Smart Grid, Smart Buildings, Electric Vehicles and Smart Factories monitoring. The functionality provided by the API as a whole is classified into 18 distinct categories, each one grouping services related to a single domain/functionality. Next, the API categories supported by the current FINESCE API specification are tabulated. Please, note that the API specification is under active development, so changes in the API definitions may occur.</p>
+    </nav>
+	
+	<div class="container">
+		<div class="page-header">
+			<h1>FINESCE API</h1>
+		</div>
+		<p>Smart Energy Grids have been subjects to extensive research during the last few years. The rapid development of highly effective communication technologies, in combination with the ever increasing computation capacity of contemporary data centres have assisted towards the design of such Grids. However, not all technical barriers have been eradicated, rendering their implementation, in many cases, impractical. Furthermore, most of the times Energy Utilities rely on proprietary software to power their Smart Energy Systems, limiting their sustainability flexibility as value added services are hard to implement. In the same context, third parties are very difficult to integrate into the existing systems, increasing implementation costs and contributing to vendor lock-ins.</p>
+        <p>FINESCE, as a part of its value proposition to the European Energy sector and the FI-PPP Phase III projects, provides a unified, homogeneous Application Programming Interface (API) in an attempt to strictly define a common format of interaction among distinct Smart Energy Systems and facilitate access of third parties to the functionality of its seven trials. The FINESCE API has been built upon the functional requirements and characteristics of these trials, spanning numerous application domains ranging from Electric Vehicles monitoring, to Smart Factories and Energy Marketplaces. A detailed but not exhaustive list of supported categories is provided in the following paragraphs.</p>
+        <p>The FINESCE API specification (currently ongoing work) is being integrated into a dedicated mediation service, provided in the form of an open-source Domain Specific Enabler (DSE), namely the FINESCE API Mediator DSE. The DSE has already been instantiated and can be graphically accessed through a dedicated web portal hosted in <a href="http://docs.fam.apiary.io" target="_blank">http://docs.fam.apiary.io</a>. With the help of the FINESCE API and the aforementioned DSE, all interested parties are able to securely access the FINESCE trial infrastructures and experiment with the FINESCE API and the historical data gathered by the FINESCE partners for more than a year.</p>
+        <p>FINESCE, as a solution provider, exhibits the capabilities of Future Internet in a multitude of disciplines including, among others, low-latency Smart Grid, Smart Buildings, Electric Vehicles and Smart Factories monitoring. The functionality provided by the API as a whole is classified into 18 distinct categories, each one grouping services related to a single domain/functionality. Next, the API categories supported by the current FINESCE API specification are tabulated. Please, note that the API specification is under active development, so changes in the API definitions may occur.</p>
 
-          <table border="1" style="background-color:#FFFFFF;border-collapse:collapse;border:1px solid #000000;color:#000000;width:100%" cellpadding="3" cellspacing="3">
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>Method</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-
-<tr><td rowspan='2'><b>Authentication</b><br>This set of APIs is used for authenticating users against oauth2 authentication and authorization services.</td>
+		<table class="themed">
+<tr class='top'><th>Category</th><th>Method</th><th>Description</th></tr>
+<tr class=category><td class=left-nonbold rowspan='2'><b>Authentication</b><br>This set of APIs is used for authenticating users against oauth2 authentication and authorization services.</td>
 <td>Authenticate a user</td><td>Authenticates a user against a set of credentials.</td></tr>
 <td>Refresh a token</td><td>Retrieves a new authentication token based on a previously issued refresh token.</td></tr>
-<tr><td>Building control centre</td><td>/</td><td>/</td></tr>
-<tr><td rowspan='5'><b>Building information</b><br>This set of APIs provide access to information related to Smart Buildings presentation.</td>
-<td>List of buildings in trial</td><td>List the buildings known to the selected trial infrastructure</td></tr>
-<td>Building Description</td><td>List the properties of the identified building. The measurement types associated with the building are delivered as well.</td></tr>
-<td>Building measurements</td><td>Lists the measurements of the specified type of a building.</td></tr>
-<td>Get available measurement types for the buildings</td><td>List the measurement types that are available for each building belonging to the trial</td></tr>
-<td>Get available measurement types of a specific type for the buildings</td><td>List the measurement types that are available for each building belonging to the trial and are of type {type}</td></tr>
-<tr><td>Customers and contracts</td><td>/</td><td>/</td></tr>
-<tr><td rowspan='5'><b>Energy demand / Power consumption</b><br>This API set offers services for getting/updating information related to the electricity demand (consumption).</td>
+<tr class=category><td class=left-nonbold rowspan='7'><b>Building information</b><br>This set of APIs provide access to information related to Smart Buildings presentation.</td>
+<td>List of buildings in trial</td><td>List the buildings known to the selected trial infrastructure. 'Horsens' is the only trial offering this service.</td></tr>
+<td>Building Description</td><td>List the properties of the identified building. The measurement types associated with the building are delivered as well. 'Horsens' is the only trial offering this service.</td></tr>
+<td>Get available measurement types for a specific building</td><td>Provides information regarding the available measurements types for the specific building.A valid {id} can be obtained by the /{version}/{trial}/buildings service. 'Horsens' is the only trial offering this service.</td></tr>
+<td>Get the available measurement for a specific building</td><td>Provides information regarding the available measurements of a specific type for a specific building, during a certain period of time. A valid {id} can be obtained by calling the /buildings service. A valid {type_id} can be obtained by calling the /buildings service and check the 'measurement_points' section of the answer. Valid {from} and {to} values are expressed in ISO8601 format. 'Horsens' is the only trial offering this service.</td></tr>
+<td>Get the available measurement types for the trial</td><td>Provides a detailed list of all the available building measurements types in the trial. 'Horsens' is the only trial offering this service.</td></tr>
+<td>Get the available measurement types for the trial, based on their id</td><td>Provides a detailed list of all the available measurements types that match a specific measurements type name. A valid {id} can be obtained by calling the /{version}/{trial}/buildings/measurement_types service. 'Horsens' is the only trial offering this service.</td></tr>
+<td>Get the available measurement types for buildings, based on their type</td><td>Provides a detailed list of all the available measurements types that match a specific measurements type. A valid {type} can be obtained by calling the /{version}/{trial}/buildings/measurement_types service and check the 'type' attribute of the answer.'Horsens' is the only trial offering this service.</td></tr>
+<tr class=category><td class=left-nonbold><b>Customers and contracts</b><br>This set of APIs is intented to provide access to information related to customer profiles and contracts signed between the end-users and the Energy Retailers providing the energy.</td><td>/</td><td>/</td></tr>
+<tr class=category><td class=left-nonbold rowspan='5'><b>Energy demand / Power consumption</b><br>This API set offers services for getting/updating information related to the electricity demand (consumption).</td>
 <td>Total user energy consumption</td><td>A total electricity consumption report for a single user.</td></tr>
 <td>User profile of energy consumption</td><td>A report on the profile of electricity consumption for a single user.</td></tr>
 <td>Sector profile of energy consumption</td><td>A total electricity consumption report for a single sector.</td></tr>
 <td>User power demand</td><td>The report of grid power demand of a single user.</td></tr>
 <td>User power demand</td><td>The report of grid power demand of a single sector.</td></tr>
-<tr><td rowspan='5'><b>Energy supply / Power production</b><br>This API set offers services for getting/updating information related to the electricity supply (production).</td>
+<tr class=category><td class=left-nonbold rowspan='5'><b>Energy supply / Power production</b><br>This API set offers services for getting/updating information related to the electricity supply (production).</td>
 <td>Total user energy production</td><td>A total electricity production report for a single user.</td></tr>
 <td>User profile of energy production</td><td>A report on the profile of electricity production for a single user.</td></tr>
 <td>Sector energy production</td><td>A report on the profile of electricity production for a single sector.</td></tr>
 <td>User power supply</td><td>The report of grid power supply of a single user.</td></tr>
 <td>Sector power supply</td><td>The report of grid power supply of a single sector.</td></tr>
-<tr><td rowspan='5'><b>Electric Vehicles</b><br>This group of APIs offers access to information related to monitoring of Electric Vehicles and their supporting equipment.</td>
-<td>List of vehicles in trial</td><td>List the vehicles known to the selected trial infrastructure</td></tr>
-<td>Vehicle Description</td><td>List the properties of the identified vehicle. The measurement types associated with the vehicle are delivered as well.</td></tr>
-<td>Vehicle measurements</td><td>Lists the measurements of the specified type of a vehicle.</td></tr>
-<td>Get available measurement types for the vehicles</td><td>List the measurement types that are available for each vehicle belonging to the trial</td></tr>
-<td>Get available measurement types of a specific type for the vehicles</td><td>List the measurement types that are available for each vehicle belonging to the trial and are of type {type}</td></tr>
-<tr><td>Event and KPIs</td><td>/</td><td>/</td></tr>
-<tr><td rowspan='2'><b>External information</b><br>This API is responsible for handling requests/responses from services that do not directly map to energy-related data.</td>
+<tr class=category><td class=left-nonbold rowspan='7'><b>Electric Vehicles</b><br>This group of APIs offers access to information related to monitoring of Electric Vehicles and their supporting equipment.</td>
+<td>List of vehicles in trial</td><td>List the vehicles known to the selected trial infrastructure. 'Horsens' and 'Ireland' are the only trials offering this service.</td></tr>
+<td>Vehicle Description</td><td>GET /Horsens/vehicles/{id} Provides information regarding a single vehicle. A valid {id} can be found by calling the /{version}/{trial}/vehicles service. 'Horsens' and 'Ireland' are the only trials offering this service.</td></tr>
+<td>Vehicles measurement types</td><td>Provides a detailed list of all the available vehicle measurements types in the trial. 'Horsens' and 'Ireland' are the only trials offering this service.</td></tr>
+<td>Vehicles measurement types</td><td>Provides a detailed list of all the available measurements types that match a specific measurements type name. A valid {id} can be obtained by calling the /{version}/{trial}/vehicles/measurement_types service. 'Horsens' and 'Ireland' are the only trials offering this service.</td></tr>
+<td>Vehicles measurement types</td><td>Provides a detailed list of all the available measurements types that match a specific measurements type. A valid {type} can be obtained by calling the /{version}/{trial}/vehicles/measurement_types service and check the 'type' entries.'Horsens' and 'Ireland' are the only trials offering this service.</td></tr>
+<td>Measurement types of a single vehicle</td><td>Provides information regarding the available measurements types for the specific vehicle. A valid {id} can be obtained by calling the /{version}/{trial}/vehicles service. 'Horsens' and 'Ireland' are the only trials offering this service.</td></tr>
+<td>Measurement types of a single vehicle</td><td>Provides information regarding the available measurements of a specific type for a specific vehicle, during a certain period of time. A valid {id} can be obtained by calling the /{version}/{trial}/vehicles service. A valid {type_id} can be obtained by calling the /{version}/{trial}/vehicles service and check the 'measurement_points' section of the answer. Valid {from} and {to} values are expressed in ISO8601 format. 'Horsens' and 'Ireland' are the only trials offering this service.</td></tr>
+<tr class=category><td class=left-nonbold><b>Event and KPIs</b><br>This set of APIs will contain services exposing functionality related to KPIs and metrics that quantify the efficiency of a Smart Energy service offering.</td><td>/</td><td>/</td></tr>
+<tr class=category><td class=left-nonbold rowspan='2'><b>External information</b><br>This API is responsible for handling requests/responses from services that do not directly map to energy-related data.</td>
 <td>Get the latest known social events</td><td>This service is meant to offer a list of social events that can temporarily influence the electricity consumption.</td></tr>
 <td>Get a specific number of the latest known social events</td><td>This service is meant to offer a list containing a specific number of social events that can temporarily influence the electricity consumption.</td></tr>
-<tr><td rowspan='3'><b>Metering infrastructure details</b><br>This set of APIs exposes services related to the presentation of the metering equipment of a Smart Energy site, be it a Smart Grid or a Smart Building.</td>
+<tr class=category><td class=left-nonbold rowspan='3'><b>Metering infrastructure details</b><br>This set of APIs exposes services related to the presentation of the metering equipment of a Smart Energy site, be it a Smart Grid or a Smart Building.</td>
 <td>List all meters</td><td>Gets a list of the available meters along with the set of their accompanying information.</td></tr>
 <td>Get a specific meter description</td><td>Retrieves a meter based on a search string.</td></tr>
 <td>List all available sectors</td><td>Gets a list of the sectors that the meters may be deployed into.</td></tr>
-<tr><td rowspan='1'><b>Pricing</b><br>This group of APIs provides information related to energy pricing.</td>
+<tr class=category><td class=left-nonbold rowspan='2'><b>Optimization</b><br>This group of APIs offers access to supported optimization engines and their parametrization.</td>
+<td>List available algorithm weights</td><td>Allows a user to retrieve a collection of algoweights. 'Ireland' is the only trial offering this service.</td></tr>
+<td>List available algorithm weights</td><td>Allows a user to retrieve an algoweights record, based on its ID. A valid {id} can be obtained by calling the /algoweights service. 'Ireland' is the only trial offering this service.</td></tr>
+<tr class=category><td class=left-nonbold rowspan='1'><b>Pricing</b><br>This group of APIs provides information related to energy pricing.</td>
 <td>Retrieve the energy prices of a specific location during a specific period</td><td>This API retrieves the energy prices of a location during a specified period of time</td></tr>
-<tr><td rowspan='2'><b>Regions</b><br>This API set offers services related to regional characteristics</td>
+<tr class=category><td class=left-nonbold rowspan='2'><b>Regions</b><br>This API set offers services related to regional characteristics</td>
 <td>Available regions</td><td>Retrieve the list of all available regions</td></tr>
 <td>Single region</td><td>Retrieve the list of a single region, based on its id</td></tr>
-<tr><td>Resolution plan and incentives</td><td>/</td><td>/</td></tr>
-<tr><td>Savings</td><td>/</td><td>/</td></tr>
-<tr><td rowspan='4'><b>Simulation</b><br>This set of APIs may be used to retrieve simulated values for various smart grid/city aspects.</td>
+<tr class=category><td class=left-nonbold><b>Resolution plan and incentives</b><br>This set of APIs will specify interfaces related to directives from a Smart Grid Aggregator to the Energy Retailers, to enable effective Demand Response in the framework of IP-enabled Smart Energy Marketplaces.</td><td>/</td><td>/</td></tr>
+<tr class=category><td class=left-nonbold><b>Savings</b><br>This set of APIs will offer functionality related to historical data related to the cost savings of energy consumers, based on their energy consumption behaviour.</td><td>/</td><td>/</td></tr>
+<tr class=category><td class=left-nonbold rowspan='4'><b>Simulation</b><br>This set of APIs may be used to retrieve simulated values for various smart grid/city aspects.</td>
 <td>Prediction of user power demand</td><td>Returns a simulated power demand prediction for a specific user, based on his/her id.</td></tr>
 <td>Prediction of sector power demand</td><td>Returns a simulated power demand prediction for a specific sector.</td></tr>
 <td>Prediction of user power supply</td><td>Returns a simulated power supply prediction for a specific user, based on his/her id.</td></tr>
 <td>Prediction of sector power supply</td><td>Returns a simulated power supply for a specific sector.</td></tr>
-<tr><td rowspan='2'><b>Smart Factories</b><br>This set of APIs offers information related to the monitoring and control of equipment of a smart factory.</td>
+<tr class=category><td class=left-nonbold rowspan='2'><b>Smart Factories</b><br>This set of APIs offers information related to the monitoring and control of equipment of a smart factory.</td>
 <td>Available machines</td><td>Gets the list of available machines of the factory.</td></tr>
 <td>Information over a single machine</td><td>Gets detailed, historical information regarding a single machine, based on its id.</td></tr>
-<tr><td rowspan='3'><b>Weather forecast</b><br>This API is responsible for fetching information related to the weather be it in the past or the near future.</td>
+<tr class=category><td class=left-nonbold rowspan='4'><b>Virtual Power Plant</b><br>This set of APIs offers information regarding the operation of virtual power plants (vvp).</td>
+<td>Get VPP components data</td><td>Gets measurement data for component for a specified data and data type. The {comp_type} can be either 'production' or 'consumption'. A valid {comp_id} can be found from the /vpp/components service. A valid {date} can be found from the /{version}/{trial}/vpp/{comp_type}/{comp_id}/data service. Currently, 'Aachen' is the only trial offering this service.</td></tr>
+<td>Get the data of a specific VPP component</td><td>Gets the list of dates of available data for a component. The {comp_type} can be either 'production' or 'consumption'. A valid {comp_id} can be found from the /{version}/{trial}/vpp/components service. Currently, 'Aachen' is the only trial offering this service.</td></tr>
+<td>Get the measurements of a specific VPP component in a day</td><td>Gets measurement data for component for a specified data and data type. The {comp_type} can be either 'production' or 'consumption'. A valid {comp_id} can be found from the /{version}/{trial}/vpp/components service. A valid {date} can be found from the /{version}/{trial}/vpp/{comp_type}/{comp_id}/data service. Currently, 'Aachen' is the only trial offering this service.</td></tr>
+<td>Get the predictions for a specific VPP component in a day</td><td>Gets prediction data for component for a specified data and data type. The {comp_type} can be either 'production' or 'consumption'. A valid {comp_id} can be found from the /{version}/{trial}/vpp/components service. A valid {date} can be found from the /{version}/{trial}/vpp/{comp_type}/{comp_id}/data service.Currently, 'Aachen' is the only trial offering this service.</td></tr>
+<tr class=category><td class=left-nonbold rowspan='3'><b>Weather forecast</b><br>This API is responsible for fetching information related to the weather be it in the past or the near future.</td>
 <td>Available forecast descriptors</td><td>Delivers the available forecast descriptors of the specified trial infrastructure.</td></tr>
 <td>Detailed weather report</td><td>A weather report for a specific area, identified by its coordinates.</td></tr>
 <td>Detailed weather report</td><td>A weather report (only one weather descriptor) for a specific area, identified by its coordinates.</td></tr>
-<tr><td rowspan='1'><b>General</b><br>This group of APIs contains functionality that could not fit into any other category.</td>
+<tr class=category><td class=left-nonbold rowspan='1'><b>General</b><br>This group of APIs contains functionality that could not fit into any other category.</td>
 <td>Retrieve a specific location</td><td>Retrieve a specific location.</td></tr>
-            </tbody>
-          </table>
-          <!-- <h4>Further information: </h4>
-          <ul>
-            <li><span style="font-weight: bold;"><a href="http://www.finesce.eu/FIPPP.html">FI-PPP programme (2013-2014)</a></span></li><span style="font-weight: bold;"></span>
-            <li><span style="font-weight: bold;"><a href="http://www.finesce.eu/Links.html">Use case and cross-cutting projects within FI-PPP programme&nbsp;(2013-2015)</a></span></li><span style="font-weight: bold;"></span>
-            <li><span style="font-weight: bold;"><a href="http://www.finesce.eu/FIWARE.html">FI-WARE</a></span> </li>
-          </ul>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p> -->
-        </div>
-        <br class="cb">
-      </div><br class="cb">
-    </div>
-    <br class="cb">
-    <a name="Menue"></a>
-    <div id="footer">
-      <div id="footer2">
-        <div class="slider">
-          <div class="bx-wrapper" style="max-width: 1550px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 100px;"><ul class="firmenlogos" style="border: 0px; margin: 0px; padding: 0px; width: 3215%; position: relative; -webkit-transition: 30s linear; transition: 30s linear; -webkit-transform: translate3d(-7575px, 0px, 0px);">
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/Develco_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/devolo_logo_claim_grau.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/DNET-Logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/insero_software_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/ismb-logo-1.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/LaSalle_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/LogoTeamWare-con-barra-verde.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logoyucca.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_acciona_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_alcatel_lucent_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_alstom_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_asm_terni_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_baum_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_engineering_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_eon_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_ericsson_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_esb_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_fir_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_grenoble_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_honeywell_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_inseroweb_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_intunes_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_orange_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_qsc_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_rwth_aachen_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_synelixis_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/logo_tssg_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/SEnerCon_Logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/SOPTIM_Logo_farbig.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;"><div style="background-image: url(&#39;images/XLAB_logo_large_light_bg.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li>
-            <li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/Develco_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/devolo_logo_claim_grau.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/DNET-Logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/insero_software_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/ismb-logo-1.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/LaSalle_logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/LogoTeamWare-con-barra-verde.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logoyucca.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_acciona_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_alcatel_lucent_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_alstom_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_asm_terni_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_baum_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_engineering_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_eon_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_ericsson_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_esb_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_fir_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_grenoble_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_honeywell_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_inseroweb_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_intunes_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_orange_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_qsc_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_rwth_aachen_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_synelixis_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/logo_tssg_web_s.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/SEnerCon_Logo.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/SOPTIM_Logo_farbig.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li><li style="float: left; list-style: none; position: relative; width: 242.5px; margin-right: 10px;" class="bx-clone"><div style="background-image: url(&#39;images/XLAB_logo_large_light_bg.png&#39;); background-position: 50% 50%; height: 100px; width: 250px; background-repeat: no-repeat;">&nbsp;</div></li></ul></div></div>
-          </div>
-          <div style="width: 40%; max-width: 310px; min-height: 50px; float: left; margin-right: 35px;">
-            <img src="images/EU.png" alt="">
-            <img src="images/Logo_FutureINet.png" alt="">
-          </div>
-          <div style="width: 310px; min-height: 50px; float: left;"></div>
-          <div style="width: 40%; max-width: 310px; min-height: 50px; float: right;text-align: right;"><br>
-            <a class="A_Menue_Top" href="http://www.finesce.eu/Contact.html">Contact</a><br>
-            <a class="A_Menue_Top" href="http://www.finesce.eu/Legal.html">Legal</a>
-          </div>
-          <br class="cb">
-        </div>
-      </div>
-    </div>
-
-<!-- Copyright (c) 2000-2013 etracker GmbH. All rights reserved. -->
-<!-- This material may not be reproduced, displayed, modified or distributed -->
-<!-- without the express prior written permission of the copyright holder. -->
-
-<!-- BEGIN etracker Tracklet 3.0 -->
-<script type="text/javascript">    document.write(String.fromCharCode(60) + 'script type="text/javascript" src="http' + ("https:" == document.location.protocol ? "s" : "") + '://code.etracker.com/t.js?et=JoEi4s">' + String.fromCharCode(60) + '/script>');</script><script type="text/javascript" src="js/t.js"></script>
-
-<!-- etracker PARAMETER 3.0 -->
-<script type="text/javascript">
-    /* Beginn des konfigurierbaren Parameterbereichs.
-    Um folgende Parameter zu verwenden, entfernen Sie bitte die führenden zwei Schrägstriche (//) und ergänzen den Parameter um den gewünschten Wert. */
-    //var et_pagename     = "";
-    //var et_areas        = "";
-    //var et_url          = "";
-    //var et_target       = "";
-    //var et_ilevel       = 0;
-    //var et_tval         = "";
-    //var et_cust         = 0;
-    //var et_tonr         = "";
-    //var et_tsale        = 0;
-    //var et_basket       = "";
-    //var et_lpage        = "";
-    //var et_trig         = "";
-    //var et_sub          = "";
-    //var et_se           = "";
-    //var et_tag          = "";
-</script>
-<!-- etracker PARAMETER END -->
-
-<script type="text/javascript">    _etc();</script><p id="et_image" style="display:none;"></p>
-<noscript>&lt;p&gt;&lt;a href="http://www.etracker.com"&gt;&lt;img style="border:0px;" alt="" src="https://www.etracker.com/nscnt.php?et=JoEi4s" /&gt;&lt;/a&gt;&lt;/p&gt;</noscript>
-<!-- etracker CODE NOSCRIPT 3.0 -->
-<noscript>
-&lt;p&gt;&lt;a href='http://www.etracker.de/app?et=JoEi4s'&gt;
-&lt;img style='border:0px;' alt='' src='https://www.etracker.de/cnt.php?et=JoEi4s&amp;amp;v=3.0&amp;amp;java=n&amp;amp;et_easy=0&amp;amp;et_pagename=&amp;amp;et_areas=&amp;amp;et_ilevel=0&amp;amp;et_target=,0,0,0&amp;amp;et_lpage=0&amp;amp;et_trig=0&amp;amp;et_se=0&amp;amp;et_cust=0&amp;amp;et_basket=&amp;amp;et_url=&amp;amp;et_tag=&amp;amp;et_sub=&amp;amp;et_organisation=&amp;amp;et_demographic=' /&gt;&lt;/a&gt;&lt;/p&gt;
-</noscript>
-<!-- etracker CODE NOSCRIPT END-->
-
-<!-- etracker CODE END -->
-
-
-
-
-<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div id="window-resizer-tooltip" style="display: block;"><a href="http://www.finesce.eu/#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle"> </span><span class="tooltipWidth" id="winWidth"></span> <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle"></span><span class="tooltipWidth" id="vpWidth"></span> <span class="tooltipHeight" id="vpHeight"></span></div></body></html>
+		</table>
+	
+		<p>&nbsp;</p>
+		
+		<footer>
+			<p>&copy; FINESCE 2013-2015</p>
+		</footer>
+	</div>
+</body>
+</html>
