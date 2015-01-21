@@ -1,13 +1,85 @@
 [
     {
-        "option": "1", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Integration_kit_DSE", 
-        "description": "Documented process including some examples for the established integrations within WP1", 
-        "site": "Malm\u00f6 (Hyllie)", 
-        "wp": "1", 
-        "id": "Integration_kit_DSE", 
-        "name": "Integration kit DSE"
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Information_(ContractInformation2Orion_**)_", 
+        "description": "ContractInformation2Orion is a REST service (developed in Java) which allows clients (e.g. Retailers) to register data about cost of energy produced from the DERs, costs of transmission system and power plants, energy costs in an instance of ORION Context Broker GE.", 
+        "site": "Terni (DSE instance deployed on FI-Lab)", 
+        "wp": "4", 
+        "id": "Contract_Information_(ContractInformation2Orion_**)_", 
+        "name": "Contract Information (ContractInformation2Orion **) "
     }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Social_Events_Interface_(Social2Orion_**)_", 
+        "description": "Social2Orion is a REST service (developed in Java) which allows clients (e.g. Social Events Information Providers) to register data about social events (affecting consumption/production in a specific area such as a concert or a football match) in an instance of ORION Context Broker GE", 
+        "site": "Terni (DSE instance deployed on FI-Lab)", 
+        "wp": "4", 
+        "id": "Social_Events_Interface_(Social2Orion_**)_", 
+        "name": "Social Events Interface (Social2Orion **) "
+    }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Weather_Condition_Interface_(WeaFor2Orion_**)_", 
+        "description": "WeaFor2Orion consists of: a REST service (developed in Java) which allow clients (e.g. Weather Condition Information Providers) to register data about weather conditions and predictions in a specific area onto an instance of ORION Context Broker GE + a Java client which retrieves weather conditions and predictions from an external service (forecast.io in our implementation) and then \u201cpasses\u201d the data to the above mentioned REST service.", 
+        "site": "Terni (DSE instance deployed on FI-Lab)", 
+        "wp": "4", 
+        "id": "Weather_Condition_Interface_(WeaFor2Orion_**)_", 
+        "name": "Weather Condition Interface (WeaFor2Orion **) "
+    }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/OBDC_Event_Sink_(EvSi)_DSE", 
+        "description": "Local storage of shop floor events", 
+        "site": "Aachen/Cologne", 
+        "wp": "3", 
+        "id": "OBDC_Event_Sink_(EvSi)_DSE", 
+        "name": "OBDC Event Sink (EvSi) DSE"
+    }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Metering_(Metering2Orion_**)_", 
+        "description": "Metering2Orion consists of: a REST service (developed in Java) which allow clients (e.g. DSOs) to register data about metering and load profile in a specific area into an instance of ORION Context Broker GE + a Java client which accepts data about metering and load profile coming from the smart meters (via either an IoT gateway or an existing legacy system) and then \u201cpasses\u201d the data to the above mentioned REST service.", 
+        "site": "Terni (DSE instance deployed on FI-Lab)", 
+        "wp": "4", 
+        "id": "Metering_(Metering2Orion_**)_", 
+        "name": "Metering (Metering2Orion **) "
+    }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Tailor_Processor_", 
+        "description": "", 
+        "site": "(no site specified)", 
+        "wp": "4", 
+        "id": "Contract_Tailor_Processor_", 
+        "name": "Contract Tailor Processor "
+    }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
+        "description": "", 
+        "site": "(no site specified)", 
+        "wp": "4", 
+        "id": "Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
+        "name": "Protocol Adapter AMM (Sensor2AMI **) "
+    }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
+        "description": "", 
+        "site": "(no site specified)", 
+        "wp": "4", 
+        "id": "Issue_Detector_Processor_(Cosmos2SCILAB___INP-SCILAB___SCILAB2Orion_**)_", 
+        "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) "
+    }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/FINESCE_API_Mediator_(FAM)_DSE", 
+        "description": "", 
+        "site": "All trial sites", 
+        "wp": "6", 
+        "id": "FINESCE_API_Mediator_(FAM)_DSE", 
+        "name": "FINESCE API Mediator (FAM) DSE"
+    },
     {
         "option": "1", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Modbus_Connector_(ModConn)_DSE", 
@@ -18,13 +90,13 @@
         "name": "Modbus Connector (ModConn) DSE"
     }, 
     {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/OBDC_Event_Sink_(EvSi)_DSE", 
-        "description": "Local storage of shop floor events", 
-        "site": "Aachen/Cologne", 
-        "wp": "3", 
-        "id": "OBDC_Event_Sink_(EvSi)_DSE", 
-        "name": "OBDC Event Sink (EvSi) DSE"
+        "option": "1", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Integration_kit_DSE", 
+        "description": "Documented process including some examples for the established integrations within WP1", 
+        "site": "Malm\u00f6 (Hyllie)", 
+        "wp": "1", 
+        "id": "Integration_kit_DSE", 
+        "name": "Integration kit DSE"
     }, 
     {
         "option": "1", 
@@ -54,69 +126,6 @@
         "name": "Production Schedule Manager DSE"
     }, 
     {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Tailor_Processor_", 
-        "description": "", 
-        "site": "(no site specified)", 
-        "wp": "4", 
-        "id": "Contract_Tailor_Processor_", 
-        "name": "Contract Tailor Processor "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Information_(ContractInformation2Orion_**)_", 
-        "description": "ContractInformation2Orion is a REST service (developed in Java) which allows clients (e.g. Retailers) to register data about cost of energy produced from the DERs, costs of transmission system and power plants, energy costs in an instance of ORION Context Broker GE.", 
-        "site": "Terni (DSE instance deployed on FI-Lab)", 
-        "wp": "4", 
-        "id": "Contract_Information_(ContractInformation2Orion_**)_", 
-        "name": "Contract Information (ContractInformation2Orion **) "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Social_Events_Interface_(Social2Orion_**)_", 
-        "description": "Social2Orion is a REST service (developed in Java) which allows clients (e.g. Social Events Information Providers) to register data about social events (affecting consumption/production in a specific area such as a concert or a football match) in an instance of ORION Context Broker GE", 
-        "site": "Terni (DSE instance deployed on FI-Lab)", 
-        "wp": "4", 
-        "id": "Social_Events_Interface_(Social2Orion_**)_", 
-        "name": "Social Events Interface (Social2Orion **) "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Weather_Condition_Interface_(WeaFor2Orion_**)_", 
-        "description": "WeaFor2Orion consists of: a REST service (developed in Java) which allow clients (e.g. Weather Condition Information Providers) to register data about weather conditions and predictions in a specific area onto an instance of ORION Context Broker GE + a Java client which retrieves weather conditions and predictions from an external service (forecast.io in our implementation) and then \u201cpasses\u201d the data to the above mentioned REST service.", 
-        "site": "Terni (DSE instance deployed on FI-Lab)", 
-        "wp": "4", 
-        "id": "Weather_Condition_Interface_(WeaFor2Orion_**)_", 
-        "name": "Weather Condition Interface (WeaFor2Orion **) "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Metering_(Metering2Orion_**)_", 
-        "description": "Metering2Orion consists of: a REST service (developed in Java) which allow clients (e.g. DSOs) to register data about metering and load profile in a specific area into an instance of ORION Context Broker GE + a Java client which accepts data about metering and load profile coming from the smart meters (via either an IoT gateway or an existing legacy system) and then \u201cpasses\u201d the data to the above mentioned REST service.", 
-        "site": "Terni (DSE instance deployed on FI-Lab)", 
-        "wp": "4", 
-        "id": "Metering_(Metering2Orion_**)_", 
-        "name": "Metering (Metering2Orion **) "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
-        "description": "", 
-        "site": "(no site specified)", 
-        "wp": "4", 
-        "id": "Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
-        "name": "Protocol Adapter AMM (Sensor2AMI **) "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
-        "description": "", 
-        "site": "(no site specified)", 
-        "wp": "4", 
-        "id": "Issue_Detector_Processor_(Cosmos2SCILAB___INP-SCILAB___SCILAB2Orion_**)_", 
-        "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) "
-    }, 
-    {
         "option": "1", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Charging_Optimisation_System_(COS)_DSE", 
         "description": "Optimisation of Electric Vehicle Charging", 
@@ -124,14 +133,5 @@
         "wp": "5", 
         "id": "Charging_Optimisation_System_(COS)_DSE", 
         "name": "Charging Optimisation System (COS) DSE"
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/FINESCE_API_Mediator_(FAM)_DSE", 
-        "description": "", 
-        "site": "All trial sites", 
-        "wp": "6", 
-        "id": "FINESCE_API_Mediator_(FAM)_DSE", 
-        "name": "FINESCE API Mediator (FAM) DSE"
     }
 ]
