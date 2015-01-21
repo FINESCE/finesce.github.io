@@ -4,24 +4,24 @@
         "Name": "Generation Schedule Manager DSE",
         "Short Description": "",
         "Documentation": {
-            "Description": "\n<p>\n The Generation Schedule Manager retrieves energy generation data in a documented format from the different possible sources, in this case the wind, solar and biogas DERs.\n <br/>\n As shown in the figure the data will be collected in storage and the needed data for e.g. a given time period will be retrieved and processed.\n</p>\n\n<p>\n <img alt=\"\" src=\"images/redmine/WP3_VPP_GenScheduleManager_DSE_Data.png\"/>\n</p>\n\n<p>\n The Generation Schedule Manager provides the information about energy generation. It determines the actual generation of the energy resources and delivers the forecasted data as well as the historical data.\n <br/>\n The information can be accessed via services as shown in the figure below.\n</p>\n\n<p>\n <img alt=\"\" src=\"images/redmine/WP3_VPP_GenScheduleManager_DSE_Services.png\"/>\n</p>\n\n\n<h3>\n Basic Concepts\n</h3>\n\n\n<h3>\n Basic Design Principles\n</h3>\n\n\n",
+            "Description": "\n<p>\n The Generation Schedule Manager retrieves energy generation data in a documented format from the different possible sources, in this case the wind, solar and biogas DERs.\n <br/>\n As shown in the figure the data will be collected in storage and the needed data for e.g. a given time period will be retrieved and processed.\n</p>\n\n<p>\n <img alt=\"\" src=\"images/redmine/WP3_VPP_GenScheduleManager_DSE_Data.png\"/>\n</p>\n\n<p>\n The Generation Schedule Manager provides the information about energy generation. It determines the actual generation of the energy resources and delivers the forecasted data as well as the historical data.\n <br/>\n The information can be accessed via services as shown in the figure below.\n</p>\n\n<p>\n <img alt=\"\" src=\"images/redmine/WP3_VPP_GenScheduleManager_DSE_Services.png\"/>\n</p>\n\n\n",
             "Copyright": "\n<p>\n Copyright \u00a9 2014 by FINESCE\n</p>\n\n\n",
-            "Glossary": "\n\n",
-            "References": "\n\n",
-            "Details": "\n\n<h3>\n Address/Protocol\n</h3>\n\n\n<h3>\n Commands\n</h3>\n\n\n<h3>\n Endpoints\n</h3>\n\n\n",
+            "Glossary": "\n<ul>\n <li>\n  B2B: Business to Business\n </li>\n <li>\n  VPP: Virtual Power Plant\n </li>\n <li>\n  REST: Representational State Transfer\n </li>\n</ul>\n\n\n",
+            "References": "\n<ul>\n <li>\n  B2B:\n  <a class=\"external\" href=\"http://en.wikipedia.org/wiki/Business-to-business\">\n   Business-to-business\n  </a>\n </li>\n <li>\n  VPP:\n  <a class=\"external\" href=\"http://en.wikipedia.org/wiki/Virtual_power_plant\">\n   Virtual_power_plant\n  </a>\n </li>\n <li>\n  REST:\n  <a class=\"external\" href=\"http://en.wikipedia.org/wiki/Representational_state_transfer\">\n   Representational_state_transfer\n  </a>\n </li>\n</ul>\n\n\n",
+            "Details": "",
             "Preface": "\n<p>\n Within this document you find a self-contained open specification of the aforementioned Domain Specific Enabler (DSE).\n</p>\n\n<p>\n Please consult the appropriate pages on the\n <a class=\"external\" href=\"http://www.finesce.eu/Trial_Site_Ireland.html\">\n  FINESCE\n </a>\n website in order to understand the complete context of the related FINESCE trials and this DSE.\n</p>\n\n\n",
-            "ReutilisedTech": "\n\n"
+            "ReutilisedTech": "\n<ul>\n <li>\n  Offers a RESTful HTTP API\n </li>\n</ul>\n\n\n"
         },
         "WP": "",
-        "Terms and Conditions": "\n\n",
+        "Terms and Conditions": "\n<p>\n The Specification of this DSE will be available.\n</p>\n\n\n",
         "wiki_attachments": [
             "/redmine/attachments/download/1966/WP3_VPP_GenScheduleManager_DSE_Data.png",
             "/redmine/attachments/download/1968/WP3_VPP_GenScheduleManager_DSE_Services.png"
         ],
         "Open Source": "",
-        "Contact Person": "\n<p>\n Adelheid Weinert,\n <a class=\"email\" href=\"mailto:Adelheid.weinertREMOVE-NO-SPAM@qsc.de\">\n  Adelheid.weinertREMOVE-NO-SPAM@qsc.de\n </a>\n</p>\n\n",
+        "Contact Person": "\n<p>\n Adelheid Weinert\n <br/>\n QSC AG\n <br/>\n <a class=\"email\" href=\"mailto:Adelheid.weinertREMOVE-NO-SPAM@qsc.de\">\n  Adelheid.weinertREMOVE-NO-SPAM@qsc.de\n </a>\n</p>\n\n",
         "Overview": "\n<p>\n In the trial of the B2B energy ecosystem a factory and a Virtual Power Plant representing respectively the energy consumer and energy generation side are combined. The target of this setup is to balance the use of energy by the factory with the generation of energy from renewable sources. In this approach an energy-flexible factory is adapted to volatile energy supply and prices which leads to an energy driven production planning. The balancing between the energy generation and consumption is done by matching the profiles of energy generation and consumption, based on a variation of energy profiles for the factory and the production as well as the forecasted data of the VPP.\n</p>\n\n<p>\n The Schedule Managers are designed for the energy generation and energy consumption to provide the profiles which enable the applications to balance the energy generation and consumption.\n</p>\n\n\n",
-        "Downloads": "",
-        "Instances": ""
+        "Downloads": "\n<p>\n None.\n</p>\n\n\n",
+        "Instances": "\n<p>\n An instance of this DSE\u2019s reference implementation runs as a part of the trial and is not publicly accessible.\n</p>\n\n\n"
     }
 ]
