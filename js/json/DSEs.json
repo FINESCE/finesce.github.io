@@ -46,33 +46,6 @@
     }, 
     {
         "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Tailor_Processor_", 
-        "description": "", 
-        "site": "(no site specified)", 
-        "wp": "4", 
-        "id": "Contract_Tailor_Processor_", 
-        "name": "Contract Tailor Processor "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
-        "description": "", 
-        "site": "(no site specified)", 
-        "wp": "4", 
-        "id": "Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
-        "name": "Protocol Adapter AMM (Sensor2AMI **) "
-    }, 
-    {
-        "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
-        "description": "", 
-        "site": "(no site specified)", 
-        "wp": "4", 
-        "id": "Issue_Detector_Processor_(Cosmos2SCILAB___INP-SCILAB___SCILAB2Orion_**)_", 
-        "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) "
-    }, 
-    {
-        "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/FINESCE_API_Mediator_(FAM)_DSE", 
         "description": "", 
         "site": "All trial sites", 
