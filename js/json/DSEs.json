@@ -46,6 +46,24 @@
     }, 
     {
         "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Scene_Manager_DSE", 
+        "description": "Configuration of a set of parameters for alert management", 
+        "site": "Madrid", 
+        "wp": "2", 
+        "id": "Scene_Manager_DSE", 
+        "name": "Scene Manager DSE"
+    }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Temporal_Consistency_DSE", 
+        "description": "Pre-processing of large data sets for removing invalid values", 
+        "site": "Madrid", 
+        "wp": "2", 
+        "id": "Temporal_Consistency_DSE", 
+        "name": "Temporal Consistency DSE"
+    }, 
+    {
+        "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/FINESCE_API_Mediator_(FAM)_DSE", 
         "description": "", 
         "site": "All trial sites", 

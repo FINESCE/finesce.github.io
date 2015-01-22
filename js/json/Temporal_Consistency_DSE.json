@@ -1,0 +1,26 @@
+[
+    {
+        "Target Usage": "",
+        "Name": "Temporal Consistency DSE",
+        "Short Description": "",
+        "Documentation": {
+            "Description": "\n\n<h3>\n Basic Concepts\n</h3>\n\n<p>\n The DSE functionalities are enabled by a Java application running within a server internal to the Madrid trial site in charge of performing periodically a temporal consistency analysis over the data stored in Cosmos GE. The results of the analysis are loaded into the database of the same internal server of the trial. A prototype web interface has been developed for testing the performance of the DSE. The screenshot in the figure below shows how the Temporal Consistency DSE is applied to the weather predictions coming from the weather forecasting module of the Madrid trial. Non-consistent predictions are detected and removed by the pre-processing algorithm.\n</p>\n\n<p>\n <img alt=\"\" src=\"images/redmine/TemporalConsistencyDSE.png\"/>\n</p>\n\n\n<h3>\n Basic Design Principles\n</h3>\n\n<p>\n The DSE makes use of the Big Data Analysis - Cosmos GE and the HiveQL Client (Backend).  HiveQL is a database querying language based on SQL that supports analysis of large datasets stored in Hadoop file systems, so it is used by the DSE for performing queries to the database programmatically.\n</p>\n\n\n",
+            "Copyright": "\n<p>\n Copyright \u00a9 2014 by FINESCE\n</p>\n\n\n",
+            "Glossary": "",
+            "References": "",
+            "Details": "",
+            "Preface": "\n<p>\n Within this document you find a self-contained open specification of the aforementioned Domain Specific Enabler (DSE).\n</p>\n\n<p>\n Please consult the appropriate pages on the\n <a class=\"external\" href=\"http://www.finesce.eu/Trial_Site_Ireland.html\">\n  FINESCE\n </a>\n website in order to understand the complete context of the related FINESCE trials and this DSE.\n</p>\n\n\n",
+            "ReutilisedTech": "\n<p>\n The Temporal Consistency DSE relies on the Big Data Analysis - Cosmos GE and the Publish/Subscribe Context Broker - Orion Context Broker GE from FIWARE\n</p>\n\n\n"
+        },
+        "WP": "",
+        "Terms and Conditions": "\n<p>\n This DSE will be available as Open Source (Apache License 2.0).\n</p>\n\n\n",
+        "wiki_attachments": [
+            "/redmine/attachments/download/2158/TemporalConsistencyDSE.png"
+        ],
+        "Open Source": "",
+        "Contact Person": "\n<p>\n Jos\u00e9 Luis Bur\u00f3n\n <br/>\n ACCIONA Infraestructuras\n <br/>\n <a class=\"email\" href=\"mailto:joseluis.buron.martinezREMOVE-NO-SPAM@acciona.com\">\n  joseluis.buron.martinezREMOVE-NO-SPAM@acciona.com\n </a>\n</p>\n\n",
+        "Overview": "\n<p>\n The aim of the temporal consistency DSE is to provide support for pre-processing data stored in the Big Data Analysis - Cosmos GE, detecting inconsistencies and removing non-valid values from large data streams.\n</p>\n\n\n<h3>\n What you get\n</h3>\n\n<p>\n The Temporal Consistency DSE allows applying a pre-processing algorithm for removing non-consistent or erroneous data from the data streams coming from the different Madrid trial subsytems. Currently it is being applied to the weather forecasts collected from an Internet web service. The algorithm is fed with historical data, therefore its performance is improved as more data are stored and made available for the algorithm. The algorithm will be adapted and applied as well to the data streams of the rest of Madrid trial subsystems, namely the smart metering infrastructure, the Building Control Centre, and the micro-grid.\n</p>\n\n\n<h3>\n Why to get it\n</h3>\n\n<p>\n With the Temporal Consistency DSE FIWARE adopters get an outline of how to apply pre-processing algorithms to big sets of data, in conjunction with the GEs with which this DSE is integrated: Big Data Analysis - Cosmos GE and Orion Context Broker GE.\n</p>\n\n\n",
+        "Downloads": "\n<p>\n To be released in Q1/2015.\n</p>\n\n\n",
+        "Instances": "\n<p>\n An instance of this DSE\u2019s reference implementation runs as a part of the trial and is not publicly accessible.\n</p>\n\n\n"
+    }
+]
