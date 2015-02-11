@@ -28,21 +28,21 @@
     }, 
     {
         "option": "2", 
-        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/OBDC_Event_Sink_(EvSi)_DSE", 
-        "description": "Local storage of shop floor events", 
-        "site": "Aachen/Cologne", 
-        "wp": "3", 
-        "id": "OBDC_Event_Sink_(EvSi)_DSE", 
-        "name": "OBDC Event Sink (EvSi) DSE"
-    }, 
-    {
-        "option": "2", 
         "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Metering_(Metering2Orion_**)_", 
         "description": "Metering2Orion consists of: a REST service (developed in Java) which allow clients (e.g. DSOs) to register data about metering and load profile in a specific area into an instance of ORION Context Broker GE + a Java client which accepts data about metering and load profile coming from the smart meters (via either an IoT gateway or an existing legacy system) and then \u201cpasses\u201d the data to the above mentioned REST service.", 
         "site": "Terni (DSE instance deployed on FI-Lab)", 
         "wp": "4", 
         "id": "Metering_(Metering2Orion_**)_", 
         "name": "Metering (Metering2Orion **) "
+    }, 
+    {
+        "option": "2", 
+        "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/OBDC_Event_Sink_(EvSi)_DSE", 
+        "description": "Local storage of shop floor events", 
+        "site": "Aachen/Cologne", 
+        "wp": "3", 
+        "id": "OBDC_Event_Sink_(EvSi)_DSE", 
+        "name": "OBDC Event Sink (EvSi) DSE"
     }, 
     {
         "option": "2", 
