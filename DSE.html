@@ -246,6 +246,7 @@
 
         // console.log("Parameters: " + id + " " + show);
         $.getJSON("js/json/DSEs.json", function(data) {
+            data = data.dse;
             var dse_data = data.filter(function(dt) {
                 return dt.id === id;
             });

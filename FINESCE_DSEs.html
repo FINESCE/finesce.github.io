@@ -104,8 +104,10 @@
 			var dataGlobal = [];
 			$.getJSON("js/json/DSEs.json", function(data){
 				dataGlobal = data;
+
 				showData("all");
 
+				data = data.dse;
 				var wp_list = [];
 				for (var line in data){
 					wp_list[data[line].site] = true;
@@ -132,6 +134,9 @@
 				// enabler_list.html('');
 				var row_html = "";
 				var data = dataGlobal;
+				var updatedAt = data.updated;
+				var data = data.dse;
+
 				if(filter && filter !== "all") {
 					data = data.filter(function(dt){
 						return dt.site === filter;
@@ -139,7 +144,7 @@
 				}
 
 				for (var line in data) {
-					row_html = '<div class="enabler-row"><h2 class="header"><a href="DSE.html?id='+ data[line].id +'">'+data[line].name+'</a></h2>'+data[line].description+'<div class="category">'+data[line].site+'</div></div>';
+					row_html = '<div class="enabler-row"><h2 class="header"><a href="DSE.html?id='+ data[line].id +'&updated=' + updatedAt + '">'+data[line].name+'</a></h2>'+data[line].description+'<div class="category">'+data[line].site+'</div></div>';
 					enabler_list.append(row_html);
 				}
 			}
