@@ -1,5 +1,5 @@
 {
-    "updated": "2015-02-13T18:08:38",
+    "updated": "2015-02-13T18:46:39.477099", 
     "dse": [
         {
             "option": "2", 
@@ -72,7 +72,7 @@
             "wp": "6", 
             "id": "FINESCE_API_Mediator_(FAM)_DSE", 
             "name": "FINESCE API Mediator (FAM) DSE"
-        },
+        }, 
         {
             "option": "1", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Modbus_Connector_(ModConn)_DSE", 
