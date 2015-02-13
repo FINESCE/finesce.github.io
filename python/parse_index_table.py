@@ -5,6 +5,7 @@ from lxml import etree
 import re
 import json
 import argparse
+import datetime
 
 
 def query_cleanup(text):
@@ -57,7 +58,10 @@ main_content = root.xpath("//div[@id='content']")[0]
 table = main_content.xpath(".//table")[0]
 rows = table.xpath(".//tr")
 
-output = [ ]
+output = {
+	'updated': datetime.datetime.now().isoformat(),
+	'dse': []
+}
 
 for row in rows[1:]:
 	cells = row.getchildren()
@@ -84,7 +88,7 @@ for row in rows[1:]:
 	if site == "":
 		site = "(no site specified)" 
 
-	output.append({
+	output['dse'].append({
 		"id": dse_id,
 		"wp": wp,
 		"name": dse_title,
@@ -102,7 +106,7 @@ print("Written the DSO table of contents to " + json_output)
 if not cookie:
 	print("No HTTP_COOKIE provided. Stopping here.")
 else:
-	for dse_line in output:
+	for dse_line in output['dse']:
 		html_path = "/tmp/%s.html" % dse_line['id']
 		json_path = "%s/%s.json" % (output_path, dse_line['id'])
 		url_source = "%s%s" % (redmine_url, dse_line['wiki_link'])
