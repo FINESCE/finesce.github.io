@@ -134,7 +134,6 @@
 				// enabler_list.html('');
 				var row_html = "";
 				var data = dataGlobal;
-				var updatedAt = data.updated;
 				var data = data.dse;
 
 				if(filter && filter !== "all") {
@@ -144,7 +143,7 @@
 				}
 
 				for (var line in data) {
-					row_html = '<div class="enabler-row"><h2 class="header"><a href="DSE.html?id='+ data[line].id +'&updated=' + updatedAt + '">'+data[line].name+'</a></h2>'+data[line].description+'<div class="category">'+data[line].site+'</div></div>';
+					row_html = '<div class="enabler-row"><h2 class="header"><a href="DSE.html?id='+ data[line].id + '">'+data[line].name+'</a></h2>'+data[line].description+'<div class="category">'+data[line].site+'</div></div>';
 					enabler_list.append(row_html);
 				}
 			}

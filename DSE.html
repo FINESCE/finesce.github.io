@@ -246,6 +246,7 @@
 
         // console.log("Parameters: " + id + " " + show);
         $.getJSON("js/json/DSEs.json", function(data) {
+            var updatedAt = data.updated;
             data = data.dse;
             var dse_data = data.filter(function(dt) {
                 return dt.id === id;
@@ -254,7 +255,7 @@
 
             if (dse_data) {
                 $(".enabler-title").text(dse_data.name);
-                $.getJSON("js/json/" + id + ".json").then(function(dse_data_all) {
+                $.getJSON("js/json/" + id +  ".json?updated=" + updatedAt).then(function(dse_data_all) {
                     var data = dse_data_all[0];
                     $("#content-wiki").html(buildHTMLforPage(data, show));
                     $(".contact-person").html(data["Contact Person"]);
