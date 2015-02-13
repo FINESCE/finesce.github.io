@@ -1,6 +1,5 @@
 {
-    "updated": "2015-02-11T15:24",
-
+    "updated": "2015-02-13T18:08:38.599908", 
     "dse": [
         {
             "option": "1", 
@@ -10,6 +9,24 @@
             "wp": "1", 
             "id": "Integration_kit_DSE", 
             "name": "Integration kit DSE"
+        }, 
+        {
+            "option": "2", 
+            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Scene_Manager_DSE", 
+            "description": "Configuration of a set of parameters for alert management", 
+            "site": "Madrid", 
+            "wp": "2", 
+            "id": "Scene_Manager_DSE", 
+            "name": "Scene Manager DSE"
+        }, 
+        {
+            "option": "2", 
+            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Temporal_Consistency_DSE", 
+            "description": "Pre-processing of large data sets for removing invalid values", 
+            "site": "Madrid", 
+            "wp": "2", 
+            "id": "Temporal_Consistency_DSE", 
+            "name": "Temporal Consistency DSE"
         }, 
         {
             "option": "1", 
@@ -58,15 +75,6 @@
         }, 
         {
             "option": "2", 
-            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Tailor_Processor_", 
-            "description": "", 
-            "site": "(no site specified)", 
-            "wp": "4", 
-            "id": "Contract_Tailor_Processor_", 
-            "name": "Contract Tailor Processor "
-        }, 
-        {
-            "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Information_(ContractInformation2Orion_**)_", 
             "description": "ContractInformation2Orion is a REST service (developed in Java) which allows clients (e.g. Retailers) to register data about cost of energy produced from the DERs, costs of transmission system and power plants, energy costs in an instance of ORION Context Broker GE.", 
             "site": "Terni (DSE instance deployed on FI-Lab)", 
@@ -102,28 +110,10 @@
             "name": "Metering (Metering2Orion **) "
         }, 
         {
-            "option": "2", 
-            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
-            "description": "", 
-            "site": "(no site specified)", 
-            "wp": "4", 
-            "id": "Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
-            "name": "Protocol Adapter AMM (Sensor2AMI **) "
-        }, 
-        {
-            "option": "2", 
-            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
-            "description": "", 
-            "site": "(no site specified)", 
-            "wp": "4", 
-            "id": "Issue_Detector_Processor_(Cosmos2SCILAB___INP-SCILAB___SCILAB2Orion_**)_", 
-            "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) "
-        }, 
-        {
             "option": "1", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Charging_Optimisation_System_(COS)_DSE", 
             "description": "Optimisation of Electric Vehicle Charging", 
-            "site": "(no site specified)", 
+            "site": "Ireland (Trial I: Electric Vehicle- Grid integration)", 
             "wp": "5", 
             "id": "Charging_Optimisation_System_(COS)_DSE", 
             "name": "Charging Optimisation System (COS) DSE"
