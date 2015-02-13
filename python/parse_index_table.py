@@ -58,10 +58,7 @@ main_content = root.xpath("//div[@id='content']")[0]
 table = main_content.xpath(".//table")[0]
 rows = table.xpath(".//tr")
 
-output = {
-	'updated': datetime.datetime.now().isoformat(),
-	'dse': []
-}
+output = []
 
 for row in rows[1:]:
 	cells = row.getchildren()
@@ -88,7 +85,7 @@ for row in rows[1:]:
 	if site == "":
 		site = "(no site specified)" 
 
-	output['dse'].append({
+	output.append({
 		"id": dse_id,
 		"wp": wp,
 		"name": dse_title,
@@ -97,6 +94,30 @@ for row in rows[1:]:
 		"site": site,
 		"description": description,
 	})
+
+# reorder output accoring to the previous order
+oldOrder = []
+orderedOutput = []
+with open(json_output, 'r') as f_json:
+	j = f_json.read()
+	oldData = json.loads(j)['dse']
+	oldOrder = [d['id'] for d in oldData]
+
+for itemId in oldOrder:
+	prev = [d for d in output if d['id'] == itemId]
+	if len(prev) > 0:
+		prev = prev[0]
+		output.remove(prev)
+		orderedOutput.append(prev)
+
+# append any new item to orderedOutput
+orderedOutput = orderedOutput + output
+
+# Add the updated timestamp
+output = {
+	'updated': datetime.datetime.now().isoformat(),
+	'dse': orderedOutput
+}
 
 # export the DSO table of contents
 with open(json_output, 'w') as f_json:
