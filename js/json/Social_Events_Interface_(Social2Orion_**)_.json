@@ -18,13 +18,13 @@
             "/redmine/attachments/download/1920/browser_test_Social2Orion_GET.png",
             "/redmine/attachments/download/1921/chrome_REST_client_screenshot.png",
             "/redmine/attachments/download/1930/Social2Orion_TomcatManager_screenshot.jpg",
-            "/redmine/attachments/download/1938/social2orion.war",
-            "/redmine/attachments/download/2070/social2orion_domainModel.png"
+            "/redmine/attachments/download/2070/social2orion_domainModel.png",
+            "/redmine/attachments/download/2262/social2orion.war"
         ],
         "Open Source": "",
         "Contact Person": "\n<p>\n Massimiliano Nigrelli (Engineering Ingegneria Informatica S.p.A.) -\n <a class=\"email\" href=\"mailto:massimiliano.nigrelliREMOVE-NO-SPAM@eng.it\">\n  massimiliano.nigrelliREMOVE-NO-SPAM@eng.it\n </a>\n <br/>\n Leandro Lombardo (Engineering Ingegneria Informatica S.p.A.) -\n <a class=\"email\" href=\"mailto:leandro.lombardoREMOVE-NO-SPAM@eng.it\">\n  leandro.lombardoREMOVE-NO-SPAM@eng.it\n </a>\n <br/>\n Dario Pellegrino (Engineering Ingegneria Informatica S.p.A.) -\n <a class=\"email\" href=\"mailto:dario.pellegrinoREMOVE-NO-SPAM@eng.it\">\n  dario.pellegrinoREMOVE-NO-SPAM@eng.it\n </a>\n</p>\n\n",
         "Overview": "\n\n<h3>\n What you get\n</h3>\n\n<p>\n Social2Orion is a REST service (developed in Java) which allows clients (e.g. Social Events Information Providers) to register data about social events (affecting consumption/production in a specific area such as a concert or a football match) into an instance of ORION Context Broker GE.\n</p>\n\n<p>\n This component can be eventually re-used and customized to fulfill the general need of having a REST service which is connected to the ORION GE.\n</p>\n\n\n<h3>\n Why to get it\n</h3>\n\n<p>\n A reference implementation of a REST service which is connected to the ORION GE.\n</p>\n\n\n<h3>\n Open Specifications\n</h3>\n\n\n<h3>\n Target Usage\n</h3>\n\n<ul>\n <li>\n  Social Events Information Providers (which may be appointed by energy companies that would need information on social events affecting consumption/production in a specific area)\n </li>\n <li>\n  Third-party applications (such as those developed by SMEs involved in Phase3)\n </li>\n</ul>\n\n\n",
-        "Downloads": "\n<table class=\"themed\">\n <tr class=\"top\">\n  <td>\n   Location\n  </td>\n  <td>\n   Revision\n  </td>\n  <td>\n   Release Date\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/social2orion.war\">\n    social2orion.war\n   </a>\n  </td>\n  <td>\n   version=0.0.1-SNAPSHOT\n  </td>\n  <td>\n   Thu Oct 30 11:02:19 CET 2014\n  </td>\n </tr>\n</table>\n\n\n",
+        "Downloads": "\n<table class=\"themed\">\n <tr class=\"top\">\n  <td>\n   Location\n  </td>\n  <td>\n   Revision\n  </td>\n  <td>\n   Release Date\n  </td>\n </tr>\n <tr>\n  <td>\n   <a class=\"external\" href=\"files/social2orion.war\">\n    social2orion.war\n   </a>\n  </td>\n  <td>\n   version=0.0.1-SNAPSHOT\n  </td>\n  <td>\n   Tue Feb 24th 11:47:00 CET 2015\n  </td>\n </tr>\n</table>\n\n\n",
         "Instances": "\n<p>\n An instance of this DSE reference implementation runs as a part of the trial and is not publicly accessible.\n</p>\n\n\n"
     }
 ]
