@@ -75,7 +75,7 @@ for row in rows[1:]:
 		if dse_id[0] == '/':
 			dse_id = dse_id[1:]
 
-	description = cells[2].text.strip()
+	description = " ".join([si.strip() for si in cells[2].itertext()])
 	option = cells[3].text.strip()
 	site = cells[4].text.strip()
 	do_publish = cells[5].text.strip()
