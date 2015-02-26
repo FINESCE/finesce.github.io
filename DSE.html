@@ -76,15 +76,15 @@
             <div>
                 <ul class="nav-docs-header finesce-subpages">
                     <li class="nav-docs-header">
-                    <a class="nav-docs-header" href="Overview">Overview</a>
+                    <a class="nav-docs-header" href="#Overview">Overview</a>
                     </li>
-                    <li><a href="Documentation">Documentation</a>
+                    <li><a href="#Documentation">Documentation</a>
                     </li>
-                    <li><a href="Downloads">Downloads</a>
+                    <li><a href="#Downloads">Downloads</a>
                     </li>
-                    <li><a href="Instances">Instances</a>
+                    <li><a href="#Instances">Instances</a>
                     </li>
-                    <li><a href="Terms">Terms and conditions</a>
+                    <li><a href="#Terms">Terms and conditions</a>
                     </li>
                 </ul>
             </div>
@@ -235,6 +235,7 @@
 
     function insertOrUpdateShow (link) {
         var show = $(link).attr('href');
+        show = show.substring(1);
         var path = document.location;
         // location.href.replace("page="+currentPageNum, "page="+newPageNum);
         var search = path.search.toString().replace(/&show=[a-zA-Z]+/gi, '');
