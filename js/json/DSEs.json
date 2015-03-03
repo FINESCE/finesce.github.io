@@ -1,5 +1,5 @@
 {
-    "updated": "2015-02-24T19:23:08.073598", 
+    "updated": "2015-03-03T12:37:45.022349", 
     "dse": [
         {
             "option": "2", 
@@ -40,7 +40,7 @@
         {
             "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Tailor_Processor_(ContractManager_**)_", 
-            "description": " Available Q1 2015  This component will be responsible to calculate a new contract for a specific customer based on an incentive plan (issued by a Retailer and approved by a Market Regulator Authority). ", 
+            "description": "This component will be responsible to calculate a new contract for a specific customer based on an incentive plan (issued by a Retailer and approved by a Market Regulator Authority).", 
             "site": "Terni (DSE instance deployed on FI-Lab)", 
             "wp": "4", 
             "id": "Contract_Tailor_Processor_(ContractManager_**)_", 
@@ -49,7 +49,7 @@
         {
             "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
-            "description": " Available Q1 2015  This component will retrieve DLMS/COSEM data from meters installed at the trial site (metering and load profile) and then feeds an instance of IDAS (Backend) Device Management GE with the data (which, on its turn, forwards data to an instance of ORION Context Broker GE ", 
+            "description": "This component will retrieve DLMS/COSEM data from meters installed at the trial site (metering and load profile) and then feeds an instance of IDAS (Backend) Device Management GE with the data (which, on its turn, forwards data to an instance of ORION Context Broker GE", 
             "site": "Terni (DSE instance deployed on hardware located at ASM's premise)", 
             "wp": "4", 
             "id": "Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
@@ -58,7 +58,7 @@
         {
             "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
-            "description": " Available Q1 2015  Detects issues related to power losses and voltage drops (in the lines of a smart LV grid) and then sends it to an instance of ORION Context Broker GE ", 
+            "description": "Detects issues related to power losses and voltage drops (in the lines of a smart LV grid) and then sends it to an instance of ORION Context Broker GE", 
             "site": "Terni (DSE instance deployed on FI-Lab)", 
             "wp": "4", 
             "id": "Issue_Detector_Processor_(Cosmos2SCILAB___INP-SCILAB___SCILAB2Orion_**)_", 
@@ -94,7 +94,7 @@
         {
             "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/FINESCE_API_Mediator_(FAM)_DSE", 
-            "description": " Available Q1 2015  It provides a single point-of-entrance to the FINESCE trial infrastructures, exposing the FINESCE API specification. It serves FINESCE-API compatible incoming requests from interested parties, abstracting the heterogeneity of the underlying FINESCE supporting services. ", 
+            "description": " It provides a single point-of-entrance to the FINESCE trial infrastructures, exposing the FINESCE API specification. It serves FINESCE-API compatible incoming requests from interested parties, abstracting the heterogeneity of the underlying FINESCE supporting services. ", 
             "site": "All trial sites", 
             "wp": "6", 
             "id": "FINESCE_API_Mediator_(FAM)_DSE", 
