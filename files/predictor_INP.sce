@@ -259,7 +259,7 @@ function [predP]=predictor_INP(loadNow, weatherNow,recentHistory, codes,e2p_conv
     oldEnergy1h = read_csv('history_INP.csv',',','decimal','double');
     [oldEnergyPeriod, oldTrainingData] = getOldEnergy(7,loadNow.time,oldEnergy1h);
 
-    write_csv(string(oldEnergyPeriod),'trainingEnergy.csv')
+    //write_csv(string(oldEnergyPeriod),'trainingEnergy.csv')
 
     //oldEnergyPeriod is a matrix with the number of data needed to predict (1 week, 1 day, 2 days and 2 weeks)
     //oldTrainingPeriod is a matrix with the training information in the chosen period

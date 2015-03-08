@@ -375,8 +375,9 @@ else
 end
                    
 data_csv=read_csv('loadData_Profil.csv',',');
-oldPower = read_csv('loadData_history.csv',';','decimal','double');
-oldWeather = read_csv('weatherData_history.csv',';','decimal','double');
+//oldPower = read_csv('loadData_history.csv',';','decimal','double');
+//oldWeather = read_csv('weatherData_history.csv',';','decimal','double');
+
 clc
 disp(" INFO: Files loaded");
 
