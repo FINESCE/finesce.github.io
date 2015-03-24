@@ -23,7 +23,7 @@
 	}    
 	var option = getUrlParameter('option') || '1';
 
-	if (option == '2') {
+	if (option == '1') {
 		$('.js-title').html('Other FINESCE results')
 	}
 
@@ -31,12 +31,12 @@
 	var cacheBuster = Math.floor(new Date().getTime() / (1000 * 60 * 60));
 	$.getJSON("js/json/DSEs.json?ts=" + cacheBuster, function(data){
 
-		// filter for SE: option == 1 && has_code == true
-		// filter for other: option == 2 || has_code == false
+		// filter for SE: option == 2 && has_code == true
+		// filter for other: option == 1 || has_code == false
 		function filterSEs(dse) {
-			if (option == '1' && option == dse.option && dse.has_code == true) {
+			if (option == '2' && option == dse.option && dse.has_code == true) {
 				return true;
-			} else if (option == '2' && (option == dse.option || !dse.has_code)) {
+			} else if (option == '1' && (option == dse.option || !dse.has_code)) {
 				return true
 			} else {
 				console.error('This is not a valid option:', option)
