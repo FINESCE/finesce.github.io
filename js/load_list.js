@@ -30,9 +30,21 @@
 	// This causse DSEs.json to be refreshed every hour
 	var cacheBuster = Math.floor(new Date().getTime() / (1000 * 60 * 60));
 	$.getJSON("js/json/DSEs.json?ts=" + cacheBuster, function(data){
-		data.dse = data.dse.filter(function(dse) {
-			return dse.option == option;
-		});
+
+		// filter for SE: option == 1 && has_code == true
+		// filter for other: option == 2 || has_code == false
+		function filterSEs(dse) {
+			if (option == '1' && option == dse.option && dse.has_code == true) {
+				return true;
+			} else if (option == '2' && (option == dse.option || !dse.has_code)) {
+				return true
+			} else {
+				console.error('This is not a valid option:', option)
+				return false;
+			}
+			return false;
+		}
+		data.dse = data.dse.filter(filterSEs);
 
 		data = data
 
