@@ -13,7 +13,7 @@
             "ReutilisedTech": "\n<ul>\n <li>\n  Offers a RESTful HTTP API\n </li>\n</ul>\n\n\n"
         },
         "WP": "",
-        "Terms and Conditions": "\n<p>\n The Specification of this DSE will be available.\n</p>\n\n\n",
+        "Terms and Conditions": "\n<p>\n This DSE will be available as Open Source (Apache License 2.0).\n</p>\n\n\n",
         "wiki_attachments": [
             "/redmine/attachments/download/1966/WP3_VPP_GenScheduleManager_DSE_Data.png",
             "/redmine/attachments/download/1968/WP3_VPP_GenScheduleManager_DSE_Services.png"
