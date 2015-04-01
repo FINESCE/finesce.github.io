@@ -31,12 +31,10 @@
 	var cacheBuster = Math.floor(new Date().getTime() / (1000 * 60 * 60));
 	$.getJSON("js/json/DSEs.json?ts=" + cacheBuster, function(data){
 
-		// filter for SE: option == 2 && has_code == true
-		// filter for other: option == 1 || has_code == false
 		function filterSEs(dse) {
-			if (option == '2' && option == dse.option && dse.has_code == true) {
+			if (option == '2' && option == dse.option) {
 				return true;
-			} else if (option == '1' && (option == dse.option || !dse.has_code)) {
+			} else if (option == '1' && option == dse.option) {
 				return true
 			} else {
 				console.error('This is not a valid option:', option)
