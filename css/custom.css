@@ -1,0 +1,35 @@
+.jumbotron {
+  padding-bottom: 0;
+}
+.jumbotron .container {
+  position: relative;
+}
+.full-width-image {
+  background: url('/images/header_bg.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  padding: 40px 0 70px;
+}
+
+.full-width-image img {
+  margin-left: -40px;
+}
+.welcome {
+  font-size: 1.4em;
+  position: absolute;
+  top: 170px;
+}
+.about-catalogue {
+  padding: 20px 0;
+
+}
+.about-catalogue p {
+  font-size: 14px;
+}
+
+.min-height-row-1 {
+  min-height: 6em;
+}
+.min-height-row-2 {
+  min-height: 4em;
+}

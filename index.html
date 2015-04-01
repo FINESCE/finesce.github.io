@@ -22,6 +22,9 @@
 
   <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
 <link rel="stylesheet" type="text/css" href="http://assets.cookieconsent.silktide.com/1.0.10/style.min.css"/>
+
+<link rel="stylesheet" href="/css/custom.css">
+
 <script type="text/javascript" src="http://assets.cookieconsent.silktide.com/1.0.10/plugin.min.js"></script>
 <script type="text/javascript">
 // <![CDATA[
@@ -65,12 +68,18 @@ cc.initialise({
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
-          <div style="background-image: url('images/Header_mast.jpg'); background-position: 50% 50%; height: 200px; width: 1000px; background-repeat: no-repeat;">
+      <div class="full-width-image">
+        <div class="container">
             <img src="images/Header_font_white_trans.png" alt="Talking Energy">
-          </div>
-          <div>
-              Welcome to the FINESCE Catalogue!
+            <div class="welcome">
+                Welcome to the FINESCE Catalogue!
+            </div>
+        </div>        
+      </div>
+      <div class="container">
+          <div class="col-md-4 about-catalogue">
+            <h2>About the Catalogue</h2>
+            <p>The FINESCE Catalogue is the central repository for implementations of Domain-Specific Enablers (DSE) that are part of the FINESCE project.</p>
           </div>
       </div>
     </div>
@@ -79,42 +88,42 @@ cc.initialise({
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>About the Catalogue</h2>
-          <div><image src="images/box_1.jpg"></image></div>
-          <p>The FINESCE Catalogue is the central repository for implementations of Domain-Specific Enablers (DSE) that are part of the FINESCE project.</p>
-        </div>
-        <div class="col-md-4">
           <h2><a href="api_table.html">View the API</a></h2>
-          <div><a href="api_table.html"><image src="images/box_2.jpg"></image></a></div>
-          <p>FINESCE project trials are in the process of providing the API- This catalog lists the available interfaces.</p>
+          <div class="thumbnail"><a href="api_table.html"><img src="images/box_2.jpg"></a></div>
+          <p class="min-height-row-1">FINESCE project trials are in the process of providing the API- This catalog lists the available interfaces.</p>
           <p><a class="btn btn-default" href="api_table.html" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2><a href="http://www.finesce.eu">The FINESCE Project</a></h2>
-          <div><a href="http://www.finesce.eu"><image src="images/box_3.jpg"></image></a></div>
-          <p>FINESCE (Future INtErnet Smart Utility ServiCEs) is the smart energy use case project of the 2nd phase of Future Internet Public Private Partnership Programme (FI-PPP) funded by the European Union within FP7.</p>
+          <div class="thumbnail"><a href="http://www.finesce.eu"><img src="images/box_3.jpg"></a></div>
+          <p class="min-height-row-1">FINESCE (Future INtErnet Smart Utility ServiCEs) is the smart energy use case project of the 2nd phase of Future Internet Public Private Partnership Programme (FI-PPP) funded by the European Union within FP7.</p>
           <p><a class="btn btn-default" href="http://www.finesce.eu" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2><a href="FINESCE_GEs.html">View the Generic Enablers</a></h2>
+          <div class="thumbnail"><a href="FINESCE_GEs.html"><img src="images/box_4.jpg"></a></div>
+          <p class="min-height-row-1">The FINESCE project uses several GEs from the FIWARE catalogue, a significant number of which have been fully integrated into the trial sites.</p>
+          <p><a class="btn btn-default" href="FINESCE_GEs.html" role="button">View details &raquo;</a></p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <h2><a href="FINESCE_GEs.html">View the Generic Enablers</a></h2>
-          <div><a href="FINESCE_GEs.html"><image src="images/box_4.jpg"></image></a></div>
-          <p>The FINESCE project uses several GEs from the FIWARE catalogue, a significant number of which have been fully integrated into the trial sites.</p>
-          <p><a class="btn btn-default" href="FINESCE_GEs.html" role="button">View details &raquo;</a></p>
-       </div>
-       <div class="col-md-4">
           <h2><a href="FINESCE_DSEs.html?option=2">View the Specific Enablers</h2>
-          <div><a href="FINESCE_DSEs.html?option=2"><image src="images/box_5.jpg"></image></a></div>
-          <p>FINESCE project has been developing Domain-Specific Enablers (DSEs) to be made available as a part of the FINESCE offering.</p>
+          <div class="thumbnail"><a href="FINESCE_DSEs.html?option=2"><img src="images/box_5.jpg"></a></div>
+          <p class="min-height-row-2">FINESCE project has been developing Domain-Specific Enablers (DSEs) to be made available as a part of the FINESCE offering.</p>
           <p><a class="btn btn-default" href="FINESCE_DSEs.html?option=2" role="button">View details &raquo;</a></p>
-       </div>
-       <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
           <h2><a href="FINESCE_DSEs.html?option=1">View other results</h2>
-          <div><a href="FINESCE_DSEs.html?option=1"><image src="images/box_6.jpg"></image></a></div>
-          <p>Other FINESCE results include solutions, which support the trial sites' services.</p>
+          <div class="thumbnail"><a href="FINESCE_DSEs.html?option=1"><img src="images/box_6.jpg"></a></div>
+          <p class="min-height-row-2">Other FINESCE results include solutions, which support the trial sites' services.</p>
           <p><a class="btn btn-default" href="FINESCE_DSEs.html?option=1" role="button">View details &raquo;</a></p>
-       </div>
+        </div>
+        <!--<div class="col-md-4">
+          <h2>Lorem Ipsum</h2>
+          <div class="thumbnail"><img src="images/box_1.jpg"></div>
+        </div>-->
+
       </div
 
       <hr>
