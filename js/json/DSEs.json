@@ -1,13 +1,12 @@
 {
-    "updated": "2015-03-25T20:40:12.462025", 
+    "updated": "2015-04-07T09:46:10.694946", 
     "dse": [
         {
             "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Information_(ContractInformation2Orion_**)_", 
             "description": "ContractInformation2Orion is a REST service (developed in Java) which allows clients (e.g. Retailers) to register data about cost of energy produced from the DERs, costs of transmission system and power plants, energy costs in an instance of ORION Context Broker GE.", 
             "site": "Terni (DSE instance deployed on FI-Lab)", 
-            "wp": "4",
-            "has_code": true, 
+            "wp": "4", 
             "id": "Contract_Information_(ContractInformation2Orion_**)_", 
             "name": "Contract Information (ContractInformation2Orion **) "
         }, 
@@ -17,7 +16,6 @@
             "description": "Social2Orion is a REST service (developed in Java) which allows clients (e.g. Social Events Information Providers) to register data about social events (affecting consumption/production in a specific area such as a concert or a football match) in an instance of ORION Context Broker GE", 
             "site": "Terni (DSE instance deployed on FI-Lab)", 
             "wp": "4", 
-            "has_code": true, 
             "id": "Social_Events_Interface_(Social2Orion_**)_", 
             "name": "Social Events Interface (Social2Orion **) "
         }, 
@@ -26,7 +24,6 @@
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Weather_Condition_Interface_(WeaFor2Orion_**)_", 
             "description": "WeaFor2Orion consists of: a REST service (developed in Java) which allow clients (e.g. Weather Condition Information Providers) to register data about weather conditions and predictions in a specific area onto an instance of ORION Context Broker GE + a Java client which retrieves weather conditions and predictions from an external service (forecast.io in our implementation) and then \u201cpasses\u201d the data to the above mentioned REST service.", 
             "site": "Terni (DSE instance deployed on FI-Lab)", 
-            "has_code": true, 
             "wp": "4", 
             "id": "Weather_Condition_Interface_(WeaFor2Orion_**)_", 
             "name": "Weather Condition Interface (WeaFor2Orion **) "
@@ -37,7 +34,6 @@
             "description": "Metering2Orion consists of: a REST service (developed in Java) which allow clients (e.g. DSOs) to register data about metering and load profile in a specific area into an instance of ORION Context Broker GE + a Java client which accepts data about metering and load profile coming from the smart meters (via either an IoT gateway or an existing legacy system) and then \u201cpasses\u201d the data to the above mentioned REST service.", 
             "site": "Terni (DSE instance deployed on FI-Lab)", 
             "wp": "4", 
-            "has_code": true, 
             "id": "Metering_(Metering2Orion_**)_", 
             "name": "Metering (Metering2Orion **) "
         }, 
@@ -47,7 +43,6 @@
             "description": "This component will be responsible to calculate a new contract for a specific customer based on an incentive plan (issued by a Retailer and approved by a Market Regulator Authority).", 
             "site": "Terni (DSE instance deployed on FI-Lab)", 
             "wp": "4", 
-            "has_code": true, 
             "id": "Contract_Tailor_Processor_(ContractManager_**)_", 
             "name": "Contract Tailor Processor (ContractManager **) "
         }, 
@@ -57,7 +52,6 @@
             "description": "This component will retrieve DLMS/COSEM data from meters installed at the trial site (metering and load profile) and then feeds an instance of IDAS (Backend) Device Management GE with the data (which, on its turn, forwards data to an instance of ORION Context Broker GE", 
             "site": "Terni (DSE instance deployed on hardware located at ASM's premise)", 
             "wp": "4", 
-            "has_code": true, 
             "id": "Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
             "name": "Protocol Adapter AMM (Sensor2AMI **) "
         }, 
@@ -67,7 +61,6 @@
             "description": "Detects issues related to power losses and voltage drops (in the lines of a smart LV grid) and then sends it to an instance of ORION Context Broker GE", 
             "site": "Terni (DSE instance deployed on FI-Lab)", 
             "wp": "4", 
-            "has_code": true, 
             "id": "Issue_Detector_Processor_(Cosmos2SCILAB___INP-SCILAB___SCILAB2Orion_**)_", 
             "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) "
         }, 
@@ -77,7 +70,6 @@
             "description": "Local storage of shop floor events", 
             "site": "Aachen/Cologne", 
             "wp": "3", 
-            "has_code": true, 
             "id": "OBDC_Event_Sink_(EvSi)_DSE", 
             "name": "OBDC Event Sink (EvSi) DSE"
         }, 
@@ -87,7 +79,6 @@
             "description": "Configuration of a set of parameters for alert management", 
             "site": "Madrid", 
             "wp": "2", 
-            "has_code": true, 
             "id": "Scene_Manager_DSE", 
             "name": "Scene Manager DSE"
         }, 
@@ -97,7 +88,6 @@
             "description": "Pre-processing of large data sets for removing invalid values", 
             "site": "Madrid", 
             "wp": "2", 
-            "has_code": true, 
             "id": "Temporal_Consistency_DSE", 
             "name": "Temporal Consistency DSE"
         }, 
@@ -107,7 +97,6 @@
             "description": " It provides a single point-of-entrance to the FINESCE trial infrastructures, exposing the FINESCE API specification. It serves FINESCE-API compatible incoming requests from interested parties, abstracting the heterogeneity of the underlying FINESCE supporting services. ", 
             "site": "All trial sites", 
             "wp": "6", 
-            "has_code": true, 
             "id": "FINESCE_API_Mediator_(FAM)_DSE", 
             "name": "FINESCE API Mediator (FAM) DSE"
         }, 
@@ -117,7 +106,6 @@
             "description": "Gateway to a local shop floor network", 
             "site": "Aachen/Cologne", 
             "wp": "3", 
-            "has_code": true, 
             "id": "Modbus_Connector_(ModConn)_DSE", 
             "name": "Modbus Connector (ModConn) DSE"
         }, 
@@ -127,37 +115,33 @@
             "description": "Documented process including some examples for the established integrations within WP1", 
             "site": "Malm\u00f6 (Hyllie)", 
             "wp": "1", 
-            "has_code": true, 
             "id": "Integration_kit_DSE", 
             "name": "Integration kit DSE"
         }, 
         {
-            "option": "1", 
+            "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Production_Planning_and_Control_System_Integrator_(PPSI)_DSE", 
             "description": "Connecting factory planning systems to the cloud", 
             "site": "Aachen/Cologne", 
             "wp": "3", 
-            "has_code": false, 
             "id": "Production_Planning_and_Control_System_Integrator_(PPSI)_DSE", 
             "name": "Production Planning and Control System Integrator (PPSI) DSE"
         }, 
         {
-            "option": "1", 
+            "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Generation_Schedule_Manager_DSE", 
             "description": "Handling energy generation schedules from the VPP", 
             "site": "Aachen/Cologne", 
             "wp": "3", 
-            "has_code": true, 
             "id": "Generation_Schedule_Manager_DSE", 
             "name": "Generation Schedule Manager DSE"
         }, 
         {
-            "option": "1", 
+            "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Production_Schedule_Manager_DSE", 
             "description": "Handling production schedules from the Smart Factory", 
             "site": "Aachen/Cologne", 
             "wp": "3", 
-            "has_code": true, 
             "id": "Production_Schedule_Manager_DSE", 
             "name": "Production Schedule Manager DSE"
         }, 
@@ -167,7 +151,6 @@
             "description": "Optimisation of Electric Vehicle Charging", 
             "site": "Ireland (Trial I: Electric Vehicle- Grid integration)", 
             "wp": "5", 
-            "has_code": true, 
             "id": "Charging_Optimisation_System_(COS)_DSE", 
             "name": "Charging Optimisation System (COS) DSE"
         }
