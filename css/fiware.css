@@ -201,3 +201,7 @@ ul.nav-docs-header li:last-child a
 	overflow: hidden;
 	height: 1px;
 }
+/* Hide special settings of the cookie consent thingy */
+#cc-notification-moreinfo {
+  display: none;
+}

@@ -36,7 +36,7 @@
 				return true;
 			} else if (option == '1' && option == dse.option) {
 				return true
-			} else {
+			} else if (['1', '2'].indexOf(option) == -1 ) {
 				console.error('This is not a valid option:', option)
 				return false;
 			}
