@@ -235,9 +235,15 @@ consenttype: "implicit",
         		doc_html = doc_html + "<h2>References</h2>" + dse_data.Documentation.References;
             return doc_html;
         } else if (part == "Downloads") {
-            return dse_data.Downloads;
+        	if (dse_data.Downloads == "")
+        		return "A download link for this DSE is not yet available.";
+        	else
+            	return dse_data.Downloads;
         } else if (part == "Instances") {
-            return dse_data.Instances;
+        	if (dse_data.Instances == "")
+        		return "An instance of this DSE’s reference implementation runs as a part of the trial and is not publicly accessible.";
+        	else
+            	return dse_data.Instances;
         } else if (part == "Terms") {
             return dse_data["Terms and Conditions"];
         } else {
