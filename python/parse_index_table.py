@@ -79,7 +79,7 @@ for row in rows[1:]:
 	option = cells[3].text.strip()
 	site = cells[4].text.strip()
 	do_publish = cells[5].text.strip()
-	if do_publish[0:3] != "yes":
+	if do_publish[0:3].lower() != "yes":
 		continue
 	
 	if site == "":

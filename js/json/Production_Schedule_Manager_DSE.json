@@ -18,7 +18,7 @@
         "Open Source": "",
         "Contact Person": "\n<p>\n Adelheid Weinert\n <br/>\n QSC AG\n <br/>\n <a class=\"email\" href=\"mailto:Adelheid.weinertREMOVE-NO-SPAM@qsc.de\">\n  Adelheid.weinertREMOVE-NO-SPAM@qsc.de\n </a>\n</p>\n\n",
         "Overview": "\n<p>\n In the trial of the B2B energy ecosystem a factory and a Virtual Power Plant representing respectively the energy consumer and energy generation side are combined. The target of this setup is to balance the use of energy by the factory with the generation of energy from renewable sources. In this approach an energy-flexible factory is adapted to volatile energy supply and prices which leads to an energy driven production planning. The balancing between the energy generation and consumption is done by matching the profiles of energy generation and consumption, based on a variation of energy profiles for the factory and the production as well as the forecasted data of the VPP.\n</p>\n\n<p>\n The Schedule Managers are designed for the energy generation and energy consumption to provide the profiles which enable the applications to balance the energy generation and consumption.\n</p>\n\n\n",
-        "Downloads": "\n<p>\n None.\n</p>\n\n\n",
+        "Downloads": "\n<p>\n A download link for this DSE is not yet available.\n</p>\n\n\n",
         "Instances": "\n<p>\n An instance of this DSE\u2019s reference implementation runs as a part of the trial and is not publicly accessible.\n</p>\n\n\n"
     }
 ]

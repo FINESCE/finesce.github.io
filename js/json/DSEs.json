@@ -1,5 +1,5 @@
 {
-    "updated": "2015-04-07T09:46:10.694946", 
+    "updated": "2015-04-08T13:47:21.902428", 
     "dse": [
         {
             "option": "2", 
@@ -153,6 +153,15 @@
             "wp": "5", 
             "id": "Charging_Optimisation_System_(COS)_DSE", 
             "name": "Charging Optimisation System (COS) DSE"
+        }, 
+        {
+            "option": "2", 
+            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Component_Composition_Framework_DSE", 
+            "description": "Component Composition Framework", 
+            "site": "Horsens", 
+            "wp": "2", 
+            "id": "Component_Composition_Framework_DSE", 
+            "name": "Component Composition Framework DSE"
         }
     ]
 }
