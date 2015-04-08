@@ -24,7 +24,8 @@
 	var option = getUrlParameter('option') || '1';
 
 	if (option == '1') {
-		$('.js-title').html('Other FINESCE results')
+		$('.js-title').html('Other FINESCE results');
+		$('.breadcrumb-text').text(' / Other results');
 	}
 
 	// This causse DSEs.json to be refreshed every hour

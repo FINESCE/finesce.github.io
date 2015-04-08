@@ -74,7 +74,7 @@ consenttype: "implicit",
                     <li class="active">Home</li>
                     <li><a href="FINESCE_GEs.html">Generic Enablers</a></li>
                     <li><a href="FINESCE_DSEs.html?option=2">Specific Enablers</a></li>
-              <li><a href="FINESCE_DSEs.html?option=1">Other results</a></li>
+                    <li><a href="FINESCE_DSEs.html?option=1">Other results</a></li>
                     <li><a href="api_table.html">API</a></li>
                 </ul>
             </div>
@@ -93,7 +93,7 @@ consenttype: "implicit",
                 <div class="alert alert-warning" role="alert">Hi! This site won't work properly without Javascript. You may prefer the experience with Javascript enabled!</div>
             </noscript>
             <div class="breadcrumb">
-                <h2 class="element-invisible">You are here</h2><a href="/">Home</a> / <a href="/FINESCE_DSEs.html">Specific Enablers</a> / <span class="enabler-title"></span>
+                <h2 class="element-invisible">You are here</h2><a href="/">Home</a> / <a class="breadcrumb-link" href="/FINESCE_DSEs.html">Specific Enablers</a> / <span class="enabler-title"></span>
             </div>
             <div>
                 <ul class="nav-docs-header finesce-subpages">
@@ -268,7 +268,7 @@ consenttype: "implicit",
         var show = getParameterByName("show");
 
         // console.log("Parameters: " + id + " " + show);
-        // This causse DSEs.json to be refreshed every hour
+        // This causes DSEs.json to be refreshed every hour
         var cacheBuster = Math.floor(new Date().getTime() / (1000 * 60 * 60));
         $.getJSON("js/json/DSEs.json?ts=" + cacheBuster, function(data) {
             var updatedAt = data.updated;
@@ -280,6 +280,12 @@ consenttype: "implicit",
 
             if (dse_data) {
                 $(".enabler-title").text(dse_data.name);
+                $(".breadcrumb-link").attr("href", "/FINESCE_DSEs.html?option="+dse_data.option);
+                if (dse_data.option == 1){
+                	$(".breadcrumb-link").text("Other results");
+               	}else{
+               		$(".breadcrumb-link").text("Specific Enablers");
+               	}
                 $.getJSON("js/json/" + id +  ".json?updated=" + updatedAt).then(function(dse_data_all) {
                     var data = dse_data_all[0];
                     $("#content-wiki").html(buildHTMLforPage(data, show));
