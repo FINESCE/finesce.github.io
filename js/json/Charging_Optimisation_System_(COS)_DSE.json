@@ -21,7 +21,7 @@
         "Open Source": "",
         "Contact Person": "\n<p>\n Miguel Ponce de Leon\n <br/>\n TSSG at Waterford Institute of Technology\n <br/>\n <a class=\"email\" href=\"mailto:miguelpdlREMOVE-NO-SPAM@tssg.org\">\n  miguelpdlREMOVE-NO-SPAM@tssg.org\n </a>\n</p>\n\n",
         "Overview": "\n<p>\n The WP5 Stream I team have developed an active demand dispatch system as a FINESCE domain specific enabler. This system optimises charging profiles for available Electric Vehicles (EV)s on the grid, by taking input of power generation forecasts from system operators\u2018 web sites and using request-response message exchange patterns with live EVSE's connected to the grid to create an optimised load scheduler every 15 minutes.\n</p>\n\n\n",
-        "Downloads": "",
+        "Downloads": "\n<p>\n None.\n</p>\n\n\n",
         "Instances": ""
     }
 ]
