@@ -20,7 +20,6 @@
             "/redmine/attachments/download/2488/finesce%23api%23v0.1-sources.jar",
             "/redmine/attachments/download/2489/finesce%23api%23v0.1.war",
             "/redmine/attachments/download/2490/ClientCode.tar.gz"
-        ],
         "Open Source": "",
         "Contact Person": "\n<p>\n Artemis Voulkidis (Synelixis Solutions) - voulkidis at synelixis doc com\n</p>\n\n",
         "Overview": "\n\n<h3>\n What you get\n</h3>\n\n<p>\n A consolidated approach for interacting with the various FINESCE trial infrastructures, using a simple, RESTful API.\n</p>\n\n\n<h3>\n Why to get it\n</h3>\n\n<p>\n It enables seamless, interoperable interaction with all the FINESCE trial infrastructures, in a transparent, homogeneous manner.\n</p>\n\n\n<h3>\n Open Specifications\n</h3>\n\n<p>\n A complete list of functionalities is going to be released in the coming months. As FAM DSE will be released as OSS, open specifications will be also available.\n</p>\n\n\n",

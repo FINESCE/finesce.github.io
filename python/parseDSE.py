@@ -117,11 +117,11 @@ def redirect_images(text):
     return text
 
 def redirect_attachments(text):
-    pattern = re.compile(r"<a.+href=\"(http://rm.finesce.tssg.org)?/redmine/attachments/download/.+/([^\"]+)\"")
+    pattern = re.compile(r"<a.+href=\"(http(|s)?://rm.finesce.tssg.org)?/redmine/attachments/download/.+/([^\"]+)\"")
     for att_url in re.findall(pattern, text):
         print(att_url)
-    text = re.sub(r'(<a.+href=\")(http://rm.finesce.tssg.org)?/redmine/attachments/download/.+/([^/]+)\"', 
-            "\\1%s/\\3\"" % attachments_path, text)
+    text = re.sub(r'(<a.+href=\")(http(|s)?://rm.finesce.tssg.org)?/redmine/attachments/download/.+/([^/]+)\"', 
+            "\\1%s/\\4\"" % attachments_path, text) 
     return text
 
 def spam_protect(text):
