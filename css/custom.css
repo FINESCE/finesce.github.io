@@ -5,7 +5,7 @@
   position: relative;
 }
 .full-width-image {
-  background: url('/images/header_bg.jpg') no-repeat center center;
+  background: url('../images/header_bg.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
   padding: 40px 0 70px;
