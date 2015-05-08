@@ -2,6 +2,7 @@ import sys
 import os.path
 from subprocess import call
 from lxml import etree
+import urllib
 import re
 import json
 import argparse
@@ -146,6 +147,7 @@ else:
 			
 		for att_path in dse_data_result.get('wiki_attachments', [ ]):
 			att_fname = os.path.basename(att_path)
+			att_fname = urllib.unquote(att_fname)	#save files unescaped, otherwise there might be 404 errors when downloading
 			att_url = "%s%s" % (redmine_url, att_path)
 			file_ext = os.path.splitext(att_path)[1].lower()
 			if file_ext in [ '.jpg', '.jpeg', '.png', '.gif' ]:
