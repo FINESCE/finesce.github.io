@@ -22,7 +22,7 @@
         "Open Source": "",
         "Contact Person": "\n<p>\n Troels Lund Rasmussen (\n <a class=\"external\" href=\"http://insero.com/en/about-us/contact/employees-and-management-team/troels-lund-rasmussen/\">\n  Link\n </a>\n )\n <br/>\n Insero Software\n</p>\n\n",
         "Overview": "\n\n<h3>\n What you get\n</h3>\n\n<p>\n The CCF is a plugin-based framework (developed in .NET, C#) that allows you to inject your own implemented components into a composition service that manages and connects all running components dynamically.\n</p>\n\n<p>\n In addition the CCF comes with an NGSI9 producer component that any other component can hook itself up against, allowing the CCF to send NGSI9 context updates without requiring the developer knowing the NGSI9 protocol.\n</p>\n\n\n<h3>\n Why to get it\n</h3>\n\n<p>\n A quick way to make existing components NGSI9 enabled using the already implemented NGSI9-producer component.\n</p>\n\n\n",
-        "Downloads": "\n<p>\n Downloads for this DSE are not available yet.\n</p>\n\n\n",
+        "Downloads": "\n<p>\n It is available on GitHub (\n <a class=\"external\" href=\"https://github.com/insero-software/component-composition-framework/\">\n  Link\n </a>\n )\n</p>\n\n\n",
         "Instances": "\n<p>\n An instance of this DSE\u2019s reference implementation runs as a part of the trial and is not publicly accessible.\n</p>\n\n\n"
     }
 ]
