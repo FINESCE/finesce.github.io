@@ -5,7 +5,7 @@
         "Short Description": "",
         "Documentation": {
             "Description": "\n<p>\n The DSE OBDC Event Sink consists of two components. The event sink is instantiated as a service written in C#.NET based on Microsoft Foundation Classes like CDatabase, CRecordset, CRecordView, CFieldExchange and CDBException. It directly interfaces with a Microsoft SQL 2008 server, installed on a different virtual machine of the factory server. Incoming events are transformed into rows for one of the two tables in the database of the SQL server.\n</p>\n\n\n",
-            "Copyright": "\n<p>\n Copyright \u00a9 2014 by FINESCE\n</p>\n\n\n",
+            "Copyright": "\n<p>\n Copyright \u00a9 2015 by FINESCE\n</p>\n\n\n",
             "Glossary": "\n<ul>\n <li>\n  OBDC: Open Database Connectivity\n </li>\n <li>\n  <acronym title=\"ful\">\n   REST\n  </acronym>\n  : Representational State Transfer\n </li>\n <li>\n  API: Application programming interface\n </li>\n</ul>\n\n\n",
             "References": "\n<ul>\n <li>\n  OBDC:\n  <a class=\"external\" href=\"http://en.wikipedia.org/wiki/ODBC\">\n   ODBC\n  </a>\n </li>\n <li>\n  REST:\n  <a class=\"external\" href=\"http://en.wikipedia.org/wiki/Representational_state_transfer\">\n   Representational_state_transfer\n  </a>\n </li>\n <li>\n  API:\n  <a class=\"external\" href=\"http://en.wikipedia.org/wiki/Application_programming_interface\">\n   Application_programming_interface\n  </a>\n </li>\n</ul>\n\n\n",
             "Details": "",
@@ -20,7 +20,7 @@
         "Open Source": "",
         "Contact Person": "\n<p>\n Julian Krenge\n <br/>\n FIR at RWTH Aachen University\n <br/>\n <a class=\"email\" href=\"mailto:Julian.KrengeREMOVE-NO-SPAM@fir.rwth-aachen.de\">\n  Julian.KrengeREMOVE-NO-SPAM@fir.rwth-aachen.de\n </a>\n</p>\n\n",
         "Overview": "\n<p>\n Main purpose of the DSE Local Storage is keeping a local copy of all the information forwarded to the FI cloud infrastructure. This has mainly two reasons: The first stems from the current demand of manufacturing companies to have all data and information on premise, as they perceive cloud storage as potential security breach. The OBDC therefore allows for storing the gathered information locally as well. However, for the trial site, a cloud storage is preferred and will be undertaken by GEs in a later phase. The second reason is to allow for a local database for further research activities and providing the information for simulation, which will be deployed locally as well to maximize data throughput.\n</p>\n\n<p>\n <img alt=\"\" src=\"images/redmine/WP3-Factory_EvSi-DSE_Overview.png\"/>\n</p>\n\n\n",
-        "Downloads": "\n<p>\n To be released in Q1/2015.\n</p>\n\n\n",
+        "Downloads": "\n<p>\n Available on\n <a class=\"external\" href=\"https://github.com/FINESCE/OBDC-Event-Sink-EvSi-DSE\">\n  GitHub\n </a>\n</p>\n\n\n",
         "Instances": "\n<p>\n An instance of this DSE\u2019s reference implementation runs as a part of the trial and is not publicly accessible.\n</p>\n\n\n"
     }
 ]
