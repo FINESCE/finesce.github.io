@@ -29,6 +29,6 @@ then
 	OUTPUT_FILE="$3"
 fi
 
-curl -s -k -H "Cookie:$HTTP_COOKIE" "$INDEX_PAGE" > $OUTPUT_FILE
+curl -s -k -H "Cookie:$HTTP_COOKIE" "$INDEX_PAGE" > "$OUTPUT_FILE"
 
 echo "Saved the index to $OUTPUT_FILE"
