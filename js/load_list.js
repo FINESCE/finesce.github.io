@@ -26,6 +26,7 @@
 	if (option == '1') {
 		$('.js-title').html('Other FINESCE results');
 		$('.breadcrumb-text').text(' / Other results');
+		$('.option-header').text("This page contains other FINESCE results, which include solutions to support our Trial Sites' services. We organised them by the Trial Site where we originally developed and used each of the results.");
 	}
 
 	// This causse DSEs.json to be refreshed every hour
@@ -54,7 +55,8 @@
 		data = data.dse;
 		var wp_list = [];
 		for (var line in data){
-			wp_list[data[line].site] = true;
+			if (data[line].site !== "All trial sites")
+				wp_list[data[line].site] = true;
 		}
 		//fill dropdown
 		$(".dropdown-menu").empty();
@@ -82,7 +84,7 @@
 
 		if(filter && filter !== "all") {
 			data = data.filter(function(dt){
-				return dt.site === filter;
+				return dt.site === filter || dt.site == "All trial sites";
 			});
 		}
 
