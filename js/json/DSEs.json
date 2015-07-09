@@ -1,5 +1,5 @@
 {
-    "updated": "2015-07-07T15:19:42.725316", 
+    "updated": "2015-07-09T11:34:22.402568", 
     "dse": [
         {
             "option": "2", 
@@ -66,15 +66,6 @@
         }, 
         {
             "option": "2", 
-            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/OBDC_Event_Sink_(EvSi)_DSE", 
-            "description": "Local storage of shop floor events", 
-            "site": "Aachen/Cologne", 
-            "wp": "3", 
-            "id": "OBDC_Event_Sink_(EvSi)_DSE", 
-            "name": "OBDC Event Sink (EvSi) DSE"
-        }, 
-        {
-            "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Scene_Manager_DSE", 
             "description": "Configuration of a set of parameters for alert management", 
             "site": "Madrid", 
@@ -120,15 +111,6 @@
         }, 
         {
             "option": "2", 
-            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Production_Planning_and_Control_System_Integrator_(PPSI)_DSE", 
-            "description": "Connecting factory planning systems to the cloud", 
-            "site": "Aachen/Cologne", 
-            "wp": "3", 
-            "id": "Production_Planning_and_Control_System_Integrator_(PPSI)_DSE", 
-            "name": "Production Planning and Control System Integrator (PPSI) DSE"
-        }, 
-        {
-            "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Generation_Schedule_Manager_DSE", 
             "description": "Handling energy generation schedules from the VPP", 
             "site": "Aachen/Cologne", 
@@ -162,6 +144,24 @@
             "wp": "2", 
             "id": "Component_Composition_Framework_DSE", 
             "name": "Component Composition Framework DSE"
+        }, 
+        {
+            "option": "2", 
+            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Event_Sink_(EvSi)_DSE", 
+            "description": "Local storage of shop floor events", 
+            "site": "Aachen/Cologne", 
+            "wp": "3", 
+            "id": "Event_Sink_(EvSi)_DSE", 
+            "name": "Event Sink (EvSi) DSE"
+        }, 
+        {
+            "option": "1", 
+            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Hybrid_Cloud_Data_Management_(HCDM)_DSE", 
+            "description": "This component provides a single interface with private and public data storage platforms", 
+            "site": "Ireland (Trial II: Future Internet in Smart Grid Communications)", 
+            "wp": "5", 
+            "id": "Hybrid_Cloud_Data_Management_(HCDM)_DSE", 
+            "name": "Hybrid Cloud Data Management (HCDM) DSE"
         }
     ]
 }
