@@ -14,12 +14,10 @@
         },
         "WP": "",
         "Terms and Conditions": "\n<p>\n Software associated to the EvSi DSE is provided as open source under the Apache2 license. Please check the specific terms and conditions linked to this open source license at\n <a class=\"external\" href=\"http://www.apache.org/licenses/LICENSE-2.0\">\n  http://www.apache.org/licenses/LICENSE-2.0\n </a>\n</p>\n\n\n",
-        "wiki_attachments": [
-            "/redmine/attachments/download/1415/WP3-Factory_EvSi-DSE_Overview.png"
-        ],
+        "wiki_attachments": [],
         "Open Source": "",
         "Contact Person": "\n<p>\n Julian Krenge\n <br/>\n FIR at RWTH Aachen University\n <br/>\n <a class=\"email\" href=\"mailto:Julian.KrengeREMOVE-NO-SPAM@fir.rwth-aachen.de\">\n  Julian.KrengeREMOVE-NO-SPAM@fir.rwth-aachen.de\n </a>\n</p>\n\n",
-        "Overview": "\n<p>\n Main purpose of the DSE Event Sink is keeping a local copy of all the information forwarded to the FIWARE LAB cloud infrastructure. This is because of the current demand of manufacturing companies to have all data and information on premise, as they perceive cloud storage as potential security breach. EvSi therefore allows for storing the gathered information locally as well. However, for running a full-powered application it is recommended to use FIWARE's full capability in the cloud. EvSi therefore should rather be seen as an on-premise backup and logging module.\n</p>\n\n<p>\n <img alt=\"\" src=\"images/redmine/WP3-Factory_EvSi-DSE_Overview.png\"/>\n</p>\n\n\n",
+        "Overview": "\n<p>\n Main purpose of the DSE Event Sink is keeping a local copy of all the information forwarded to the FIWARE LAB cloud infrastructure. This is because of the current demand of manufacturing companies to have all data and information on premise, as they perceive cloud storage as potential security breach. EvSi therefore allows for storing the gathered information locally as well. However, for running a full-powered application it is recommended to use FIWARE's full capability in the cloud. EvSi therefore should rather be seen as an on-premise backup and logging module.\n</p>\n\n\n",
         "Downloads": "\n<p>\n Available on\n <a class=\"external\" href=\"https://github.com/FINESCE/fiware-orion-accumulator\">\n  GitHub\n </a>\n</p>\n\n<p>\n Node.js code does not need to be compiled. For installation instructions see \u00abDocumentation\u00bb.\n</p>\n\n\n",
         "Instances": "\n<p>\n An instance of this DSE\u2019s reference implementation runs as a part of the trial and is not publicly accessible.\n</p>\n\n\n"
     }

@@ -111,8 +111,8 @@ soup = bs4.BeautifulSoup(htmlcontent)
 
 content = soup.find("div", {"id": "content"})
 
-def redirect_images(text):
-    text = re.sub(r'(<img.+src=\")/redmine/attachments/download/.+/([^/]+)\"', 
+def redirect_images(text): 
+    text = re.sub(r'(<img.+src=\")/redmine/attachments/download/[^/]+/([^/]+)\"',
             "\\1%s/\\2\"" % images_path, text)
     return text
 
