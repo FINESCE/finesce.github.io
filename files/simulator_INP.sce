@@ -13,7 +13,7 @@
 //limitations under the License.
 
 //Developped by: José Sanchez Torres
-//Last version : 02/03/2015
+//Last version : 06/07/2015
 
 function output = updateDataFile(newData, filename, maxData)
     //This function updates a csv file "filename", inserting at the end the "newData", it has to control a maximum of rows of "maxData"
@@ -103,8 +103,8 @@ function [valeur, newValues]= fileCheck(typeFile, values, time)
 endfunction
 function [power, weather, err]=load_data(filepath,e2p_conversion)
     err = 0;
-    inputfile_load = strcat([filepath,"/input/loadData.csv"]);
-    inputfile_weather = strcat([filepath,"/input/weatherData.csv"]);
+    inputfile_load = strcat([filepath,"/loadData.csv"]);
+    inputfile_weather = strcat([filepath,"/weatherData.csv"]);
     [xLoad, ierrLoad] = fileinfo(inputfile_load);
     [xWeather, ierrWeather] = fileinfo(inputfile_weather);
     if ierrLoad ~= -1 & ierrWeather ~= -1 then
@@ -327,13 +327,8 @@ mode(0)
 format(15); // To avoid Scientific Notation
 ieee(2);
 
-// DIRECTORY ON THE VIRTUAL MACHINE
-//chdir("/home/finesce-inp/simulator"); //FOR THE VM
-//filepath = '/home/finesce-inp';       //FOR THE VM
-
-// DIRECTORY ON TEST MACHINE (Grenoble INP)
-chdir("/home/sanchjos/finesce-inp/simulator"); //INP-Computer
-filepath = '/home/sanchjos/finesce-inp'; //INP-Computer
+exec('simulator_properties.sce',-1)
+[filepath,filepath_input,filepath_output]=simulator_properties();
 
 exec('loadFlow_INP.sce',-1);    // Load Flow algorithm
 exec('customerData.sce',-1);   // System data
@@ -406,7 +401,7 @@ while steps>0 do
         [nnodes, d, p0, bus, Rng, Rgg,base,codes_lines_ENG,codes]=customerData();
         p0ini = p0;
         //Load data from meters, it is reading the file from ENG
-        [power, weather, err]=load_data(filepath,e2p_conversion); //Load data from Meters Information in W and VAR by counter
+        [power, weather, err]=load_data(filepath_input,e2p_conversion); //Load data from Meters Information in W and VAR by counter
         
         if err == 0 then
         // PROFILE OF UNINSTALLED METERS 
@@ -514,7 +509,7 @@ while steps>0 do
         LL = round(losses_ligne*10^3)/10^3; 
         file1 = string([VD LL]);
         //Date | Line number | Voltage Drop | losses_ligne
-        outputfile1 = strcat([filepath,"/output/powerLosses_VoltageDrops.csv"]);
+        outputfile1 = strcat([filepath_output,"powerLosses_VoltageDrops.csv"]);
         
         // I HAVE TO CHOOSE:
         //    1st TIME -> Prediction with old values
@@ -586,7 +581,7 @@ while steps>0 do
         
         //FILE 2
         //Date | Meter number | Voltage
-        outputfile2 = strcat([filepath,"/output/predictions.csv"]);
+        outputfile2 = strcat([filepath_output,"predictions.csv"]);
         n_meters= size(power.meter);
         n_meters = n_meters(1);
         // For the moment zero values ==> NEW FUNCTION WILL FILL THIS DATA
