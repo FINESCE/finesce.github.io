@@ -1,5 +1,5 @@
 {
-    "updated": "2015-07-15T11:06:10.657730", 
+    "updated": "2015-07-23T10:31:26.374881", 
     "dse": [
         {
             "option": "2", 
@@ -128,15 +128,6 @@
             "name": "Production Schedule Manager DSE"
         }, 
         {
-            "option": "1", 
-            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Charging_Optimisation_System_(COS)_DSE", 
-            "description": "Optimisation of Electric Vehicle Charging", 
-            "site": "Ireland (Trial I: Electric Vehicle- Grid integration)", 
-            "wp": "5", 
-            "id": "Charging_Optimisation_System_(COS)_DSE", 
-            "name": "Charging Optimisation System (COS) DSE"
-        }, 
-        {
             "option": "2", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Component_Composition_Framework_DSE", 
             "description": "Component Composition Framework", 
@@ -162,6 +153,15 @@
             "wp": "5", 
             "id": "Hybrid_Cloud_Data_Management_(HCDM)_DSE", 
             "name": "Hybrid Cloud Data Management (HCDM) DSE"
+        }, 
+        {
+            "option": "1", 
+            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Charging_Optimisation_System_(COS)", 
+            "description": "Optimisation of Electric Vehicle Charging", 
+            "site": "Ireland (Trial I: Electric Vehicle- Grid integration)", 
+            "wp": "5", 
+            "id": "Charging_Optimisation_System_(COS)", 
+            "name": "Charging Optimisation System (COS)"
         }
     ]
 }
