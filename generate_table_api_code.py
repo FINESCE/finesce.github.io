@@ -14,19 +14,19 @@ for category in categories:
 			category_description = "<br>%s" % (category_description[0].replace("\n", "").strip())
 		else:
 			category_description = ""
-		methods = category.xpath(".//div[@class='resource2']")
+		methods = category.xpath(".//div[@class='resource']")
 		if methods:
 			print "<tr class=category><td class=left-nonbold rowspan='%d'><b>%s</b>%s</td>" % (
 					len(methods), category_name, category_description)
 			is_first_method = True
 			for method in methods:
-				method_name = method.xpath(".//h2[@class='resource2Name']/text()")
+				method_name = method.xpath(".//h2[@class='resourceName']/text()")
 				if method_name:
 					method_name = method_name[0].replace("\n","").strip()
 				else:
 					method_name = "/"
 
-				method_description = method.xpath(".//div[contains(@class,'resource2Description')]/p/text()")
+				method_description = method.xpath(".//div[contains(@class,'resourceDescription')]/p/text()")
 				if method_description:
 					method_description = method_description[0].replace("\n","").strip()
 				else:
