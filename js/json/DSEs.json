@@ -1,167 +1,185 @@
 {
-    "updated": "2015-07-23T10:31:26.374881", 
+    "updated": "2015-08-21T17:32:50.861485", 
     "dse": [
         {
-            "option": "2", 
+            "name": "Contract Information (ContractInformation2Orion **) ", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Information_(ContractInformation2Orion_**)_", 
+            "site": "Terni Energy Grid Management (FIWARE Lab instance)", 
             "description": "ContractInformation2Orion is a REST service (developed in Java) which allows clients (e.g. Retailers) to register data about cost of energy produced from the DERs, costs of transmission system and power plants, energy costs in an instance of ORION Context Broker GE.", 
-            "site": "Terni (DSE instance deployed on FI-Lab)", 
-            "wp": "4", 
+            "categories": "FIWARE Adapters", 
             "id": "Contract_Information_(ContractInformation2Orion_**)_", 
-            "name": "Contract Information (ContractInformation2Orion **) "
+            "work_package": "4", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Social Events Interface (Social2Orion **) ", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Social_Events_Interface_(Social2Orion_**)_", 
+            "site": "Terni Energy Grid Management (FIWARE Lab instance)", 
             "description": "Social2Orion is a REST service (developed in Java) which allows clients (e.g. Social Events Information Providers) to register data about social events (affecting consumption/production in a specific area such as a concert or a football match) in an instance of ORION Context Broker GE", 
-            "site": "Terni (DSE instance deployed on FI-Lab)", 
-            "wp": "4", 
+            "categories": "FIWARE Adapters", 
             "id": "Social_Events_Interface_(Social2Orion_**)_", 
-            "name": "Social Events Interface (Social2Orion **) "
+            "work_package": "4", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Weather Condition Interface (WeaFor2Orion **) ", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Weather_Condition_Interface_(WeaFor2Orion_**)_", 
+            "site": "Terni Energy Grid Management (FIWARE Lab instance)", 
             "description": "WeaFor2Orion consists of: a REST service (developed in Java) which allow clients (e.g. Weather Condition Information Providers) to register data about weather conditions and predictions in a specific area onto an instance of ORION Context Broker GE + a Java client which retrieves weather conditions and predictions from an external service (forecast.io in our implementation) and then \u201cpasses\u201d the data to the above mentioned REST service.", 
-            "site": "Terni (DSE instance deployed on FI-Lab)", 
-            "wp": "4", 
+            "categories": "FIWARE Adapters, Logging", 
             "id": "Weather_Condition_Interface_(WeaFor2Orion_**)_", 
-            "name": "Weather Condition Interface (WeaFor2Orion **) "
+            "work_package": "4", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Metering (Metering2Orion **) ", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Metering_(Metering2Orion_**)_", 
+            "site": "Terni Energy Grid Management (FIWARE Lab instance)", 
             "description": "Metering2Orion consists of: a REST service (developed in Java) which allow clients (e.g. DSOs) to register data about metering and load profile in a specific area into an instance of ORION Context Broker GE + a Java client which accepts data about metering and load profile coming from the smart meters (via either an IoT gateway or an existing legacy system) and then \u201cpasses\u201d the data to the above mentioned REST service.", 
-            "site": "Terni (DSE instance deployed on FI-Lab)", 
-            "wp": "4", 
+            "categories": "FIWARE Adapters, IoT", 
             "id": "Metering_(Metering2Orion_**)_", 
-            "name": "Metering (Metering2Orion **) "
+            "work_package": "4", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Contract Tailor Processor (ContractManager **) ", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Tailor_Processor_(ContractManager_**)_", 
+            "site": "Terni Energy Grid Management (FIWARE Lab instance)", 
             "description": "This component will be responsible to calculate a new contract for a specific customer based on an incentive plan (issued by a Retailer and approved by a Market Regulator Authority).", 
-            "site": "Terni (DSE instance deployed on FI-Lab)", 
-            "wp": "4", 
+            "categories": "FIWARE Adapters, Data Processing", 
             "id": "Contract_Tailor_Processor_(ContractManager_**)_", 
-            "name": "Contract Tailor Processor (ContractManager **) "
+            "work_package": "4", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Protocol Adapter AMM (Sensor2AMI **) ", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
+            "site": "Terni Energy Grid Management (local instance at ASM)", 
             "description": "This component will retrieve DLMS/COSEM data from meters installed at the trial site (metering and load profile) and then feeds an instance of IDAS (Backend) Device Management GE with the data (which, on its turn, forwards data to an instance of ORION Context Broker GE", 
-            "site": "Terni (DSE instance deployed on hardware located at ASM's premise)", 
-            "wp": "4", 
+            "categories": "FIWARE Adapters, IoT, Logging", 
             "id": "Protocol_Adapter_AMM_(Sensor2AMI_**)_", 
-            "name": "Protocol Adapter AMM (Sensor2AMI **) "
+            "work_package": "4", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) ", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
+            "site": "Terni Energy Grid Management (FIWARE Lab instance)", 
             "description": "Detects issues related to power losses and voltage drops (in the lines of a smart LV grid) and then sends it to an instance of ORION Context Broker GE", 
-            "site": "Terni (DSE instance deployed on FI-Lab)", 
-            "wp": "4", 
+            "categories": "Data Processing, IoT, Logging", 
             "id": "Issue_Detector_Processor_(Cosmos2SCILAB___INP-SCILAB___SCILAB2Orion_**)_", 
-            "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) "
+            "work_package": "4", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Scene Manager DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Scene_Manager_DSE", 
+            "site": "Madrid Smart Office Buildings", 
             "description": "Configuration of a set of parameters for alert management", 
-            "site": "Madrid", 
-            "wp": "2", 
+            "categories": "Data Processing, Filtering", 
             "id": "Scene_Manager_DSE", 
-            "name": "Scene Manager DSE"
+            "work_package": "2", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Temporal Consistency DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Temporal_Consistency_DSE", 
+            "site": "Madrid Smart Office Buildings", 
             "description": "Pre-processing of large data sets for removing invalid values", 
-            "site": "Madrid", 
-            "wp": "2", 
+            "categories": "Filtering, IoT, Logging", 
             "id": "Temporal_Consistency_DSE", 
-            "name": "Temporal Consistency DSE"
+            "work_package": "2", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "FINESCE API Mediator (FAM) DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/FINESCE_API_Mediator_(FAM)_DSE", 
-            "description": " It provides a single point-of-entrance to the FINESCE trial infrastructures, exposing the FINESCE API specification. It serves FINESCE-API compatible incoming requests from interested parties, abstracting the heterogeneity of the underlying FINESCE supporting services. ", 
             "site": "All trial sites", 
-            "wp": "6", 
+            "description": " It provides a single point-of-entrance to the FINESCE trial infrastructures, exposing the FINESCE API specification. It serves FINESCE-API compatible incoming requests from interested parties, abstracting the heterogeneity of the underlying FINESCE supporting services. ", 
+            "categories": "FIWARE Adapters, Documentation", 
             "id": "FINESCE_API_Mediator_(FAM)_DSE", 
-            "name": "FINESCE API Mediator (FAM) DSE"
+            "work_package": "6", 
+            "option": "2"
         }, 
         {
-            "option": "1", 
-            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Modbus_Connector_(ModConn)_DSE", 
-            "description": "Gateway to a local shop floor network", 
-            "site": "Aachen/Cologne", 
-            "wp": "3", 
-            "id": "Modbus_Connector_(ModConn)_DSE", 
-            "name": "Modbus Connector (ModConn) DSE"
-        }, 
-        {
-            "option": "1", 
-            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Integration_kit_DSE", 
-            "description": "Documented process including some examples for the established integrations within WP1", 
-            "site": "Malm\u00f6 (Hyllie)", 
-            "wp": "1", 
-            "id": "Integration_kit_DSE", 
-            "name": "Integration kit DSE"
-        }, 
-        {
-            "option": "2", 
+            "name": "Generation Schedule Manager DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Generation_Schedule_Manager_DSE", 
+            "site": "Aachen/Cologne B2B Energy Ecosystem", 
             "description": "Handling energy generation schedules from the VPP", 
-            "site": "Aachen/Cologne", 
-            "wp": "3", 
+            "categories": "Data Processing, Data Storage", 
             "id": "Generation_Schedule_Manager_DSE", 
-            "name": "Generation Schedule Manager DSE"
+            "work_package": "3", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Production Schedule Manager DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Production_Schedule_Manager_DSE", 
+            "site": "Aachen/Cologne B2B Energy Ecosystem", 
             "description": "Handling production schedules from the Smart Factory", 
-            "site": "Aachen/Cologne", 
-            "wp": "3", 
+            "categories": "Data Processing, Data Storage", 
             "id": "Production_Schedule_Manager_DSE", 
-            "name": "Production Schedule Manager DSE"
+            "work_package": "3", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Component Composition Framework DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Component_Composition_Framework_DSE", 
+            "site": "Horsens Smart Prosumer", 
             "description": "Component Composition Framework", 
-            "site": "Horsens", 
-            "wp": "2", 
+            "categories": "FIWARE Adapters", 
             "id": "Component_Composition_Framework_DSE", 
-            "name": "Component Composition Framework DSE"
+            "work_package": "2", 
+            "option": "2"
         }, 
         {
-            "option": "2", 
+            "name": "Event Sink (EvSi) DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Event_Sink_(EvSi)_DSE", 
+            "site": "Aachen/Cologne B2B Energy Ecosystem", 
             "description": "Local storage of shop floor events", 
-            "site": "Aachen/Cologne", 
-            "wp": "3", 
+            "categories": "Data Storage, Logging", 
             "id": "Event_Sink_(EvSi)_DSE", 
-            "name": "Event Sink (EvSi) DSE"
+            "work_package": "3", 
+            "option": "2"
         }, 
         {
-            "option": "1", 
+            "name": "Hybrid Cloud Data Management (HCDM) DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Hybrid_Cloud_Data_Management_(HCDM)_DSE", 
+            "site": "Ireland Software Defined Utility", 
             "description": "This component provides a single interface with private and public data storage platforms", 
-            "site": "Ireland (Trial II: Future Internet in Smart Grid Communications)", 
-            "wp": "5", 
+            "categories": "Data Storage", 
             "id": "Hybrid_Cloud_Data_Management_(HCDM)_DSE", 
-            "name": "Hybrid Cloud Data Management (HCDM) DSE"
+            "work_package": "5", 
+            "option": "2"
         }, 
         {
-            "option": "1", 
+            "name": "Charging Optimisation System (COS)", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Charging_Optimisation_System_(COS)", 
+            "site": "Ireland Electric Vehicle Grid Integration", 
             "description": "Optimisation of Electric Vehicle Charging", 
-            "site": "Ireland (Trial I: Electric Vehicle- Grid integration)", 
-            "wp": "5", 
+            "categories": "Data Processing, IoT", 
             "id": "Charging_Optimisation_System_(COS)", 
-            "name": "Charging Optimisation System (COS)"
+            "work_package": "5", 
+            "option": "1"
+        }, 
+        {
+            "name": "Integration kit", 
+            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Integration_kit", 
+            "site": "Malm\u00f6 (Hyllie) Smart District", 
+            "description": "Documented process including some examples for the established integrations within WP1", 
+            "categories": "Documentation", 
+            "id": "Integration_kit", 
+            "work_package": "1", 
+            "option": "1"
+        }, 
+        {
+            "name": "Modbus Connector (ModConn)", 
+            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Modbus_Connector_(ModConn)", 
+            "site": "Aachen/Cologne B2B Energy Ecosystem", 
+            "description": "Gateway to a local shop floor network", 
+            "categories": "FIWARE Adapters", 
+            "id": "Modbus_Connector_(ModConn)", 
+            "work_package": "3", 
+            "option": "1"
         }
     ]
 }

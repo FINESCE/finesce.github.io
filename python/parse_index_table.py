@@ -63,7 +63,7 @@ output = []
 
 for row in rows[1:]:
 	cells = row.getchildren()
-	wp = cells[0].text.strip()
+	work_package = cells[0].text.strip()
 	dse_cell = cells[1].getchildren()
 	if len(dse_cell) == 0:
 		# TODO handle any DSEs with no links
@@ -79,7 +79,8 @@ for row in rows[1:]:
 	description = " ".join([si.strip() for si in cells[2].itertext()])
 	option = cells[3].text.strip()
 	site = cells[4].text.strip()
-	do_publish = cells[5].text.strip()
+	categories = cells[5].text.strip()
+	do_publish = cells[6].text.strip()
 	if do_publish[0:3].lower() != "yes":
 		continue
 	
@@ -88,12 +89,13 @@ for row in rows[1:]:
 
 	output.append({
 		"id": dse_id,
-		"wp": wp,
+		"work_package": work_package,
 		"name": dse_title,
 		"wiki_link": dse_link,
 		"option": option,
 		"site": site,
 		"description": description,
+		"categories": categories
 	})
 
 # reorder output accoring to the previous order

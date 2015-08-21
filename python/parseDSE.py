@@ -55,6 +55,7 @@ class DSEData(object):
     target_usage = ""
     documentation = DSEData_documentation()
     downloads = ""
+    usage = ""
     instances = ""
     terms = ""
     wiki_attachments = [ ]
@@ -69,6 +70,7 @@ class DSEData(object):
                ", Target Usage:" + repr(self.target_usage) + \
                ", Documentation:" + repr(self.documentation) + \
                ", Downloads:" + repr(self.downloads) + \
+               ", Usage:" + repr(self.usage) + \
                ", Instances:" + repr(self.instances) + \
                ", Terms and Conditions:" + repr(self.terms)
                
@@ -82,6 +84,7 @@ class DSEData(object):
                  'Target Usage': self.target_usage, \
                  'Documentation':  self.documentation.toJSON(), \
                  'Downloads':  self.downloads, \
+                 'Usage':  self.usage, \
                  'Instances':  self.instances, \
                  'Terms and Conditions':  self.terms,
                  'wiki_attachments': self.wiki_attachments,
@@ -185,7 +188,7 @@ for h2 in content.find_all("h2"):
         dse_data.overview = processH2(h2)
     elif h2_text.startswith("target usage"):
         dse_data.target_usage = processH2(h2)
-    elif h2_text.startswith("dse description"):
+    elif h2_text.startswith("dse description") or h2_text.startswith("description"):
         dse_data.documentation.dse_description = processH2(h2)
     elif h2_text.startswith("detailed specifications"):
         dse_data.documentation.detailed_specs = processH2(h2)
@@ -197,6 +200,8 @@ for h2 in content.find_all("h2"):
         dse_data.documentation.references = processH2(h2)
     elif h2_text.startswith("downloads"):
         dse_data.downloads = processH2(h2, True)
+    elif h2_text.startswith("installation and usage examples"):
+        dse_data.usage = processH2(h2, True)
     elif h2_text.startswith("instances"):
         dse_data.instances = processH2(h2, True)
     elif h2_text.startswith("contact person"):

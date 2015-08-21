@@ -13,6 +13,7 @@
             "ReutilisedTech": "\n<p>\n As mentioned earlier the HCDM DSE re-uses the FI-WARE Object Storage GE and Identity Management Keyrock GE.\n</p>\n\n\n"
         },
         "WP": "",
+        "Usage": "\n\n",
         "Terms and Conditions": "\n<p>\n An instance of this SE\u2019s reference implementation runs as a part of the Irish trial and is only accessible via its API. Documentation on the API can be found at\n <a class=\"external\" href=\"https://finesce.tssg.org/documentation/index.html\">\n  https://finesce.tssg.org/documentation/index.html\n </a>\n</p>\n\n\n",
         "wiki_attachments": [
             "/redmine/attachments/download/2639/HCDM_DSE.png",
@@ -27,6 +28,6 @@
         "Contact Person": "\n<p>\n Ramon Martin de Pozuelo\n <br/>\n FUNITEC - La Salle\n <br/>\n <a class=\"email\" href=\"mailto:ramonmdpREMOVE-NO-SPAM@salleurl.edu\">\n  ramonmdpREMOVE-NO-SPAM@salleurl.edu\n </a>\n</p>\n\n<p>\n Alan Briones\n <br/>\n FUNITEC - La Salle\n <br/>\n <a class=\"email\" href=\"mailto:abrionesREMOVE-NO-SPAM@salleurl.edu\">\n  abrionesREMOVE-NO-SPAM@salleurl.edu\n </a>\n</p>\n\n<p>\n Agust\u00edn Zaballos\n <br/>\n FUNITEC - La Salle\n <br/>\n <a class=\"email\" href=\"mailto:zaballosREMOVE-NO-SPAM@salleurl.edu\">\n  zaballosREMOVE-NO-SPAM@salleurl.edu\n </a>\n</p>\n\n",
         "Overview": "\n\n<h3>\n What you get\n</h3>\n\n<p>\n Hybrid Cloud Data Management is a REST service which provides to users transparent access to the Hybrid Cloud (distributed local storage or cloud storage system) infrastructure for the data management of the \"Software Define Utility\u201d, combining and integrating functionalities from Object Storage GE local instances and in FIWARE Lab; authentication through Identity Management Keyrock GE; and additional encryption functionalities.\n</p>\n\n\n<h3>\n Why to get it\n</h3>\n\n<p>\n A reference implementation of a REST service which is allows a secure management of data, privately (although allowing replication among different regions), and publicly (storing objects in FIWARE Lab through Object Storage GE).\n</p>\n\n\n<h3>\n Target Usage\n</h3>\n\n<p>\n This DSE is thought to be a data management tool for utilities (to upload public information on Electric Vehicle charging points, Smart Metering, costs of transmission system and power plants, energy costs, etc.).\n <br/>\n It could be useful for any retailer that wants a straight-forward but secure tool to manage data and share it with other stakeholders.\n</p>\n\n\n",
         "Downloads": "\n\n",
-        "Instances": ""
+        "Instances": "\n\n"
     }
 ]

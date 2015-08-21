@@ -26,7 +26,7 @@
 	if (option == '1') {
 		$('.js-title').html('Other FINESCE results');
 		$('.breadcrumb-text').text(' / Other results');
-		$('.option-header').text("This page contains other FINESCE results, which include solutions to support our Trial Sites' services. We organised them by the Trial Site where we originally developed and used each of the results.");
+		$('.option-header').text("This page contains other FINESCE results, which include solutions to support our Trial Sites' services. We organised them into categories based on the functionality that they offer. Below each title we list the trial site where we originally developed and used each of the results.");
 	}
 
 	// This causse DSEs.json to be refreshed every hour
@@ -53,18 +53,21 @@
 		showData("all");
 
 		data = data.dse;
-		var wp_list = [];
+		var category_list = [];
 		for (var line in data){
-			if (data[line].site !== "All trial sites")
-				wp_list[data[line].site] = true;
+			var categories = data[line].categories.split(",");
+			for (var c in categories){
+				category_list[categories[c].trim()] = true;
+			}				
 		}
+		category_list = Object.keys(category_list).sort();
 		//fill dropdown
 		$(".dropdown-menu").empty();
 		$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" data-id="all" href="#">All</a></li>');
 		$("#dropdownMenu1").html('All <span class="caret"></span>');
 
-		for (var wp in wp_list){
-			$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" data-id="'+wp+'" href="#">'+wp+'</a></li>');
+		for (var category in category_list){
+			$(".dropdown-menu").append('<li role="presentation"><a role="menuitem" tabindex="-1" data-id="'+category_list[category]+'" href="#">'+category_list[category]+'</a></li>');
 		}
 	});
 
@@ -84,7 +87,12 @@
 
 		if(filter && filter !== "all") {
 			data = data.filter(function(dt){
-				return dt.site === filter || dt.site == "All trial sites";
+				var categories = dt.categories.split(",");
+				for (var c in categories){
+					if (categories[c].trim() === filter)
+						return true;
+				}
+				return false;
 			});
 		}
 

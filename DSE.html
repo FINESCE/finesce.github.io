@@ -100,11 +100,11 @@ consenttype: "implicit",
                     <li class="nav-docs-header">
                     <a class="nav-docs-header" href="#Overview">Overview</a>
                     </li>
-                    <li><a href="#Documentation">Documentation</a>
+                    <li><a href="#Documentation">Details</a>
                     </li>
                     <li><a href="#Downloads">Downloads</a>
                     </li>
-                    <li><a href="#Instances">Reference implementation</a>
+                    <li><a href="#Usage">Installation and usage examples</a>
                     </li>
                     <li><a href="#Terms">Terms and conditions</a>
                     </li>
@@ -216,7 +216,7 @@ consenttype: "implicit",
     "use strict";
 
     /* global $, console*/
-    function buildHTMLforPage(dse_data, part) {
+    function buildHTMLforPage(dse_data, part, option) {
         if (part == "Documentation") {
         	var doc_html = "";
         	if ($.trim(dse_data.Documentation.Copyright) != "")
@@ -224,7 +224,10 @@ consenttype: "implicit",
        		if ($.trim(dse_data.Documentation.Preface) != "")
         		doc_html = doc_html + "<h2>Preface</h2>" + dse_data.Documentation.Preface;
         	if ($.trim(dse_data.Documentation.Description) != "")
-        		doc_html = doc_html + "<h2>DSE Description</h2>" + dse_data.Documentation.Description;
+        		if(dse_data.option == 1)
+        			doc_html = doc_html + "<h2>Description</h2>" + dse_data.Documentation.Description;
+        		else
+        			doc_html = doc_html + "<h2>DSE Description</h2>" + dse_data.Documentation.Description;
         	if ($.trim(dse_data.Documentation.Details) != "")
         		doc_html = doc_html + "<h2>Detailed Specifications</h2>" + dse_data.Documentation.Details;
         	if ($.trim(dse_data.Documentation.ReutilisedTech) != "")
@@ -235,17 +238,28 @@ consenttype: "implicit",
         		doc_html = doc_html + "<h2>References</h2>" + dse_data.Documentation.References;
             return doc_html;
         } else if (part == "Downloads") {
-        	if (dse_data.Downloads == "")
-        		return "Downloads for this DSE are not available yet.";
+        	if ($.trim(dse_data.Downloads) == "")
+        		return "<h2>Downloads</h2>" + "Downloads for this DSE are not available yet.";
         	else
-            	return dse_data.Downloads;
-        } else if (part == "Instances") {
-        	if (dse_data.Instances == "")
-        		return "An instance of this DSE’s reference implementation runs as a part of the trial and is not publicly accessible.";
-        	else
-            	return dse_data.Instances;
+        		return "<h2>Downloads</h2>" + dse_data.Downloads;
+        } else if (part == "Usage") {
+        	var usage_html = "";
+        	if ($.trim(dse_data.Usage) !== "")
+       			usage_html = "<h2>Installation and usage examples</h2>" + dse_data.Usage
+           	if ($.trim(dse_data.Instances) !== "")
+            	usage_html = usage_html + "<h2>Live instances</h2>" + dse_data.Instances;
+            else if (usage_html == "")
+            	usage_html =  "No examples of usage are available.";
+            else
+            	usage_html = "<h2>Live instances</h2>" + "An instance of this DSE’s reference implementation runs as a part of the trial and is not publicly accessible."
+           	return usage_html;
         } else if (part == "Terms") {
-            return dse_data["Terms and Conditions"];
+        	var terms_html = "";
+        	if ($.trim(dse_data["Terms and Conditions"]) != "")
+            	terms_html = terms_html + "<h2>Terms and Conditions</h2>" + dse_data["Terms and Conditions"];
+            if ($.trim(dse_data.Documentation.Copyright) != "")
+        		terms_html = terms_html + "<h3>Copyright</h3>" + dse_data.Documentation.Copyright;
+        	return terms_html;
         } else {
         	var overview_html = "<h2>Overview</h2>" + dse_data.Overview; 
         	if (dse_data["Target Usage"] != "")
@@ -294,9 +308,10 @@ consenttype: "implicit",
                	}
                 $.getJSON("js/json/" + id +  ".json?updated=" + updatedAt).then(function(dse_data_all) {
                     var data = dse_data_all[0];
+                    data.option = dse_data.option;
                     $("#content-wiki").html(buildHTMLforPage(data, show));
                     $(".contact-person").html(data["Contact Person"]);
-                    $(".trial-site").html(dse_data.site);
+                    $(".trial-site").html("\n<p>\n "+dse_data.site+"<\p>");
 
                     $(".finesce-subpages a").each(function(){
                         $(this).attr("href", insertOrUpdateShow(this));
