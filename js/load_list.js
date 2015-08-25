@@ -26,7 +26,7 @@
 	if (option == '1') {
 		$('.js-title').html('Other FINESCE results');
 		$('.breadcrumb-text').text(' / Other results');
-		$('.option-header').text("This page contains other FINESCE results, which include solutions to support our Trial Sites' services. We organised them into categories based on the functionality that they offer. Below each title we list the trial site where we originally developed and used each of the results.");
+		$('.option-header').text("The components on this page differ from the FINESCE Specific Enablers in that they do not contain downloadable software. They comprise specifications of components and integration examples from the FINESCE trials. We organised them into categories based on the functionality that they offer.");
 	}
 
 	// This causse DSEs.json to be refreshed every hour
