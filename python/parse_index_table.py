@@ -98,28 +98,13 @@ for row in rows[1:]:
 		"categories": categories
 	})
 
-# reorder output accoring to the previous order
-oldOrder = []
-orderedOutput = []
-with open(json_output, 'r') as f_json:
-	j = f_json.read()
-	oldData = json.loads(j)['dse']
-	oldOrder = [d['id'] for d in oldData]
-
-for itemId in oldOrder:
-	prev = [d for d in output if d['id'] == itemId]
-	if len(prev) > 0:
-		prev = prev[0]
-		output.remove(prev)
-		orderedOutput.append(prev)
-
-# append any new item to orderedOutput
-orderedOutput = orderedOutput + output
+# reorder alphabetically
+output.sort(key=lambda x: x["name"], reverse=False)
 
 # Add the updated timestamp
 output = {
 	'updated': datetime.datetime.now().isoformat(),
-	'dse': orderedOutput
+	'dse': output
 }
 
 # export the DSO table of contents
