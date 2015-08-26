@@ -251,7 +251,7 @@ consenttype: "implicit",
             else if (usage_html == "")
             	usage_html =  "No examples of usage are available.";
             else
-            	usage_html = "<h2>Live instances</h2>" + "An instance of this DSE’s reference implementation runs as a part of the trial and is not publicly accessible."
+            	usage_html = usage_html + "<h2>Live instances</h2>" + "An instance of this DSE’s reference implementation runs as a part of the trial and is not publicly accessible."
            	return usage_html;
         } else if (part == "Terms") {
         	var terms_html = "";
