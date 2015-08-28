@@ -151,6 +151,16 @@ consenttype: "implicit",
                                                 <div class="field-content"></div>
                                             </div>
                                             <div class="views-field views-field-field-api-contact-person">
+                                                <strong class="views-label views-label-field-api-contact-person">Version: 
+                                                </strong><span class="version"></span>
+                                                <div class="field-content"></div>
+                                            </div>
+                                            <div class="views-field views-field-field-api-contact-person">
+                                                <strong class="views-label views-label-field-api-contact-person">Last update: 
+                                                </strong><span class="last-update"></span>
+                                                <div class="field-content"></div>
+                                            </div>
+                                            <div class="views-field views-field-field-api-contact-person">
                                                 <strong class="views-label views-label-field-api-contact-person">Contact
 													person: </strong><span class="contact-person"></span>
                                                 <div class="field-content"></div>
@@ -311,6 +321,8 @@ consenttype: "implicit",
                     data.option = dse_data.option;
                     $("#content-wiki").html(buildHTMLforPage(data, show));
                     $(".contact-person").html(data["Contact Person"]);
+                    $(".version").html(data["Version"]);
+                    $(".last-update").html(data["Last Update"]);
                     $(".trial-site").html("\n<p>\n "+dse_data.site+"<\p>");
 
                     $(".finesce-subpages a").each(function(){

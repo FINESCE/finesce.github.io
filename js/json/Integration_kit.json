@@ -1,5 +1,6 @@
 [
     {
+        "Last Update": "2015-08-28",
         "Target Usage": "",
         "Name": "Integration kit",
         "Short Description": "",
@@ -12,6 +13,7 @@
             "Preface": "\n<p>\n Within this document you find a self-contained open specification of the aforementioned kit.\n</p>\n\n<p>\n Please consult the appropriate pages on the\n <a class=\"external\" href=\"http://www.finesce.eu/Trial_Site_Malmo.html\">\n  FINESCE\n </a>\n website in order to understand the complete context of the related FINESCE trials and this result.\n</p>\n\n\n",
             "ReutilisedTech": "\n<p>\n WP1 re-uses FIWARE GE\u2019s Orion Context Broker and Cosmos BigData Analysis.\n</p>\n\n<p>\n Google GSON \u2013 a JSON Parsing library for Java\n <a class=\"external\" href=\"https://code.google.com/p/google-gson/\">\n  https://code.google.com/p/google-gson/\n </a>\n <br/>\n Apache Camel - a rule-based routing and mediation engine\n <a class=\"external\" href=\"http://camel.apache.org/\">\n  http://camel.apache.org/\n </a>\n</p>\n\n\n"
         },
+        "Version": "1.0",
         "WP": "",
         "Usage": "\n\n",
         "Terms and Conditions": "\n<p>\n Open source under the Apache2 license.\n</p>\n\n\n",
@@ -23,7 +25,7 @@
             "/redmine/attachments/download/2224/Image_5.jpg"
         ],
         "Open Source": "",
-        "Contact Person": "\n<p>\n David Lillienberg, E.ON,\n <a class=\"email\" href=\"mailto:david.lillienbergREMOVE-NO-SPAM@eon.se\">\n  david.lillienbergREMOVE-NO-SPAM@eon.se\n </a>\n</p>\n\n",
+        "Contact Person": "\n<p>\n David Lillienberg, E.ON,\n <a class=\"email\" href=\"mailto:david.lillienbergREMOVE-NO-SPAM@eon.se\">\n  david.lillienbergREMOVE-NO-SPAM@eon.se\n </a>\n</p>\n\n\n",
         "Overview": "\n<p>\n The WP1 Integration kit is an integration implementation kit including some examples for the established integrations within WP1. This will help others to more easily and quickly establish those integrations. The kit will fit into the architecture as illustrated below (Image 1).\n</p>\n\n<p>\n <img alt=\"\" src=\"images/redmine/Image_1.png\"/>\n</p>\n\n<p>\n The WP1 architecture consists of, but not limited to:\n <br/>\n - The E.ON API Proxy which serves as the main integrator and core point of our architecture. The E.ON API Proxy integrates the Portfolio Manager, the FINESCE API and the FINESCE GE's.\n <br/>\n - The Portfolio Manager provides data to E.ON API Proxy through a REST API. The data is then forwarded to either the FINESCE GE's for analysis, or the FINESCE API for publishing.\n <br/>\n - The FINESCE API publishes data from the E.ON API Proxy to its users as a Odata API, currently available types are weather and price.\n <br/>\n - The FIWARE GE's integrated thus far is Orion Context Broker and Cosmos BigData Analysis.\n</p>\n\n<p>\n Orion Context Broker serves as the entry point of the FINESCE GE Cloud, where data to be analyzed is sent to the REST API Interface of Orion Context Broker. Through the subscription functionality of Orion Context Broker, data is automatically forwarded to Cosmos BigData Analysis, where analytical work is performed.\n</p>\n\n<p>\n The following details reflect the current status of WP1 and may be subject to change.\n</p>\n\n<p>\n The integration consists of interconnecting the API Proxy, with the Orion Context Broker, and the Cosmos BigData Analysis. The purpose of the integration is for data that has been retrieved by API Proxy, to be analyzed within Cosmos Big Data Analysis, and then returned to API Proxy via Orion Context Broker. The analyzed data is then exposed from the API Proxy as an OData API for the outside world to access.\n</p>\n\n\n<h3>\n What you get\n</h3>\n\n<p>\n The provided documentation includes the following, but not limited to:\n <br/>\n - Experience gained by WP1 when integrating FIWARE Generic Enablers\n <br/>\n - Different integration kits developed by WP1\n <br/>\n - Sample code\n</p>\n\n\n<h3>\n Why to get it\n</h3>\n\n<p>\n Ideally this documentation will give valuable insights linked to FIWARE Generic Enablers to SME\u2019s and Start up\u2019s joining the FIWARE Accelerator Programme. In particular FIWARE GE\u2019s Orion Context Broker and Cosmos BigData Analysis.\n</p>\n\n\n",
         "Downloads": "\n<p>\n No Downloads are available for this result.\n</p>\n\n\n",
         "Instances": "\n<p>\n An instance of this reference implementation runs as a part of the trial and is not publicly accessible.\n</p>\n\n\n"

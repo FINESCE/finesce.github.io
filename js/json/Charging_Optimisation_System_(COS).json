@@ -1,5 +1,6 @@
 [
     {
+        "Last Update": "2015-08-28",
         "Target Usage": "\n<p>\n There are several major applications of this concept in the control of electricity grids, including:\n</p>\n\n<ol>\n <li>\n  Develop flexible and rapid responses to grid emergencies while minimising customer impact;\n </li>\n <li>\n  Balancing volatile renewable supply and EV demand, to minimise CO2 emissions;\n </li>\n <li>\n  Manipulate inter-regional power flows to avoid the high costs of future power link upgrades;\n </li>\n <li>\n  Provide energy markets with an additional control capability;\n </li>\n <li>\n  Offer individual customers and service providers more information and control of their electric vehicle charging applications.\n </li>\n</ol>\n\n\n",
         "Name": "Charging Optimisation System (COS)",
         "Short Description": "",
@@ -12,6 +13,7 @@
             "Preface": "\n<p>\n Within this document you find a self-contained open specification of the FINESCE WP5 Charging Optimisation System (COS).\n</p>\n\n<p>\n Please consult the appropriate pages on the\n <a class=\"external\" href=\"http://www.finesce.eu/Trial_Site_Ireland.html\">\n  FINESCE\n </a>\n website in order to understand the complete context of the related FINESCE trials.\n</p>\n\n\n",
             "ReutilisedTech": "\n<p>\n As mentioned earlier the COS re-uses the FI-WARE Data Handling GE, FI-WARE DB Anonymiser GE, FI-WARE Identity Management GCP GE , FI-WARE Content Based Security GE , FI-WARE Complex Event Processing GE and FI-WARE Cloud Edge GE.\n</p>\n\n\n"
         },
+        "Version": "1.0",
         "WP": "",
         "Usage": "",
         "Terms and Conditions": "\n<p>\n An instance of the COSs reference implementation runs as a part of the Irish trial and is only accessible via its API. Documentation on the API can be found at\n <a class=\"external\" href=\"https://finesce.tssg.org/documentation/index.html\">\n  https://finesce.tssg.org/documentation/index.html\n </a>\n</p>\n\n\n",
@@ -20,7 +22,7 @@
             "/redmine/attachments/download/2018/wp5_cos_dse.png"
         ],
         "Open Source": "",
-        "Contact Person": "\n<p>\n Miguel Ponce de Leon\n <br/>\n TSSG at Waterford Institute of Technology\n <br/>\n <a class=\"email\" href=\"mailto:miguelpdlREMOVE-NO-SPAM@tssg.org\">\n  miguelpdlREMOVE-NO-SPAM@tssg.org\n </a>\n</p>\n\n",
+        "Contact Person": "\n<p>\n Miguel Ponce de Leon\n <br/>\n TSSG at Waterford Institute of Technology\n <br/>\n <a class=\"email\" href=\"mailto:miguelpdlREMOVE-NO-SPAM@tssg.org\">\n  miguelpdlREMOVE-NO-SPAM@tssg.org\n </a>\n</p>\n\n\n",
         "Overview": "\n<p>\n The WP5 Stream I team have developed an active demand dispatch system as part of the FINESCE API. This system optimises charging profiles for available Electric Vehicles (EV)s on the grid, by taking input of power generation forecasts from system operators\u2018 web sites and using request-response message exchange patterns with live EVSE's connected to the grid to create an optimised load scheduler every 15 minutes.\n</p>\n\n\n",
         "Downloads": "\n<p>\n No downloads are available for this result.\n</p>\n\n\n",
         "Instances": ""

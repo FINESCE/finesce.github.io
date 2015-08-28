@@ -4,6 +4,7 @@ from lxml import etree
 import bs4
 import json
 import re
+import datetime
 
 def usage():
     print("""
@@ -51,6 +52,8 @@ class DSEData(object):
     short_description = ""
     open_source = ""    #TODO: this was false
     contact_person = ""
+    version = "1.0"
+    last_update = ""
     overview = ""
     target_usage = ""
     documentation = DSEData_documentation()
@@ -66,6 +69,8 @@ class DSEData(object):
                ", Short Description:" + repr(self.short_description) + \
                ", Open Source:" + repr(self.open_source) + \
                ", Contact Person:" + repr(self.contact_person) + \
+               ", Version:" + repr(self.version) + \
+               ", Last Update:" + repr(self.last_update) + \
                ", Overview:" + repr(self.overview) + \
                ", Target Usage:" + repr(self.target_usage) + \
                ", Documentation:" + repr(self.documentation) + \
@@ -79,6 +84,8 @@ class DSEData(object):
                  'Name': self.name, \
                  'Short Description': self.short_description, \
                  'Contact Person':  self.contact_person, \
+                 'Version':  self.version, \
+                 'Last Update':  self.last_update, \
                  'Open Source':  self.open_source, \
                  'Overview':  self.overview, \
                  'Target Usage': self.target_usage, \
@@ -129,6 +136,9 @@ def redirect_attachments(text):
 
 def spam_protect(text):
     return re.sub("@", "REMOVE-NO-SPAM@", text)
+   
+def clean_newlines(text):
+	return re.sub("[\n]|<p>|</p>", "", text).strip()
 
 def processH2(start, trim_href = False):
     processed_part = ""
@@ -206,6 +216,8 @@ for h2 in content.find_all("h2"):
         dse_data.instances = processH2(h2, True)
     elif h2_text.startswith("contact person"):
         dse_data.contact_person = spam_protect(processH2(h2))
+    elif h2_text.startswith("version"):
+        dse_data.version = clean_newlines(processH2(h2))
 
 #if len(content.findAll(text="What you get")) > 0:
 #    dse_data.target_usage = "";
@@ -226,6 +238,8 @@ print dse_data.documentation.dse_description
 print dse_data.overview
 dse_data.documentation = ""
 """
+
+dse_data.last_update = datetime.datetime.now().date().isoformat()
 
 with open(output_json_path, 'w') as outfile:
     json.dump(dse_data, outfile, indent=4, separators=(',', ': '), cls=DSEEncoder)

@@ -1,5 +1,5 @@
 {
-    "updated": "2015-08-28T09:58:05.351720", 
+    "updated": "2015-08-28T15:11:23.815202", 
     "dse": [
         {
             "name": "Charging Optimisation System (COS)", 
@@ -15,7 +15,7 @@
             "name": "Component Composition Framework DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Component_Composition_Framework_DSE", 
             "site": "Horsens Smart Prosumer", 
-            "description": "Component Composition Framework", 
+            "description": "Component Composition framework enables injection of new component plugins into a service that manages and connects all running components dynamically.", 
             "categories": "FIWARE Adapters", 
             "id": "Component_Composition_Framework_DSE", 
             "work_package": "2", 
@@ -65,7 +65,7 @@
             "name": "Generation Schedule Manager DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Generation_Schedule_Manager_DSE", 
             "site": "Aachen/Cologne B2B Energy Ecosystem", 
-            "description": "Handling energy generation schedules from the VPP", 
+            "description": "The Generation Schedule Manager is a REST service (developed in Java) which allows clients to access data about the energy generation schedule of energy sources for specified days", 
             "categories": "Data Processing, Data Storage", 
             "id": "Generation_Schedule_Manager_DSE", 
             "work_package": "3", 
@@ -125,7 +125,7 @@
             "name": "Production Schedule Manager DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Production_Schedule_Manager_DSE", 
             "site": "Aachen/Cologne B2B Energy Ecosystem", 
-            "description": "Handling production schedules from the Smart Factory", 
+            "description": "The Production Schedule Manager is a REST service (developed in Java) which allows clients to access data about the planned consumption profiles of an energy flexible factory for specified days", 
             "categories": "Data Processing, Data Storage", 
             "id": "Production_Schedule_Manager_DSE", 
             "work_package": "3", 
