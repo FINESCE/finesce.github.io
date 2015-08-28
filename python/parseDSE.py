@@ -5,6 +5,7 @@ import bs4
 import json
 import re
 import datetime
+import os
 
 def usage():
     print("""
@@ -239,10 +240,26 @@ print dse_data.overview
 dse_data.documentation = ""
 """
 
-dse_data.last_update = datetime.datetime.now().date().isoformat()
-
-with open(output_json_path, 'w') as outfile:
+# Check if new json is same as old (ignoring update time)
+output_json_path_temp = output_json_path+"_temp"
+with open(output_json_path_temp, 'w') as outfile:
     json.dump(dse_data, outfile, indent=4, separators=(',', ': '), cls=DSEEncoder)
+files_equal = False
+with open(output_json_path, 'r') as infile1:
+    with open(output_json_path_temp, 'r') as infile2: 
+        old_data = json.loads(infile1.read())
+        new_data = json.loads(infile2.read())
+        new_data[0]["Last Update"] = old_data[0]["Last Update"]
+        files_equal = old_data == new_data
+os.remove(output_json_path_temp)
+
+# if new json is different, dump it with the new timestamp
+if not files_equal:
+    dse_data.last_update = datetime.datetime.now().date().isoformat()
+    with open(output_json_path, 'w') as outfile:
+        json.dump(dse_data, outfile, indent=4, separators=(',', ': '), cls=DSEEncoder)
+else:
+	print "New JSON is same as old, not writing new one."
 #print(content.prettify())
 
 """
