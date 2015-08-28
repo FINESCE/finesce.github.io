@@ -1,6 +1,16 @@
 {
-    "updated": "2015-08-26T12:26:44.211382", 
+    "updated": "2015-08-28T09:58:05.351720", 
     "dse": [
+        {
+            "name": "Charging Optimisation System (COS)", 
+            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Charging_Optimisation_System_(COS)", 
+            "site": "Ireland Electric Vehicle Grid Integration", 
+            "description": "Optimisation of Electric Vehicle Charging", 
+            "categories": "Data Processing, IoT", 
+            "id": "Charging_Optimisation_System_(COS)", 
+            "work_package": "5", 
+            "option": "1"
+        }, 
         {
             "name": "Component Composition Framework DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Component_Composition_Framework_DSE", 
@@ -10,7 +20,7 @@
             "id": "Component_Composition_Framework_DSE", 
             "work_package": "2", 
             "option": "2"
-        },
+        }, 
         {
             "name": "Contract Information (ContractInformation2Orion **) ", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Contract_Information_(ContractInformation2Orion_**)_", 
@@ -80,17 +90,7 @@
             "id": "Integration_kit", 
             "work_package": "1", 
             "option": "1"
-        },
-        {
-            "name": "Charging Optimisation System (COS)", 
-            "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Charging_Optimisation_System_(COS)", 
-            "site": "Ireland Electric Vehicle Grid Integration", 
-            "description": "Optimisation of Electric Vehicle Charging", 
-            "categories": "Data Processing, IoT", 
-            "id": "Charging_Optimisation_System_(COS)", 
-            "work_package": "5", 
-            "option": "1"
-        },
+        }, 
         {
             "name": "Issue Detector Processor (Cosmos2SCILAB + INP-SCILAB + SCILAB2Orion **) ", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Issue_Detector_Processor_(Cosmos2SCILAB_+_INP-SCILAB_+_SCILAB2Orion_**)_", 
