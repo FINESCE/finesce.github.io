@@ -259,7 +259,7 @@ if not files_equal:
     with open(output_json_path, 'w') as outfile:
         json.dump(dse_data, outfile, indent=4, separators=(',', ': '), cls=DSEEncoder)
 else:
-	print "New JSON is same as old, not writing new one."
+	print "New JSON is same as old, new file will not be written."
 #print(content.prettify())
 
 """
