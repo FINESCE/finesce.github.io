@@ -1,11 +1,11 @@
 [
     {
-        "Last Update": "2015-08-28",
+        "Last Update": "2015-08-31",
         "Target Usage": "",
         "Name": "Contract Information (ContractInformation2Orion **) ",
         "Short Description": "",
         "Documentation": {
-            "Description": "\n\n<h3>\n Basic Concepts\n</h3>\n\n<p>\n ContractInformation2Orion is a REST based client that exposes a @POST method via which an external provider will be able to send the marketplace data on the cost of energy, the cost of energy produced by DERs and the cost of system transmission power plants.\n</p>\n\n\n<h3>\n Basic Design Principles\n</h3>\n\n<p>\n The following picture gives a snapshot of the java classes (and the interaction among these) that have been developed for ContractInformation2Orion:\n</p>\n\n<p style=\"text-align:center;\">\n <img alt=\"\" src=\"images/redmine/ContractInformation2Orion.jpg\"/>\n <br/>\n <strong>\n  Figure 1: Contractinformation2orion domain model\n </strong>\n</p>\n\n\n",
+            "Description": "\n\n<h3>\n Basic Concepts\n</h3>\n\n<p>\n ContractInformation2Orion is a REST based client that exposes a @POST method via which an external provider will be able to send the marketplace data on the cost of energy, the cost of energy produced by DERs and the cost of system transmission power plants.\n</p>\n\n\n<h3>\n Basic Design Principles\n</h3>\n\n<p>\n The following picture gives a snapshot of the java classes (and the interaction among these) that have been developed for ContractInformation2Orion:\n</p>\n\n<p style=\"text-align:center;\">\n <img alt=\"\" src=\"images/redmine/ContractInformation2Orion.jpg\"/>\n <br/>\n <strong>\n  Figure 1: Contractinformation2orion domain model\n </strong>\n</p>\n\n\n<h3>\n DSE Interwork\n</h3>\n\n<p>\n This DSE does not interact with any other WP4 DSE.\n</p>\n\n\n<h3>\n GE Dependancies\n</h3>\n\n<p>\n The implementation of this DSE is working with an instance of ORION v0.14.\n</p>\n\n\n",
             "Copyright": "\n<p>\n Copyright \u00a9 2015 by FINESCE\n</p>\n\n\n",
             "Glossary": "\n\n",
             "References": "\n\n",

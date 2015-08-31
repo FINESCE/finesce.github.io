@@ -1,11 +1,11 @@
 [
     {
-        "Last Update": "2015-08-28",
+        "Last Update": "2015-08-31",
         "Target Usage": "",
         "Name": "Contract Tailor Processor (ContractManager **) ",
         "Short Description": "",
         "Documentation": {
-            "Description": "\n\n<h3>\n Basic Concepts\n</h3>\n\n\n\nContractManager is a REST based client that exposes two @POST methods: \n\t<ul>\n <li>\n  @sendContract which translates an IncentivePlan (marked as \"Compliant\" by the market regulator) into a Contract proposal Orion entity,\n </li>\n <li>\n  @updateContract which allows the e-marketplace customer user interface to accept or reject the contract proposal by updating the Orion entity status.\n </li>\n</ul>\n\n\n<h3>\n Basic Design Principles\n</h3>\n\n<p>\n The following picture gives a snapshot of the java classes that have been developed for ContractManager:\n</p>\n\n<p style=\"text-align:center;\">\n <img alt=\"\" src=\"images/redmine/ContractManager_Domain_Model.jpg\"/>\n <br/>\n <strong>\n  Figure 1: ContractManager domain model\n </strong>\n</p>\n\n\n",
+            "Description": "\n\n<h3>\n Basic Concepts\n</h3>\n\n\n\nContractManager is a REST based client that exposes two @POST methods: \n\t<ul>\n <li>\n  @sendContract which translates an IncentivePlan (marked as \"Compliant\" by the market regulator) into a Contract proposal Orion entity,\n </li>\n <li>\n  @updateContract which allows the e-marketplace customer user interface to accept or reject the contract proposal by updating the Orion entity status.\n </li>\n</ul>\n\n\n<h3>\n Basic Design Principles\n</h3>\n\n<p>\n The following picture gives a snapshot of the java classes that have been developed for ContractManager:\n</p>\n\n<p style=\"text-align:center;\">\n <img alt=\"\" src=\"images/redmine/ContractManager_Domain_Model.jpg\"/>\n <br/>\n <strong>\n  Figure 1: ContractManager domain model\n </strong>\n</p>\n\n\n<h3>\n DSE Interwork\n</h3>\n\n<p>\n This DSE does not interact with any other WP4 DSE.\n</p>\n\n\n<h3>\n GE Dependancies\n</h3>\n\n<p>\n The implementation of this DSE is working with an instance of ORION v0.14.\n</p>\n\n\n",
             "Copyright": "\n<p>\n Copyright \u00a9 2015 by FINESCE\n</p>\n\n\n",
             "Glossary": "\n\n",
             "References": "\n\n",

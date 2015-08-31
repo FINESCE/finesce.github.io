@@ -1,11 +1,11 @@
 [
     {
-        "Last Update": "2015-08-28",
+        "Last Update": "2015-08-31",
         "Target Usage": "",
         "Name": "Social Events Interface (Social2Orion **) ",
         "Short Description": "",
         "Documentation": {
-            "Description": "\n\n<h3>\n Basic Concepts\n</h3>\n\n<p>\n Social2Orion is a REST based client that exposes a @POST method via which an external provider will be able to send the marketplace data on social events (such as concerts, football matches, etc) that can affect consumption/production in the Trial site area.\n</p>\n\n\n<h3>\n Basic Design Principles\n</h3>\n\n<p>\n The following picture gives a snapshot of the java classes (and the interaction among these) that have been developed for Social2Orion:\n</p>\n\n<p style=\"text-align:center;\">\n <img alt=\"\" src=\"images/redmine/Social2Orion.jpg\"/>\n <br/>\n <strong>\n  Figure 1: Social2Orion domain model\n </strong>\n</p>\n\n\n",
+            "Description": "\n\n<h3>\n Basic Concepts\n</h3>\n\n<p>\n Social2Orion is a REST based client that exposes a @POST method via which an external provider will be able to send the marketplace data on social events (such as concerts, football matches, etc) that can affect consumption/production in the Trial site area.\n</p>\n\n\n<h3>\n Basic Design Principles\n</h3>\n\n<p>\n The following picture gives a snapshot of the java classes (and the interaction among these) that have been developed for Social2Orion:\n</p>\n\n<p style=\"text-align:center;\">\n <img alt=\"\" src=\"images/redmine/Social2Orion.jpg\"/>\n <br/>\n <strong>\n  Figure 1: Social2Orion domain model\n </strong>\n</p>\n\n\n<h3>\n DSE Interwork\n</h3>\n\n<p>\n This DSE does not interact with any other WP4 DSE.\n</p>\n\n\n<h3>\n GE Dependancies\n</h3>\n\n<p>\n The implementation of this DSE is working with an instance of ORION v0.14.\n</p>\n\n\n",
             "Copyright": "\n<p>\n Copyright \u00a9 2015 by FINESCE\n</p>\n\n\n",
             "Glossary": "\n\n",
             "References": "\n\n",
