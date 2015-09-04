@@ -1,5 +1,5 @@
 {
-    "updated": "2015-09-03T14:08:59.595544", 
+    "updated": "2015-09-04T09:31:12.471430", 
     "dse": [
         {
             "name": "Charging Optimisation System (COS)", 
@@ -45,7 +45,7 @@
             "name": "Event Sink (EvSi) DSE", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Event_Sink_(EvSi)_DSE", 
             "site": "Aachen/Cologne B2B Energy Ecosystem", 
-            "description": "Local storage of shop floor events", 
+            "description": "Consumer to be installed on premise and connected to local Orion Context Broker to locally gather all context updates for backup- and research-purpose", 
             "categories": "Data Storage, Logging", 
             "id": "Event_Sink_(EvSi)_DSE", 
             "work_package": "3", 
@@ -115,7 +115,7 @@
             "name": "Modbus Connector (ModConn)", 
             "wiki_link": "/redmine/projects/finesce-domain-specific-enablers/wiki/Modbus_Connector_(ModConn)", 
             "site": "Aachen/Cologne B2B Energy Ecosystem", 
-            "description": "Gateway to a local shop floor network", 
+            "description": "Proprietary protocol adapter to connect shop floor network running on Modbus/Ethernet to a local instance of Orion via NGSI", 
             "categories": "FIWARE Adapters", 
             "id": "Modbus_Connector_(ModConn)", 
             "work_package": "3", 
